@@ -1,0 +1,27 @@
+<div id="content" class="container">
+  <div class="row">
+    <div class="col-md-9 order-md-last">
+      <p class="lead">The NREL application template can be used for small, special-purpose sites—such as software, tools, and databases—that cannot be readily accommodated on the main NREL.gov website. The template allows for design flexibility within the content area of each page and unique navigation that can be customized to the site's content.</p>
+      <p>The NREL application template uses a consistent header, <a href="https://www.nrel.gov/comm-standards/web/footer.html">footer</a>, and stylesheet, which should not be modified. The top and side navigation are optional. See an example <a routerLink="/without-topnav">without top navigation</a>. Application sites may also include breadcrumbs to show the application's relationship to the sponsoring research site.</p>
+      <p>All application sites use the same landing page template. Two template options are available for secondary pages. The <a routerLink="/primary-template">preferred version</a> uses the same header and footer as the landing page. The <a routerLink="/secondary-template">alternate version</a> uses a modified header to maximize screen space for the user interface of complex software and tools.</p>
+    </div>
+    <!-- Site left navigation -->
+    <div class="col-md-3 order-md-first hidden-print">
+      <nav class="sidenav">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a routerLink="." fragment="" class="nav-link">Link</a>
+          </li>
+          <li class="nav-item"><a routerLink="." fragment="" class="nav-link">Link</a>
+            <ul class="nav flex-column"><!-- add .hide class to close nav -->
+              <li class="nav-item"><a routerLink="." fragment="" class="nav-link">2nd level link</a>
+                <ul class="nav flex-column"><!-- add .hide class to close nav -->
+                  <li class="nav-item"><a routerLink="." fragment="" class="nav-link">3rd level link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

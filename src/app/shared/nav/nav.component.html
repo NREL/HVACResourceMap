@@ -1,0 +1,75 @@
+<div *ngIf="showTopNav" class="program-header" [attr.id]="showAlternate ? 'interior' : ''">
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+
+      <div id="program-menu" class="mr-auto">
+        <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-collapse" aria-controls="topnav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggle-label">Menu</span>
+        </button>
+      </div>
+
+      <!-- Navigation -->
+      <div class="navbar-collapse collapse" id="topnav-collapse">
+        <ul class="nav navbar-nav">
+          <li data-topnav="link1" class="nav-item"><a routerLink="." fragment="" class="nav-link">Link 1</a></li>
+          <li data-topnav="link2" class="nav-item"><a routerLink="." fragment="" class="nav-link">Link 2</a></li>
+          <li class="dropdown nav-item" data-topnav="link3">
+            <a routerLink="." fragment="" class="dropdown-toggle nav-link" data-toggle="dropdown">Link 3 <span class="fa fa-angle-down"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="nav-item"><a routerLink="." fragment="" class="nav-link">Sub-Nav 1 <span class="fa fa-home"></span></a></li>
+              <li class="nav-item"><a routerLink="." fragment="" class="nav-link">Sub-Nav 2</a></li>
+            </ul>
+          </li>
+          <li data-topnav="link4" class="nav-item"><a routerLink="." fragment="" class="nav-link">Link4</a></li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item"><a routerLink="." fragment="" class="nav-link">Login</a></li>
+          <li class="nav-item"><a routerLink="." fragment="" class="nav-link">Help</a></li>
+        </ul>
+        <!-- desktop search button -->
+        <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-none d-md-inline" [class.int]="showAlternate" data-toggle="collapse" data-target="#searchbar-collapse" aria-expanded="false" aria-label="Toggle Search">
+          <span class="fa fa-search" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    </nav>
+  </div><!--container-->
+</div><!--program-header-->
+<!-- mobile search button -->
+<button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-md-none" data-toggle="collapse" data-target="#searchbar-collapse-mobile" aria-expanded="false" aria-label="Toggle Search">
+  <span class="fa fa-search" aria-hidden="true"></span>
+</button>
+<!-- Start collapsible site search bar -->
+<div class="site-search-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-light">
+          <div class="navbar-collapse collapse" id="searchbar-collapse">
+            <form
+              method="get"
+              class="site-searchbar-form form-inline ThunderstoneForm"
+              action="https://search4.nrel.gov/texis/search/"
+              id="ThunderstoneSearchForm">
+
+              <input type="hidden" name="pr" value="metanrel" />
+              <div class="form-group">
+                <label for="query" class="sr-only">Search NREL.gov</label>
+                <input
+                  type="search"
+                  id="query" name="query"
+                  maxlength="2047"
+                  placeholder="Search NREL.gov"
+                  class="form-control"
+                  aria-label="Search NREL.gov">
+                <button type="submit" class="btn btn-default">Search</button>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End collapsible site search bar -->

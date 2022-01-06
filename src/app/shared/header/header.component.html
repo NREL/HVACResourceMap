@@ -1,0 +1,55 @@
+<a routerLink="." fragment="content" class="sr-only app">Skip to main content</a>
+
+<header id="banner" [class.notopnav]="!showTopNav">
+  <div class="banner-logo">
+    <div class="container app">
+      <div class="row">
+
+        <div class="col-md-6 col-xl-4 order-md-2">
+          <a href="https://www.nrel.gov"><div class="logo" [class.interior]="showAlternate"><img src="assets/images/nrel-logo-web.svg" class="sr-only" alt="National Renewable Energy Laboratory" /></div></a>
+        </div>
+
+        <div class="col-12 d-md-none">
+          <!-- Start MOBILE collapsible site search bar -->
+          <div class="site-search-bar">
+            <div class="container">
+              <div class="row">
+                <div class="col d-flex justify-content-center mb-1">
+                  <nav class="navbar navbar-light">
+                    <div class="navbar-collapse collapse" id="searchbar-collapse-mobile">
+                      <form
+                        method="get"
+                        class="site-searchbar-form form-inline ThunderstoneForm"
+                        action="https://search4.nrel.gov/texis/search/"
+                        id="ThunderstoneSearchForm">
+
+                        <input type="hidden" name="pr" value="metanrel" />
+                        <div class="form-group">
+                          <label for="query" class="sr-only">Search NREL.gov</label>
+                          <input
+                            type="search"
+                            id="query" name="query"
+                            maxlength="2047"
+                            placeholder="Search NREL.gov"
+                            class="form-control"
+                            aria-label="Search NREL.gov">
+                          <button type="submit" class="btn btn-default">Search</button>
+                        </div>
+                      </form>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End MOBILE collapsible site search bar -->
+        </div>
+
+        <div class="col-md-6 col-xl-8 order-md-1">
+          <a routerLink="/" class="app-name">Application Name</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
