@@ -1,4 +1,47 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import "assets/css/nrel.complete.css";
-@import "assets/css/nrel.application.css";
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import 'app/shared/styles/nrel.complete.css';
+@import 'app/shared/styles/nrel.application.css';
+
+.table td ul {
+  padding-left: 18px;
+}
+
+h1 a[href]::after,
+h2 a[href]::after,
+h3 a[href]::after,
+h4 a[href]::after,
+h5 a[href]::after,
+h6 a[href]::after,
+a[href]::after,
+.headerlink-cr::after,
+.headerlink:after,
+.bio p.header a[href]::after,
+.fa-blue-arrow a::before,
+ul.fa-check-circle li:before,
+.fa-blue-arrow-text a:before,
+.enlarge:before {
+  font-family: 'Font Awesome 5 Free';
+}
+
+h1 a[href]::after,
+h2 a[href]::after,
+h3 a[href]::after,
+h4 a[href]::after,
+h5 a[href]::after,
+h6 a[href]::after,
+.headerlink-cr::after,
+.headerlink:after,
+.bio p.header a[href]::after {
+  font-weight: 900;
+}
+
+.sidenav > ul.nav > li > a {
+  text-transform: uppercase;
+}
+
+.ou-form label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}

@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 413 792">
+  <style>
+    .st1 {
+      fill: #8ce;
+      stroke: #231f20;
+      stroke-width: 0.2054
+    }
+
+    .st1, .st3, .st4, .st5 {
+      stroke-miterlimit: 10
+    }
+
+    .st3 {
+      fill: none;
+      stroke: #8ce
+    }
+
+    .st3, .st4 {
+      stroke-width: 2
+    }
+
+    .st4, .st5 {
+      stroke: #8ce
+    }
+
+    .st4 {
+      fill: #fff
+    }
+
+    .st5 {
+      fill: none;
+      stroke-width: 0.07917207
+    }
+
+    .st6 {
+      opacity: .4
+    }
+
+    .st7 {
+      fill: #8ce
+    }
+
+    .st9 {
+      fill: #fff;
+      stroke: #8ce;
+      stroke-width: 0.09934057;
+      stroke-miterlimit: 10
+    }
+
+    .st10 {
+      opacity: 0.57
+    }
+  </style>
+  <g id="space">
+    <path d="M54.6 248h8v510.9h-8z" class="st1"/>
+    <path d="M56.1 180h3.8v68.5h-3.8z" class="st1"/>
+    <path d="M54.2 138.6H63v41h-8.8z" class="st1"/>
+    <path fill="#8ce" stroke="#231f20" stroke-miterlimit="10.0008" stroke-width=".20540411" d="m17.75569 136.14944 382.1406-95.9784 2.5578 10.18395-382.1406 95.9784z"/>
+    <path d="M62.4 290.3h292.4v20.6H62.4z" class="st3"/>
+    <path d="M355 244.1h8.8v69.4H355z" class="st1"/>
+    <path d="M357.2 175.3h3.8v68.5h-3.8z" class="st1"/>
+    <path d="M355 134.2h8.8v41H355z" class="st1"/>
+    <path d="M357.2 100.4h3.8v33.9h-3.8z" class="st1"/>
+    <path d="M363.4 100.9H355V62.5l8.4-2.9z" class="st1"/>
+    <path d="M62.1 725.4H91v32.4H62.1z" class="st1"/>
+    <path d="M50.2 757.7h46.4v8.8H50.2z" class="st1"/>
+    <path d="M327 725.4h28.9v32.9H327z" class="st1"/>
+    <path d="M321.9 757.7h46.4v8.8h-46.4z" class="st1"/>
+    <path d="M189.7 148.7H87.5l4.7-7.3h93z" class="st4"/>
+    <path d="m100.3 140.8 6.4-16.8" class="st3"/>
+    <path d="m179.8 140.8-8-32.7" class="st3"/>
+    <path d="M310.5 149.9h-102l4.7-7.9h92.9z" class="st4"/>
+    <path d="m221 141.4 11.7-47.2" class="st3"/>
+    <path d="m300.8 141.4-11.5-61.2" class="st3"/>
+    <path d="M164.6 514.6v17" class="st5"/>
+    <path d="M171.8 537.6c0 3.8-14.6 3.8-14.6 0s3.2-7.1 7.1-7.1c4.4 0 7.5 3.3 7.5 7.1z" class="st5"/>
+    <path d="M252 513.9v17.3" class="st5"/>
+    <path d="M259.4 537.2c0 3.8-14.6 3.8-14.6 0s3.2-7.1 7.1-7.1c4.4-.4 7.5 3 7.5 7.1z" class="st5"/>
+    <g class="st6">
+      <path d="M409 244.8c-12.7 0-12.7-6-25.5-6-12.7 0-12.7 6-25.5 6-12.7 0-12.7-6-25.5-6-13 0-13 6-25.5 6-1.6 0-3.2 0-4.6-.3" class="st3"/>
+      <path d="M281.6 239.1c11.1-.9 24.3-4.4 33.9-9L305.1 245l1.6 18c-5.8-8.7-16.1-18.2-25.1-23.9z" class="st7"/>
+    </g>
+    <path d="M356.5 685.4h8.8v72.4h-8.8z" class="st1"/>
+    <path d="M354.6 346.3h8.8v41h-8.8z" class="st1"/>
+    <g class="st6">
+      <path fill="none" stroke="#8ce" stroke-miterlimit="10" stroke-width="3" d="M406.9 418.7h-24.3c-11.3 0-6.9-11.5-26.7-11.5H186s-51.3 3.2-51.3-17.4v-39.3s-.3-17.2 31.1-18h190.7c8.8 0 13.7 8.3 22.5 8.3h28.8"/>
+      <path d="M428.9 340.6c-10.4 3.7-22.8 10.4-30.5 16.8l6.3-16.8-6.3-16.8c8 6.7 20.5 13.4 30.5 16.8z" class="st7"/>
+    </g>
+    <ellipse cx="122.6" cy="292.8" class="st9" rx="13.3" ry="2.9"/>
+    <ellipse cx="204.8" cy="292.8" class="st9" rx="13.3" ry="2.9"/>
+    <ellipse cx="287.4" cy="292.8" class="st9" rx="13.3" ry="2.9"/>
+    <g class="st10">
+      <path d="M122.6 292.8v-11.2" class="st3"/>
+      <path d="M122.6 272.6c1.6 4.4 4.4 9.4 6.9 12.7l-6.9-2.5-6.9 2.5c2.6-3.4 5.2-8.6 6.9-12.7z" class="st7"/>
+    </g>
+    <g class="st10">
+      <path d="M204.8 290.7v-11.3" class="st3"/>
+      <path d="M204.8 270.2c1.6 4.4 4.4 9.4 6.9 12.7l-6.9-2.5-6.9 2.5c2.6-2.9 5.6-8.2 6.9-12.7z" class="st7"/>
+    </g>
+    <g class="st10">
+      <path d="M287.4 296.1v-11.3" class="st3"/>
+      <path d="M287.4 275.8c1.6 4.4 4.4 9.4 6.9 12.7l-6.9-2.5-7.1 2.5c2.9-3.4 5.5-8.5 7.1-12.7z" class="st7"/>
+    </g>
+    <path d="M63.5 488.8h292.4v20.6H63.5z" class="st3"/>
+    <ellipse cx="124" cy="491.6" class="st9" rx="13.3" ry="2.9"/>
+    <ellipse cx="206.2" cy="491.6" class="st9" rx="13.3" ry="2.9"/>
+    <ellipse cx="288.6" cy="491.6" class="st9" rx="13.3" ry="2.9"/>
+    <g class="st10">
+      <path d="M124 491.6v-11.2" class="st3"/>
+      <path d="M124 471.3c1.6 4.4 4.4 9.4 6.9 12.7l-6.9-2.5-6.9 2.5c2.5-3.1 5.3-8.5 6.9-12.7z" class="st7"/>
+    </g>
+    <g class="st10">
+      <path d="M206.2 489.7v-11.6" class="st3"/>
+      <path d="M206.2 469.1c1.6 4.4 4.4 9.4 6.9 12.7l-6.9-2.5-6.9 2.5c2.6-2.8 5.4-8.3 6.9-12.7z" class="st7"/>
+    </g>
+    <g class="st10">
+      <path d="M288.6 491.1v-11.2" class="st3"/>
+      <path d="M288.6 470.8c1.6 4.4 4.4 9.4 6.9 12.7l-6.9-2.5-6.9 2.5c2.4-3.4 5.4-8.4 6.9-12.7z" class="st7"/>
+    </g>
+    <path d="M76.7 357.7h16.8v25.1H76.7z" class="st3"/>
+    <path d="M85.1 361.3c-3.7 0-6.6 2.9-6.6 6.6h13c.3-3.8-2.7-6.6-6.4-6.6z" class="st3"/>
+    <path d="m84.7 370.3.4-6.6" class="st3"/>
+    <path d="M356.5 564.8h8.8v69.4h-8.8z" class="st1"/>
+    <path d="M358.8 513.9h3.8v50.5h-3.8z" class="st1"/>
+    <path d="M356.5 464.5h8.8v48.9h-8.8z" class="st1"/>
+    <path d="M358.8 634h3.8v50.5h-3.8z" class="st1"/>
+    <path d="M355.9 725.4H62.1v-15.6l294.4.4z" class="st1"/>
+    <path d="M99.6 650.5H65c0 5.3 5.5 9.4 13.3 11.1l-2.2 48.2h13l-3.7-48.2c7.8-1 14.2-5.6 14.2-11.1z" class="st1"/>
+    <path d="M66.7 647.7h2.2v2.5h-2.2z" class="st1"/>
+    <path d="M67.5 645.4h.7v2.5h-.7z" class="st1"/>
+    <path fill="none" stroke="#f3743f" stroke-miterlimit="10" d="M159.3 690.5v22.8H66.7l-.3-59.6 3.2-4.4s-.3-6 0-6.3c.9-1.6 6.9-3.7 8-2.9.7.3.7 1.6.7 1.6"/>
+    <path d="M70.1 650.5c-.3 0-.9-.3-.9-.9-.3-6.3 0-6.6 0-6.9.9-2.1 7.6-3.8 9.2-3.2 1.3.7 1.3 2.2 1.3 2.5 0 .7-.3.9-.9.9-.7 0-.9-.3-.9-.9 0-.3 0-.7-.3-.9-1.3 0-6 1.6-6.6 2.5v6c.1.3-.3.9-.9.9z" class="st1"/>
+    <ellipse cx="66.6" cy="644.8" class="st1" rx="1.6" ry=".3"/>
+    <ellipse cx="69.2" cy="644.8" class="st7" rx="1.6" ry=".3"/>
+    <path d="M357.2 388.7h3.8v77.4h-3.8z" class="st1"/>
+    <path d="M357.2 313.6h3.8v33.9h-3.8z" class="st1"/>
+    <path d="M85 357.8v-11.5" class="st3"/>
+    <path d="M77.5 329.2h15.2v17.4H77.5z" class="st3"/>
+    <path fill="#8ce" stroke="#8ce" stroke-miterlimit="10" d="M89.1 334.8h-3.2v9.3h-1.2v-9.3h-3.2v-1.1h7.7l-.1 1.1z"/>
+    <path fill="#fff" stroke="#f3743f" stroke-miterlimit="10" stroke-width="2" d="M205.6 709.8h-47.2c-3.7 0-6.3-2.9-6.3-6.3V580.4c0-3.7 2.9-6.3 6.3-6.3h46.9c3.7 0 6.3 2.9 6.3 6.3v123.1c.2 3-2.8 6.3-6 6.3z"/>
+  </g>
+</svg>

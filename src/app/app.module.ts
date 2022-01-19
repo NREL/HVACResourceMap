@@ -3,24 +3,52 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CentralPlantComponent } from './commercial-hvac/central-plant/central-plant.component';
+import { CoolThermalEnergyStorageComponent } from './commercial-hvac/central-plant/cool-thermal-energy-storage/cool-thermal-energy-storage.component';
+import { HotThermalEnergyStorageComponent } from './commercial-hvac/central-plant/hot-thermal-energy-storage/hot-thermal-energy-storage.component';
+import { CommercialHVACHomeComponent } from './commercial-hvac/commercial-hvac-home/commercial-hvac-home.component';
+import { CommercialHVACComponent } from './commercial-hvac/commercial-hvac.component';
+import { DiffusersComponent } from './commercial-hvac/distribution/diffusers/diffusers.component';
+import { DuctingComponent } from './commercial-hvac/distribution/ducting/ducting.component';
+import { SensorsControlsComponent } from './commercial-hvac/distribution/sensors-controls/sensors-controls.component';
+import { SteamTrapsComponent } from './commercial-hvac/distribution/steam-traps/steam-traps.component';
+import { TerminalComponent } from './commercial-hvac/distribution/terminal/terminal.component';
+import { VavComponent } from './commercial-hvac/distribution/vav/vav.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContributorsComponent } from './contributors/contributors.component';
 import { HomeComponent } from './home/home.component';
-import { PrimaryTemplateComponent } from './primary-template/primary-template.component';
-import { SecondaryTemplateComponent } from './secondary-template/secondary-template.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { NavComponent } from './shared/nav/nav.component';
-import { WithoutTopnavComponent } from './without-topnav/without-topnav.component';
+import { LabHVACComponent } from './lab-hvac/lab-hvac.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { NavComponent } from './shared/components/nav/nav.component';
+import { SpaceLoadsComponent } from './space-loads/space-loads.component';
+import { HvacDiagramComponent } from './diagrams/hvac-diagram/hvac-diagram.component';
+import { SpaceDiagramComponent } from './diagrams/space-diagram/space-diagram.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CentralPlantComponent,
+    CommercialHVACComponent,
+    CommercialHVACHomeComponent,
+    ContactComponent,
+    ContributorsComponent,
+    CoolThermalEnergyStorageComponent,
+    DiffusersComponent,
+    DuctingComponent,
     FooterComponent,
     HeaderComponent,
     HomeComponent,
+    HotThermalEnergyStorageComponent,
+    LabHVACComponent,
     NavComponent,
-    PrimaryTemplateComponent,
-    SecondaryTemplateComponent,
-    WithoutTopnavComponent
+    SensorsControlsComponent,
+    SpaceLoadsComponent,
+    SteamTrapsComponent,
+    TerminalComponent,
+    VavComponent,
+    HvacDiagramComponent,
+    SpaceDiagramComponent
   ],
   imports: [
     AppRoutingModule,

@@ -8,7 +8,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent {
   readonly showTopNav = true;
-  readonly showAlternate = false;
+  readonly showAlternate = true;
 
   isHome = false;
 

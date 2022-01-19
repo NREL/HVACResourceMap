@@ -1,4 +1,6 @@
-<app-header [showTopNav]="showTopNav" [showAlternate]="!isHome && showAlternate"></app-header>
-<app-nav [showTopNav]="showTopNav" [showAlternate]="!isHome && showAlternate"></app-nav>
-<router-outlet></router-outlet>
+<app-header [showAlternate]="!isHome && showAlternate" [showTopNav]="showTopNav"></app-header>
+<app-nav [showAlternate]="!isHome && showAlternate" [showTopNav]="showTopNav"></app-nav>
+<div class="container" id="content">
+  <router-outlet></router-outlet>
+</div>
 <app-footer></app-footer>

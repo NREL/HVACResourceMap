@@ -1,0 +1,26 @@
+<div *ngIf="showTopNav" [attr.id]="showAlternate ? 'interior' : ''" class="program-header">
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+
+      <div class="mr-auto" id="program-menu">
+        <button aria-controls="topnav-collapse" aria-expanded="false" aria-label="Toggle navigation" class="custom-toggler navbar-toggler" data-target="#topnav-collapse" data-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggle-label">Menu</span>
+        </button>
+      </div>
+
+      <!-- Navigation -->
+      <div class="navbar-collapse collapse" id="topnav-collapse">
+        <ul class="nav navbar-nav">
+          <li class="nav-item" data-topnav="home"><a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li class="nav-item" data-topnav="commercial-hvac"><a class="nav-link" routerLink="/commercial-hvac" routerLinkActive="active">Commercial HVAC</a></li>
+          <li class="nav-item" data-topnav="lab-hvac"><a class="nav-link" routerLink="/laboratories" routerLinkActive="active">Lab HVAC</a></li>
+          <li class="nav-item" data-topnav="space-loads"><a class="nav-link" routerLink="/space-loads" routerLinkActive="active">Space Loads</a></li>
+          <li class="nav-item" data-topnav="contributors"><a class="nav-link" routerLink="/contributors" routerLinkActive="active">Contributors</a></li>
+          <li class="nav-item" data-topnav="contact"><a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </div><!--container-->
+</div><!--program-header-->

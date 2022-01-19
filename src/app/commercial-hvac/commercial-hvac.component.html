@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-6">
+    <router-outlet></router-outlet>
+  </div>
+
+  <app-hvac-diagram class="col-md-3 order-md-last">Diagram</app-hvac-diagram>
+
+  <div class="col-md-3 order-md-first hidden-print">
+    <nav class="sidenav">
+      <ul class="nav flex-column">
+        <li *ngFor="let a of routes" [class.active]="url === join(a)" class="nav-item">
+          <a [routerLink]="join(a)" routerLinkActive #rlaA="routerLinkActive" class="nav-link">{{ a.name }}</a>
+          <ul *ngIf="a.children" [class.hide]="!rlaA.isActive" class="nav flex-column">
+            <li *ngFor="let b of a.children" [class.active]="url === join(a, b)" class="nav-item">
+              <a [routerLink]="join(a, b)" routerLinkActive #rlaB="routerLinkActive" class="nav-link">{{ b.name }}</a>
+              <ul *ngIf="b.children" [class.hide]="!rlaB.isActive" class="nav flex-column">
+                <li *ngFor="let c of b.children" [class.active]="rlaC.isActive" class="nav-item">
+                  <a [routerLink]="join(a, b, c)" routerLinkActive #rlaC="routerLinkActive" class="nav-link">{{ c.name }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
