@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
 @Component({
-  selector: 'app-distribution',
   templateUrl: './distribution.component.html'
 })
 export class DistributionComponent {

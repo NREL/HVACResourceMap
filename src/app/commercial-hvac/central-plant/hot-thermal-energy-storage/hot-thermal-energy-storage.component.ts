@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
 @Component({
-  selector: 'app-hot-thermal-energy-storage',
   templateUrl: './hot-thermal-energy-storage.component.html'
 })
 export class HotThermalEnergyStorageComponent {

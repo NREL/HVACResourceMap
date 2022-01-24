@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
 @Component({
-  selector: 'app-cooling-tower',
   templateUrl: './cooling-tower.component.html'
 })
 export class CoolingTowerComponent {

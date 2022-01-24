@@ -10,7 +10,6 @@ type Route = {
 };
 
 @Component({
-  selector: 'app-commercial-hvac',
   templateUrl: './commercial-hvac.component.html'
 })
 export class CommercialHVACComponent implements OnDestroy {
