@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-tools',
-  templateUrl: './tools.component.html',
-  styleUrls: ['./tools.component.scss']
+  templateUrl: './tools.component.html'
 })
 export class ToolsComponent {
   readonly title = 'Pump: Design Calculators and Tools';

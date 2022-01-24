@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-contributors',
-  templateUrl: './contributors.component.html',
-  styleUrls: ['./contributors.component.scss']
+  templateUrl: './contributors.component.html'
 })
 export class ContributorsComponent {
   readonly title = 'Contributors';

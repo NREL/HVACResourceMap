@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-piping',
-  templateUrl: './piping.component.html',
-  styleUrls: ['./piping.component.scss']
+  templateUrl: './piping.component.html'
 })
 export class PipingComponent {
   readonly title = 'Piping: General Information';

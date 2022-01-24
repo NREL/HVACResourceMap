@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-ducting',
-  templateUrl: './ducting.component.html',
-  styleUrls: ['./ducting.component.scss']
+  templateUrl: './ducting.component.html'
 })
 export class DuctingComponent {
   readonly title = 'Ducting';

@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-cooling-tower',
-  templateUrl: './cooling-tower.component.html',
-  styleUrls: ['./cooling-tower.component.scss']
+  templateUrl: './cooling-tower.component.html'
 })
 export class CoolingTowerComponent {
   readonly title = 'Cooling Tower: General Description and Uses';

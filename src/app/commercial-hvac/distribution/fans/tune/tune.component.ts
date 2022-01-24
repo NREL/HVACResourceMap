@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-tune',
-  templateUrl: './tune.component.html',
-  styleUrls: ['./tune.component.scss']
+  templateUrl: './tune.component.html'
 })
 export class TuneComponent {
   readonly title = 'Fan: Tune-Up Measures';

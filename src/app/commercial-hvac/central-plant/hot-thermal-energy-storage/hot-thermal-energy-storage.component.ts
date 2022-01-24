@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-hot-thermal-energy-storage',
-  templateUrl: './hot-thermal-energy-storage.component.html',
-  styleUrls: ['./hot-thermal-energy-storage.component.scss']
+  templateUrl: './hot-thermal-energy-storage.component.html'
 })
 export class HotThermalEnergyStorageComponent {
   readonly title = 'Hot Thermal Energy Storage: Basics';

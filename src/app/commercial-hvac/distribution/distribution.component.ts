@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-distribution',
-  templateUrl: './distribution.component.html',
-  styleUrls: ['./distribution.component.scss']
+  templateUrl: './distribution.component.html'
 })
 export class DistributionComponent {
   readonly title = 'Distribution System';

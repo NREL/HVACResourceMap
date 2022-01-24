@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-commercial-hvac-home',
-  templateUrl: './commercial-hvac-home.component.html',
-  styleUrls: ['./commercial-hvac-home.component.scss']
+  templateUrl: './commercial-hvac-home.component.html'
 })
 export class CommercialHVACHomeComponent {
   readonly title = 'Commercial HVAC';

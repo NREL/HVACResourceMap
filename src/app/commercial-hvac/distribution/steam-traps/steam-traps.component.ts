@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-steam-traps',
-  templateUrl: './steam-traps.component.html',
-  styleUrls: ['./steam-traps.component.scss']
+  templateUrl: './steam-traps.component.html'
 })
 export class SteamTrapsComponent {
   readonly title = 'Steam Traps: General Information';

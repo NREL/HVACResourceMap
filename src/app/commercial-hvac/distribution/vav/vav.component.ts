@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-vav',
-  templateUrl: './vav.component.html',
-  styleUrls: ['./vav.component.scss']
+  templateUrl: './vav.component.html'
 })
 export class VavComponent {
   readonly title = 'VAV Boxes';

@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-operation',
-  templateUrl: './operation.component.html',
-  styleUrls: ['./operation.component.scss']
+  templateUrl: './operation.component.html'
 })
 export class OperationComponent {
   readonly title = 'Piping: Operation and Training Resources';

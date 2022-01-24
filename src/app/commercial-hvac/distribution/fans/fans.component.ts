@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-fans',
-  templateUrl: './fans.component.html',
-  styleUrls: ['./fans.component.scss']
+  templateUrl: './fans.component.html'
 })
 export class FansComponent {
   readonly title = 'Fan: General Information';

@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-terminal',
-  templateUrl: './terminal.component.html',
-  styleUrls: ['./terminal.component.scss']
+  templateUrl: './terminal.component.html'
 })
 export class TerminalComponent {
   readonly title = 'Terminal Units';

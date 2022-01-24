@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-sensors-controls',
-  templateUrl: './sensors-controls.component.html',
-  styleUrls: ['./sensors-controls.component.scss']
+  templateUrl: './sensors-controls.component.html'
 })
 export class SensorsControlsComponent {
   readonly title = 'Sensors and Controls: Basics';

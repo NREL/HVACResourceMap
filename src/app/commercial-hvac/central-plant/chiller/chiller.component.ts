@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-chiller',
-  templateUrl: './chiller.component.html',
-  styleUrls: ['./chiller.component.scss']
+  templateUrl: './chiller.component.html'
 })
 export class ChillerComponent {
   readonly title = 'Chiller: General Description and Uses';

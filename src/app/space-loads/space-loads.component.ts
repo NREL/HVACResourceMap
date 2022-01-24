@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-space-loads',
-  templateUrl: './space-loads.component.html',
-  styleUrls: ['./space-loads.component.scss']
+  templateUrl: './space-loads.component.html'
 })
 export class SpaceLoadsComponent {
   readonly title = 'Space Loads';

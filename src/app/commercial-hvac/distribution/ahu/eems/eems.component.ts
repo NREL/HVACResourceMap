@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-eems',
-  templateUrl: './eems.component.html',
-  styleUrls: ['./eems.component.scss']
+  templateUrl: './eems.component.html'
 })
 export class EemsComponent {
   readonly title = 'Air Handling Units: Performance Ratings';

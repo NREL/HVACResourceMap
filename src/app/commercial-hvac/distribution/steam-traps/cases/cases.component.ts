@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-cases',
-  templateUrl: './cases.component.html',
-  styleUrls: ['./cases.component.scss']
+  templateUrl: './cases.component.html'
 })
 export class CasesComponent {
   readonly title = 'Steam Traps: Case Studies';

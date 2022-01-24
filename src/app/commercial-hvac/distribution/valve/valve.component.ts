@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-valve',
-  templateUrl: './valve.component.html',
-  styleUrls: ['./valve.component.scss']
+  templateUrl: './valve.component.html'
 })
 export class ValveComponent {
   readonly title = 'Valve: General Information';

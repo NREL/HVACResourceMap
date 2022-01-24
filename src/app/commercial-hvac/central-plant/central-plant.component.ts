@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-central-plant',
-  templateUrl: './central-plant.component.html',
-  styleUrls: ['./central-plant.component.scss']
+  templateUrl: './central-plant.component.html'
 })
 export class CentralPlantComponent {
   readonly title = 'Central Plant';

@@ -3,8 +3,7 @@ import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  templateUrl: './contact.component.html'
 })
 export class ContactComponent {
   readonly title = 'Contact Us';
