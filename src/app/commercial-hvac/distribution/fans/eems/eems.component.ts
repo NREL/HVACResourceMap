@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-eems',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./eems.component.scss']
 })
 export class EemsComponent {
+  readonly title = 'Fan: Energy Efficiency Measures';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

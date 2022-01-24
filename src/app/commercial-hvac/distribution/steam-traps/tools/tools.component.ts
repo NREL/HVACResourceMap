@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-tools',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./tools.component.scss']
 })
 export class ToolsComponent {
+  readonly title = 'Steam Traps: Design Calculators and Tools';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

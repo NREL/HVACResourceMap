@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-types',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./types.component.scss']
 })
 export class TypesComponent {
+  readonly title = 'Air Handling Units: Types';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

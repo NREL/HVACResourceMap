@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-vav',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./vav.component.scss']
 })
 export class VavComponent {
+  readonly title = 'VAV Boxes';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-codes',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./codes.component.scss']
 })
 export class CodesComponent {
+  readonly title = 'Cooling Tower: Performance Ratings';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

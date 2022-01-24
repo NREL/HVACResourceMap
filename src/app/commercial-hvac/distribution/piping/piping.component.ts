@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-piping',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./piping.component.scss']
 })
 export class PipingComponent {
+  readonly title = 'Piping: General Information';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

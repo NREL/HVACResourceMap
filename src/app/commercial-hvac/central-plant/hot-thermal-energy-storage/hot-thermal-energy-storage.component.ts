@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-hot-thermal-energy-storage',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./hot-thermal-energy-storage.component.scss']
 })
 export class HotThermalEnergyStorageComponent {
+  readonly title = 'Hot Thermal Energy Storage: Basics';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

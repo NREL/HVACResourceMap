@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-tune',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./tune.component.scss']
 })
 export class TuneComponent {
+  readonly title = 'Fan: Tune-Up Measures';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

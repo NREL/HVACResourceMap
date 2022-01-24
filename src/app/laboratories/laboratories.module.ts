@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../shared/shared.module';
 
 import { LaboratoriesRoutingModule } from './laboratories-routing.module';
 import { LaboratoriesComponent } from './laboratories.component';
@@ -11,7 +12,8 @@ import { LaboratoriesComponent } from './laboratories.component';
   ],
   imports: [
     CommonModule,
-    LaboratoriesRoutingModule
+    LaboratoriesRoutingModule,
+    SharedModule
   ]
 })
 export class LaboratoriesModule {

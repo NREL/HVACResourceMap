@@ -9,6 +9,7 @@ import { HotThermalEnergyStorageComponent } from './commercial-hvac/central-plan
 import { CommercialHVACHomeComponent } from './commercial-hvac/commercial-hvac-home/commercial-hvac-home.component';
 import { CommercialHVACComponent } from './commercial-hvac/commercial-hvac.component';
 import { DiffusersComponent } from './commercial-hvac/distribution/diffusers/diffusers.component';
+import { DistributionComponent } from './commercial-hvac/distribution/distribution.component';
 import { DuctingComponent } from './commercial-hvac/distribution/ducting/ducting.component';
 import { SensorsControlsComponent } from './commercial-hvac/distribution/sensors-controls/sensors-controls.component';
 import { SteamTrapsComponent } from './commercial-hvac/distribution/steam-traps/steam-traps.component';
@@ -16,14 +17,12 @@ import { TerminalComponent } from './commercial-hvac/distribution/terminal/termi
 import { VavComponent } from './commercial-hvac/distribution/vav/vav.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContributorsComponent } from './contributors/contributors.component';
-import { HomeComponent } from './home/home.component';
-import { LabHVACComponent } from './lab-hvac/lab-hvac.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { NavComponent } from './shared/components/nav/nav.component';
-import { SpaceLoadsComponent } from './space-loads/space-loads.component';
 import { HvacDiagramComponent } from './diagrams/hvac-diagram/hvac-diagram.component';
 import { SpaceDiagramComponent } from './diagrams/space-diagram/space-diagram.component';
+import { HomeComponent } from './home/home.component';
+import { LabHVACComponent } from './lab-hvac/lab-hvac.component';
+import { SharedModule } from './shared/shared.module';
+import { SpaceLoadsComponent } from './space-loads/space-loads.component';
 
 @NgModule({
   declarations: [
@@ -35,26 +34,24 @@ import { SpaceDiagramComponent } from './diagrams/space-diagram/space-diagram.co
     ContributorsComponent,
     CoolThermalEnergyStorageComponent,
     DiffusersComponent,
+    DistributionComponent,
     DuctingComponent,
-    FooterComponent,
-    HeaderComponent,
     HomeComponent,
     HotThermalEnergyStorageComponent,
+    HvacDiagramComponent,
     LabHVACComponent,
-    NavComponent,
     SensorsControlsComponent,
+    SpaceDiagramComponent,
     SpaceLoadsComponent,
     SteamTrapsComponent,
     TerminalComponent,
-    VavComponent,
-    HvacDiagramComponent,
-    SpaceDiagramComponent
+    VavComponent
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    SharedModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../../../shared/shared.module';
 import { CasesComponent } from './cases/cases.component';
 import { CodesComponent } from './codes/codes.component';
 
@@ -25,7 +26,8 @@ import { TypesComponent } from './types/types.component';
   ],
   imports: [
     CommonModule,
-    CoolingTowerRoutingModule
+    CoolingTowerRoutingModule,
+    SharedModule
   ]
 })
 export class CoolingTowerModule {

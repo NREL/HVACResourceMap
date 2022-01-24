@@ -1,9 +1,9 @@
-<div *ngIf="showTopNav" [attr.id]="showAlternate ? 'interior' : ''" class="program-header">
+<div *ngIf="showTopNav" class="program-header" [attr.id]="showAlternate ? 'interior' : ''">
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-light">
 
-      <div class="mr-auto" id="program-menu">
-        <button aria-controls="topnav-collapse" aria-expanded="false" aria-label="Toggle navigation" class="custom-toggler navbar-toggler" data-target="#topnav-collapse" data-toggle="collapse" type="button">
+      <div id="program-menu" class="mr-auto">
+        <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-collapse" aria-controls="topnav-collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggle-label">Menu</span>
         </button>

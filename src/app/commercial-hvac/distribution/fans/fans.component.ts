@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-fans',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./fans.component.scss']
 })
 export class FansComponent {
+  readonly title = 'Fan: General Information';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

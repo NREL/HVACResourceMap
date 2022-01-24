@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-cases',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./cases.component.scss']
 })
 export class CasesComponent {
+  readonly title = 'Steam Traps: Case Studies';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

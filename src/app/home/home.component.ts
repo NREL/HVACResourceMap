@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle();
   }
 
 }

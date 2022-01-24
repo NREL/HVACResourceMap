@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   readonly title = 'Contact Us';
+
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
+  }
 
 }

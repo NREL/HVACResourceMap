@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-steam-traps',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./steam-traps.component.scss']
 })
 export class SteamTrapsComponent {
+  readonly title = 'Steam Traps: General Information';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

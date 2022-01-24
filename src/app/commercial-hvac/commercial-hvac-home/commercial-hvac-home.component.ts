@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-commercial-hvac-home',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./commercial-hvac-home.component.scss']
 })
 export class CommercialHVACHomeComponent {
+  readonly title = 'Commercial HVAC';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

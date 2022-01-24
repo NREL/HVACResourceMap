@@ -10,7 +10,7 @@ export class SharedService {
   constructor(private titleService: Title) {
   }
 
-  setTitle(title: string): void {
+  setTitle(title?: string): void {
     if (title) {
       this.titleService.setTitle(`${title} | ${this.site}`);
     } else {

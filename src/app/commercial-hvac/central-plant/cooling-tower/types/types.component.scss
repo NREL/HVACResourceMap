@@ -1,0 +1,7 @@
+img {
+  max-width: 200px;
+}
+
+a[href$='.png']::after {
+  display: none;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-procure',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./procure.component.scss']
 })
 export class ProcureComponent {
+  readonly title = 'Piping: Procurement and Performance Specifications';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

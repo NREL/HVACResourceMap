@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../../../shared/shared.module';
 import { EemsComponent } from './eems/eems.component';
 
 import { FansRoutingModule } from './fans-routing.module';
@@ -25,7 +26,8 @@ import { CasesComponent } from './cases/cases.component';
   ],
   imports: [
     CommonModule,
-    FansRoutingModule
+    FansRoutingModule,
+    SharedModule
   ]
 })
 export class FansModule {

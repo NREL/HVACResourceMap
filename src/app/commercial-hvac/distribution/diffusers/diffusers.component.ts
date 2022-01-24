@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-diffusers',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./diffusers.component.scss']
 })
 export class DiffusersComponent {
+  readonly title = 'Diffusers';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

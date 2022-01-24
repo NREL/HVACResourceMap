@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-pump',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./pump.component.scss']
 })
 export class PumpComponent {
+  readonly title = 'Pump: Basics';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

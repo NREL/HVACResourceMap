@@ -1,13 +1,13 @@
-<a class="sr-only app" fragment="content" routerLink=".">Skip to main content</a>
+<a routerLink="." fragment="content" class="sr-only app">Skip to main content</a>
 
-<header [class.notopnav]="!showTopNav" id="banner">
+<header id="banner" [class.notopnav]="!showTopNav">
   <div class="banner-logo">
     <div class="container app">
       <div class="row">
 
         <div class="col-md-6 col-xl-4 order-md-2">
-          <a href="https://www.nrel.gov">
-            <div [class.interior]="showAlternate" class="logo"><img alt="National Renewable Energy Laboratory" class="sr-only" src="../../../../assets/images/nrel-logo-web.svg"/></div>
+          <a href="https://www.nrel.gov/">
+            <div class="logo" [class.interior]="showAlternate"><img src="assets/images/nrel-logo-web.svg" class="sr-only" alt="National Renewable Energy Laboratory"/></div>
           </a>
         </div>
 
@@ -20,22 +20,22 @@
                   <nav class="navbar navbar-light">
                     <div class="navbar-collapse collapse" id="searchbar-collapse-mobile">
                       <form
-                        action="https://search4.nrel.gov/texis/search/"
+                        method="get"
                         class="site-searchbar-form form-inline ThunderstoneForm"
-                        id="ThunderstoneSearchForm"
-                        method="get">
+                        action="https://search4.nrel.gov/texis/search/"
+                        id="ThunderstoneSearchForm">
 
-                        <input name="pr" type="hidden" value="metanrel"/>
+                        <input type="hidden" name="pr" value="metanrel"/>
                         <div class="form-group">
-                          <label class="sr-only" for="query">Search NREL.gov</label>
+                          <label for="query" class="sr-only">Search NREL.gov</label>
                           <input
-                            aria-label="Search NREL.gov"
-                            class="form-control" id="query"
+                            type="search"
+                            id="query" name="query"
                             maxlength="2047"
-                            name="query"
                             placeholder="Search NREL.gov"
-                            type="search">
-                          <button class="btn btn-default" type="submit">Search</button>
+                            class="form-control"
+                            aria-label="Search NREL.gov">
+                          <button type="submit" class="btn btn-default">Search</button>
                         </div>
                       </form>
                     </div>
@@ -48,7 +48,7 @@
         </div>
 
         <div class="col-md-6 col-xl-8 order-md-1">
-          <a class="app-name" routerLink="/">HVAC Resource Map</a>
+          <a routerLink="/" class="app-name">HVAC Resource Map</a>
         </div>
 
       </div>

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../../../shared/shared.module';
 import { CodesComponent } from './codes/codes.component';
 import { EemsComponent } from './eems/eems.component';
 import { OperationComponent } from './operation/operation.component';
@@ -21,7 +22,8 @@ import { ToolsComponent } from './tools/tools.component';
   ],
   imports: [
     CommonModule,
-    PipingRoutingModule
+    PipingRoutingModule,
+    SharedModule
   ]
 })
 export class PipingModule {

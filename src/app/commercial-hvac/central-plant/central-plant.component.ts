@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '@services/shared.service';
 
 @Component({
   selector: 'app-central-plant',
@@ -6,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./central-plant.component.scss']
 })
 export class CentralPlantComponent {
+  readonly title = 'Central Plant';
 
-  constructor() {
+  constructor(private sharedService: SharedService) {
+    sharedService.setTitle(this.title);
   }
 
 }

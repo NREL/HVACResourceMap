@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../../../shared/shared.module';
 
 import { AhuRoutingModule } from './ahu-routing.module';
 import { AhuComponent } from './ahu.component';
@@ -23,7 +24,8 @@ import { TypesComponent } from './types/types.component';
   ],
   imports: [
     AhuRoutingModule,
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class AhuModule {

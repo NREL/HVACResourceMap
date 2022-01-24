@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../../../shared/shared.module';
 
 import { BoilerRoutingModule } from './boiler-routing.module';
 import { BoilerComponent } from './boiler.component';
@@ -22,7 +23,8 @@ import { EemsComponent } from './eems/eems.component';
   ],
   imports: [
     BoilerRoutingModule,
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class BoilerModule {

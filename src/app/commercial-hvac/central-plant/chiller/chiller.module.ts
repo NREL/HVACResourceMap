@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../../../shared/shared.module';
 import { CasesComponent } from './cases/cases.component';
-
 import { ChillerRoutingModule } from './chiller-routing.module';
 import { ChillerComponent } from './chiller.component';
 import { CodesComponent } from './codes/codes.component';
@@ -22,8 +22,9 @@ import { ToolsComponent } from './tools/tools.component';
     ToolsComponent
   ],
   imports: [
+    ChillerRoutingModule,
     CommonModule,
-    ChillerRoutingModule
+    SharedModule
   ]
 })
 export class ChillerModule {

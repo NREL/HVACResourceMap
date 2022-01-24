@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProcureComponent } from '../chiller/procure/procure.component';
 import { CasesComponent } from './cases/cases.component';
 import { CodesComponent } from './codes/codes.component';
 import { CoolingTowerComponent } from './cooling-tower.component';
 import { EemsComponent } from './eems/eems.component';
 import { OperationComponent } from './operation/operation.component';
+import { ProcureComponent } from './procure/procure.component';
 import { ToolsComponent } from './tools/tools.component';
 import { TypesComponent } from './types/types.component';
 
