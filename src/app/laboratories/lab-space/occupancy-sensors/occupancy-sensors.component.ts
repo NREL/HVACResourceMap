@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
 @Component({
-  templateUrl: './sensors-controls.component.html'
+  selector: 'app-occupancy-sensors',
+  templateUrl: './occupancy-sensors.component.html'
 })
-export class SensorsControlsComponent {
-  readonly title = 'Sensors and Controls';
+export class OccupancySensorsComponent {
+  readonly title = 'Occupancy Sensors';
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);

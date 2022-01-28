@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
 @Component({
-  templateUrl: './types.component.html',
-  styleUrls: ['./types.component.scss']
+  templateUrl: './types.component.html'
 })
 export class TypesComponent {
   readonly title = 'Cooling Tower: Types';

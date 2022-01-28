@@ -47,7 +47,7 @@ const routes: Routes = [{
     loadChildren: () => import(/* webpackChunkName: "central-plant-pump" */ './commercial-hvac/central-plant/pump/pump.module').then(m => m.PumpModule)
   }, {
     path: 'central-plant/sensors-controls',
-    loadChildren: () => import(/* webpackChunkName: "central-plant-sensors-controls" */ './commercial-hvac/central-plant/sensors-controls/sensors-controls.module').then(m => m.SensorsControlsModule)
+    loadChildren: () => import(/* webpackChunkName: "sensors-controls" */ './commercial-hvac/shared/sensors-controls/sensors-controls.module').then(m => m.SensorsControlsModule)
   }, {
     path: 'distribution',
     component: DistributionComponent
@@ -80,7 +80,7 @@ const routes: Routes = [{
     component: VavComponent
   }, {
     path: 'distribution/sensors-controls',
-    loadChildren: () => import(/* webpackChunkName: "distribution-sensors-controls" */ './commercial-hvac/distribution/sensors-controls/sensors-controls.module').then(m => m.SensorsControlsModule)
+    loadChildren: () => import(/* webpackChunkName: "sensors-controls" */ './commercial-hvac/shared/sensors-controls/sensors-controls.module').then(m => m.SensorsControlsModule)
   }]
 }, {
   path: 'space-loads',

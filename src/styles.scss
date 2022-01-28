@@ -45,3 +45,12 @@ h6 a[href]::after,
   margin-bottom: 5px;
   font-weight: 700;
 }
+
+table a[href$='.png']::after {
+  display: none;
+}
+
+table img {
+  max-height: 100px;
+  max-width: 150px;
+}

@@ -5,7 +5,7 @@ import { SharedService } from '@services/shared.service';
   templateUrl: './eems.component.html'
 })
 export class EemsComponent {
-  readonly title = 'Air Handling Units: Performance Ratings';
+  readonly title = 'Air Handling Units: Energy Efficiency Measures';
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);

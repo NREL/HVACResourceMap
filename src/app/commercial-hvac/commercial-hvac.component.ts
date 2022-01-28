@@ -1,6 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { SharedService } from '@services/shared.service';
 import { Subject, takeUntil } from 'rxjs';
 
 type Route = {

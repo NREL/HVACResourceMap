@@ -1,21 +1,27 @@
-<h1>HVAC Resource Map for Laboratories</h1>
+<div class="row">
+  <div class="col-md-6">
+    <router-outlet></router-outlet>
+  </div>
 
-<h2>What is this resource?</h2>
+  <div class="col-md-3 order-md-last">Diagram</div>
 
-<p class="lead">The HVAC Resource Map for Laboratories is an intuitive graphical interface that provides quick access to a broad array of quality information on design, operations and maintenance best practices, and energy and water efficiency measures in single-pass HVAC systems that are 100% outside air and do not have return air.</p>
-
-<p>The resources cover the central plant, distribution systems, and zone systems. The primary audiences are facility managers, operations staff, and design engineers who want to improve central plant and distribution efficiency.</p>
-
-<div class="well rounded">
-  <h3>Explore HVAC Resources</h3>
-  <p>Use the navigation on the right or the interactive diagram on the left to dive into resources on different HVAC components.</p>
-  <p><em>The interactive diagram will not be available on Internet Explorer. Please use Edge, Chrome, Safari, or Firefox for a better experience.</em></p>
-  <p>The resources listed on this site have been carefully selected to help narrow your search for helpful information.</p>
+  <div class="col-md-3 order-md-first hidden-print">
+    <nav class="sidenav">
+      <ul class="nav flex-column">
+        <li *ngFor="let a of routes" [class.active]="url === join(a)" class="nav-item">
+          <a [routerLink]="join(a)" routerLinkActive #rlaA="routerLinkActive" class="nav-link">{{ a.name }}</a>
+          <ul *ngIf="a.children" [class.hide]="!rlaA.isActive" class="nav flex-column">
+            <li *ngFor="let b of a.children" [class.active]="url === join(a, b)" class="nav-item">
+              <a [routerLink]="join(a, b)" routerLinkActive #rlaB="routerLinkActive" class="nav-link">{{ b.name }}</a>
+              <ul *ngIf="b.children" [class.hide]="!rlaB.isActive" class="nav flex-column">
+                <li *ngFor="let c of b.children" [class.active]="rlaC.isActive" class="nav-item">
+                  <a [routerLink]="join(a, b, c)" routerLinkActive #rlaC="routerLinkActive" class="nav-link">{{ c.name }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
-
-<img class="img-fluid rounded" src="assets/images/29658.jpg" alt="Jeff Wolfe does research in the compositional analysis lab at the Field Test Laboratory Building (FTLB) at the National Renewable Energy Laboratory in Golden, CO. (Photo by Dennis Schroeder / NREL)">
-<p class="caption">
-  <strong>Laboratories have unique HVAC needs</strong> Photo by Dennis Schroeder/NREL 29658
-</p>
-
-<p>This Resource Map does not duplicate guidance provided in codes and standards, and it should not be used in lieu of professional engineering services.</p>
