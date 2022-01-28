@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
 @Component({
-  selector: 'app-exposure-control-devices',
   templateUrl: './exposure-control-devices.component.html'
 })
 export class ExposureControlDevicesComponent {

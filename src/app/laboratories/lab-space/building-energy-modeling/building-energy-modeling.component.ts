@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
 @Component({
-  selector: 'app-building-energy-modeling',
   templateUrl: './building-energy-modeling.component.html'
 })
 export class BuildingEnergyModelingComponent {

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
 @Component({
-  selector: 'app-demand-control-ventilation',
   templateUrl: './demand-control-ventilation.component.html'
 })
 export class DemandControlVentilationComponent {
