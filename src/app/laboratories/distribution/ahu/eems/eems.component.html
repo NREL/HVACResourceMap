@@ -1,0 +1,34 @@
+<h1>{{ title }}</h1>
+
+<p>The key components of air handling unit (AHU) design are fans, coils, and filters. Decisions made upfront regarding their design can significantly influence the overall energy use of the AHU during its operating life. Low pressure drop design is crucial, especially for AHUs with long run hours, such as those serving laboratories. Refer to the I2SL report on
+  <a href="https://www.i2sl.org/documents/toolkit/bp_lowpressure_508.pdf">Low-Pressure-Drop HVAC Design for Laboratories</a> for more details.</p>
+
+<h2>Fans</h2>
+<p>Fans should be able to meet airflow and pressure requirements while adhering to the design constraints of space and acoustic requirements. A <a href="https://www1.eere.energy.gov/buildings/publications/pdfs/commercial_initiative/hvac_volume2_final_report.pdf">study by Arthur D. Little for the U.S. Department of Energy</a> estimated the parasitic energy consumption (i.e. energy required to distribute heating and cooling inside a building, heat rejection and ventilation) in commercial buildings to be 1.5 quads. Out of total parasitic load, <strong>supply fans consumed 50% of the energy</strong>. Thus, AHU fan selection can have a major impact on overall energy consumption. Details about selecting efficient fans can be found in the <a routerLink="../../fans">fans section</a> of this website.</p>
+
+<img class="img-fluid" src="assets/images/ahu_pie.png" alt="Pie chart showing parasitic primary energy consumption per equipment. Supply and return fans are 50%, chilled water pumps are 2%, condenser water pumps are 2%, heating water pumps are 5%, cooling tower fans are 1%, condenser fans are 5%, and fan powered terminal boxes are 2%, and exhaust fans are 33%.">
+<p class="caption">
+  <strong>Parasitic primary energy consumption per equipment</strong> Source: <a href="https://www1.eere.energy.gov/buildings/publications/pdfs/commercial_initiative/hvac_volume2_final_report.pdf">Energy Consumption Characteristics of Commercial Building HVAC Systems</a>, U.S. Department of Energy
+</p>
+
+<h2>Coils</h2>
+<p>Cooling and heating coil capacity is generally measured in thousands of Btu per hour (MBH). Air-side and water-side pressure drops are the important parameters to evaluate when sizing the coil to meet the required load.</p>
+
+<p>Low delta-T at the chiller is one of the major reasons for inefficient overall energy performance, and cooling coil design at the AHU influences the delta-T at the chiller. A larger delta-T offers a number of advantages, such as lower flow, lower pump energy, and better chiller capacity. For more information about design and operational techniques to achieve a larger delta-T, refer to <a href="https://tayloreng.egnyte.com/dl/2nX81OnoU9/ASHRAE_Symposium_-_AC-02-6-1_Degrading_Delta-T.pdf_">Degrading Chilled Water Plant Delta-T: Causes and Mitigation</a>, by Steven Taylor, Taylor Engineering.</p>
+
+<p>Coil design also includes considerations such as header orientation/material, coil hand, material, fins per inch, and face velocity. For typical ranges used in the
+  industry for designing each parameter, refer to <a href="https://www.dac-hvac.com/custom-air-handling-units-coil-selection-guidelines/">Coil Selection Guidelines</a>, by Jim Shiminski, DAC Sales.</p>
+
+<h2>Filters</h2>
+<p>The first step in efficient filter design is to understand the indoor air quality requirements of the space. If it is a critical application such as an operating room or if it is an owner requirement, high efficiency HEPA filters maybe used. Location of the jobsite also needs to be considered when selecting filters. The pressure drop associated with the filter assembly should be closely evaluated at startup and also at intermediate loading.</p>
+
+<h4>Resources</h4>
+<ul>
+  <li><a href="https://www.researchgate.net/publication/291135385_Face_Velocity_Considerations_In_Air_Handler_Selection">Face Velocity Considerations in Air Handler Selection</a>, by Kent Peterson, ASHRAE Journal, May 2014</li>
+  <li><a href="https://www.csemag.com/articles/how-to-select-an-air-handling-unit/">How to select an air handling unit</a>, by Rob McAtee and Evan Riley, Consulting-Specifying Engineer, December 27, 2012</li>
+  <li><a href="https://www.ashrae.org/technical-resources/bookstore/indoor-air-quality-guide">Indoor Air Quality Guide: Best Practices for Design, Construction and Commissioning</a>, ASHRAE, the American Institute of Architects, Building Owners and Managers Association International, Sheet Metal and Air Conditioning Contractors' National Association, U.S. Environmental Protection Agency, U.S. Green Building Council</li>
+  <li><a href="https://buildingretuning.pnnl.gov/documents/pnnl_sa_84187.pdf">AHU Guide for Static Pressure Control</a></li>
+  <li><a href="https://buildingretuning.pnnl.gov/documents/pnnl_sa_84186.pdf">AHU Guide for Discharge Air Temperature Control</a></li>
+  <li><a href="https://buildingretuning.pnnl.gov/documents/pnnl_sa_88359.pdf">AHU Heating and Cooling Control Guide</a></li>
+  <li><a href="https://buildingretuning.pnnl.gov/training/economizers/PNWD-SA-8511%20HVAC%20Economizers%20101-Section%208.pdf">Dampers: Types, Actuators, and Characteristics</a></li>
+</ul>

@@ -1,11 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CoolThermalEnergyStorageComponent } from '../commercial-hvac/central-plant/cool-thermal-energy-storage/cool-thermal-energy-storage.component';
+import { HotThermalEnergyStorageComponent } from '../commercial-hvac/central-plant/hot-thermal-energy-storage/hot-thermal-energy-storage.component';
+import { AhuComponent } from '../commercial-hvac/distribution/ahu/ahu.component';
+import { CodesComponent } from '../commercial-hvac/distribution/ahu/codes/codes.component';
+import { CasesComponent } from '../commercial-hvac/distribution/fans/cases/cases.component';
+import { EemsComponent as FansEemsComponent } from '../commercial-hvac/distribution/fans/eems/eems.component';
+import { FansComponent } from '../commercial-hvac/distribution/fans/fans.component';
+import { OperationComponent as FansOperationComponent } from '../commercial-hvac/distribution/fans/operation/operation.component';
+import { ProcureComponent } from '../commercial-hvac/distribution/fans/procure/procure.component';
+import { ToolsComponent } from '../commercial-hvac/distribution/fans/tools/tools.component';
+import { TuneComponent } from '../commercial-hvac/distribution/fans/tune/tune.component';
+import { SteamTrapsComponent } from '../commercial-hvac/distribution/steam-traps/steam-traps.component';
+import { ToolsComponent as SteamTrapsToolsComponent } from '../commercial-hvac/distribution/steam-traps/tools/tools.component';
+import { AlternateHVACComponent } from './distribution/ahu/alternate-hvac/alternate-hvac.component';
+import { EemsComponent } from './distribution/ahu/eems/eems.component';
+import { OperationComponent } from './distribution/ahu/operation/operation.component';
+import { DiffuserComponent } from './distribution/diffuser/diffuser.component';
+import { DuctingComponent } from './distribution/ducting/ducting.component';
+import { LowPressureDropDesignComponent } from './distribution/low-pressure-drop-design/low-pressure-drop-design.component';
+import { VavSystemsComponent } from './distribution/vav-systems/vav-systems.component';
+import { VavComponent } from './distribution/vav/vav.component';
 import { EnergyRecoveryComponent } from './lab-exhaust-devices/energy-recovery/energy-recovery.component';
 import { OptimizedExhaustStackDesignComponent } from './lab-exhaust-devices/optimized-exhaust-stack-design/optimized-exhaust-stack-design.component';
 import { BuildingEnergyModelingComponent } from './lab-space/building-energy-modeling/building-energy-modeling.component';
 import { DemandControlVentilationComponent } from './lab-space/demand-control-ventilation/demand-control-ventilation.component';
 import { EnergyBenchmarkingForLabsComponent } from './lab-space/energy-benchmarking-for-labs/energy-benchmarking-for-labs.component';
-import { ComputationalFluidDynamicsComponent } from './lab-space/laboratory-ventilation-effectiveness/computational-fluid-dynamics/computational-fluid-dynamics.component';
 import { OccupancySensorsComponent } from './lab-space/occupancy-sensors/occupancy-sensors.component';
 import { LaboratoriesHomeComponent } from './laboratories-home/laboratories-home.component';
 import { LaboratoriesComponent } from './laboratories.component';
@@ -41,8 +61,71 @@ const routes: Routes = [{
     path: 'distribution',
     component: LaboratoriesHomeComponent
   }, {
+    path: 'distribution/low-pressure-drop-design',
+    component: LowPressureDropDesignComponent
+  }, {
+    path: 'distribution/ahu',
+    component: AhuComponent
+  }, {
+    path: 'distribution/ahu/alternate-hvac',
+    component: AlternateHVACComponent
+  }, {
+    path: 'distribution/ahu/codes',
+    component: CodesComponent
+  }, {
+    path: 'distribution/ahu/eems',
+    component: EemsComponent
+  }, {
+    path: 'distribution/ahu/operation',
+    component: OperationComponent
+  }, {
+    path: 'distribution/fans',
+    component: FansComponent
+  }, {
+    path: 'distribution/fans/eems',
+    component: FansEemsComponent
+  }, {
+    path: 'distribution/fans/tools',
+    component: ToolsComponent
+  }, {
+    path: 'distribution/fans/operation',
+    component: FansOperationComponent
+  }, {
+    path: 'distribution/fans/procure',
+    component: ProcureComponent
+  }, {
+    path: 'distribution/fans/cases',
+    component: CasesComponent
+  }, {
+    path: 'distribution/fans/tune',
+    component: TuneComponent
+  }, {
+    path: 'distribution/ducting',
+    component: DuctingComponent
+  }, {
+    path: 'distribution/vav-systems',
+    component: VavSystemsComponent
+  }, {
+    path: 'distribution/vav',
+    component: VavComponent
+  }, {
+    path: 'distribution/diffuser',
+    component: DiffuserComponent
+  }, {
+    path: 'distribution/piping',
+    loadChildren: () => import(/* webpackChunkName: "distribution-piping" */ '../commercial-hvac/distribution/piping/piping.module').then(m => m.PipingModule)
+  }, {
+    path: 'distribution/steam-traps',
+    component: SteamTrapsComponent
+  }, {
+    path: 'distribution/steam-traps/tools',
+    component: SteamTrapsToolsComponent
+  }, {
+    path: 'distribution/valve',
+    loadChildren: () => import(/* webpackChunkName: "distribution-valve" */ '../commercial-hvac/distribution/valve/valve.module').then(m => m.ValveModule)
+  }, {
     path: 'lab-exhaust-devices',
-    component: LaboratoriesHomeComponent,
+    component: LaboratoriesHomeComponent
   }, {
     path: 'lab-exhaust-devices/energy-recovery',
     component: EnergyRecoveryComponent
@@ -55,6 +138,24 @@ const routes: Routes = [{
   }, {
     path: 'central-plant/boiler',
     loadChildren: () => import(/* webpackChunkName: "central-plant-boiler" */ '../commercial-hvac/central-plant/boiler/boiler.module').then(m => m.BoilerModule)
+  }, {
+    path: 'central-plant/chiller',
+    loadChildren: () => import(/* webpackChunkName: "central-plant-chiller" */ '../commercial-hvac/central-plant/chiller/chiller.module').then(m => m.ChillerModule)
+  }, {
+    path: 'central-plant/cooling-tower',
+    loadChildren: () => import(/* webpackChunkName: "central-plant-cooling-tower" */ '../commercial-hvac/central-plant/cooling-tower/cooling-tower.module').then(m => m.CoolingTowerModule)
+  }, {
+    path: 'central-plant/cool-thermal-energy-storage',
+    component: CoolThermalEnergyStorageComponent
+  }, {
+    path: 'central-plant/hot-thermal-energy-storage',
+    component: HotThermalEnergyStorageComponent
+  }, {
+    path: 'central-plant/pump',
+    loadChildren: () => import(/* webpackChunkName: "central-plant-pump" */ '../commercial-hvac/central-plant/pump/pump.module').then(m => m.PumpModule)
+  }, {
+    path: 'central-plant/sensors-controls',
+    loadChildren: () => import(/* webpackChunkName: "sensors-controls" */ '../commercial-hvac/shared/sensors-controls/sensors-controls.module').then(m => m.SensorsControlsModule)
   }]
 }];
 

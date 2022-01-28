@@ -54,3 +54,7 @@ table img {
   max-height: 100px;
   max-width: 150px;
 }
+
+a.well[href$='.pdf']::after {
+  display: none;
+}

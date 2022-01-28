@@ -46,23 +46,95 @@ export class LaboratoriesComponent implements OnDestroy {
     children: [{
       name: 'Low Pressure Drop Design'
     }, {
-      name: 'Air Handling Unit'
+      name: 'Air Handling Units',
+      route: 'ahu',
+      children: [{
+        name: 'Alternate HVAC'
+      }, {
+        name: 'Performance Ratings',
+        route: 'codes'
+      }, {
+        name: 'Energy Efficiency Measures',
+        route: 'eems'
+      }, {
+        name: 'Operation & Training',
+        route: 'operation'
+      }]
     }, {
-      name: 'Fans'
+      name: 'Fans',
+      children: [{
+        name: 'Energy Efficiency Measures',
+        route: 'eems'
+      }, {
+        name: 'Calculators & Tools',
+        route: 'tools'
+      }, {
+        name: 'Operation & Training',
+        route: 'operation'
+      }, {
+        name: 'Procurement & Performance',
+        route: 'procure'
+      }, {
+        name: 'Case Studies',
+        route: 'cases'
+      }, {
+        name: 'Tune-up Measures',
+        route: 'tune'
+      }]
     }, {
       name: 'Ducting'
     }, {
-      name: 'Variable Air Volume Systems'
+      name: 'Variable Air Volume Systems',
+      route: 'vav-systems'
     }, {
-      name: 'VAV Boxes'
+      name: 'VAV Boxes',
+      route: 'vav'
     }, {
       name: 'Diffuser'
     }, {
-      name: 'Piping'
+      name: 'Piping',
+      children: [{
+        name: 'Performance Ratings',
+        route: 'codes'
+      }, {
+        name: 'Energy Efficiency Measures',
+        route: 'eems'
+      }, {
+        name: 'Calculators & Tools',
+        route: 'tools'
+      }, {
+        name: 'Operation & Training',
+        route: 'operation'
+      }, {
+        name: 'Procurement & Performance',
+        route: 'procure'
+      }]
     }, {
-      name: 'Steam Traps'
+      name: 'Steam Traps',
+      children: [{
+        name: 'Calculators & Tools',
+        route: 'tools'
+      }]
     }, {
-      name: 'Valves'
+      name: 'Valve',
+      children: [{
+        name: 'Types'
+      }, {
+        name: 'Performance Ratings',
+        route: 'codes'
+      }, {
+        name: 'Energy Efficiency Measures',
+        route: 'eems'
+      }, {
+        name: 'Calculators & Tools',
+        route: 'tools'
+      }, {
+        name: 'Operation & Training',
+        route: 'operation'
+      }, {
+        name: 'Case Studies',
+        route: 'cases'
+      }]
     }]
   }, {
     name: 'Lab Exhaust Devices',
@@ -74,19 +146,101 @@ export class LaboratoriesComponent implements OnDestroy {
   }, {
     name: 'Central Plant',
     children: [{
-      name: 'Boiler'
+      name: 'Boiler',
+      children: [{
+        name: 'Performance Ratings',
+        route: 'codes'
+      }, {
+        name: 'Energy Efficiency Measures',
+        route: 'eems'
+      }, {
+        name: 'Calculators & Tools',
+        route: 'tools'
+      }, {
+        name: 'Operation & Training',
+        route: 'operation'
+      }, {
+        name: 'Procurement & Performance',
+        route: 'procure'
+      }, {
+        name: 'Case Studies',
+        route: 'cases'
+      }]
     }, {
-      name: 'Chiller'
+      name: 'Chiller',
+      children: [{
+        name: 'Performance Ratings',
+        route: 'codes'
+      }, {
+        name: 'Energy Efficiency Measures',
+        route: 'eems'
+      }, {
+        name: 'Calculators & Tools',
+        route: 'tools'
+      }, {
+        name: 'Operation & Training',
+        route: 'operation'
+      }, {
+        name: 'Procurement & Performance',
+        route: 'procure'
+      }, {
+        name: 'Case Studies',
+        route: 'cases'
+      }]
     }, {
-      name: 'Cooling Tower'
+      name: 'Cooling Tower',
+      children: [{
+        name: 'Types'
+      }, {
+        name: 'Performance Ratings',
+        route: 'codes'
+      }, {
+        name: 'Energy Efficiency Measures',
+        route: 'eems'
+      }, {
+        name: 'Calculators & Tools',
+        route: 'tools'
+      }, {
+        name: 'Operation & Training',
+        route: 'operation'
+      }, {
+        name: 'Procurement & Performance',
+        route: 'procure'
+      }, {
+        name: 'Case Studies',
+        route: 'cases'
+      }]
     }, {
       name: 'Cool Thermal Energy Storage'
     }, {
       name: 'Hot Thermal Energy Storage'
     }, {
-      name: 'Pump'
+      name: 'Pump',
+      children: [{
+        name: 'Performance Ratings',
+        route: 'codes'
+      }, {
+        name: 'Energy Efficiency Measures',
+        route: 'eems'
+      }, {
+        name: 'Calculators & Tools',
+        route: 'tools'
+      }, {
+        name: 'Operation & Training',
+        route: 'operation'
+      }, {
+        name: 'Procurement & Performance',
+        route: 'procure'
+      }, {
+        name: 'Case Studies',
+        route: 'cases'
+      }]
     }, {
-      name: 'Sensors & Controls'
+      name: 'Sensors & Controls',
+      children: [{
+        name: 'Operation & Training',
+        route: 'operation'
+      }]
     }]
   }];
 
