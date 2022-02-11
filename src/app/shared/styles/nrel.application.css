@@ -46,7 +46,7 @@ header a.app-name, header a.app-name:hover, header a.app-name:visited {
 /* Interior page header */
 header .logo.interior {
   height: 65px;
-  background-size: 137px;
+  background-size: contain;
 }
 
 #interior.program-header .navbar-light .navbar-nav > li > a {

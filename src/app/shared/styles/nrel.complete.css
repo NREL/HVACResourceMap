@@ -2841,9 +2841,9 @@ ul.dropdown-menu {
 }
 
 header .logo {
-  background: url('../../../assets/images/nrel-logo-web.svg') no-repeat center;
+  background: url('../../../assets/images/hvac_icon.svg') no-repeat center;
   height: 75px;
-  background-size: 160px;
+  background-size: contain;
   margin: 0 0 10px 0;
 }
 
@@ -2868,16 +2868,16 @@ header.notopnav {
 @media only screen and (min-width: 480px) {
   header .logo {
     height: 85px;
-    background-size: 181px;
+    background-size: contain;
     margin: 0 0 10px 0;
   }
 }
 
 @media (min-width: 768px) {
   header .logo {
-    background: url('../../../assets/images/nrel-logo-web.svg') no-repeat left;
+    background: url('../../../assets/images/hvac_icon.svg') no-repeat left;
     height: 130px;
-    background-size: 277px;
+    background-size: contain;
   }
 
   .program-header .container {

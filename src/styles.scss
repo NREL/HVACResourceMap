@@ -2,6 +2,46 @@
 @import 'app/shared/styles/nrel.complete.css';
 @import 'app/shared/styles/nrel.application.css';
 
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url(assets/fonts/RobotoCondensed-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/fonts/Roboto-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(assets/fonts/Roboto-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url(assets/fonts/Roboto-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(assets/fonts/Roboto-Regular-Italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url(assets/fonts/Roboto-Bold-Italic.woff2) format('woff2');
+}
+
 .table td ul {
   padding-left: 18px;
 }

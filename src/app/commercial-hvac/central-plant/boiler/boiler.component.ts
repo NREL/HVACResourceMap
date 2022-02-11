@@ -9,6 +9,7 @@ export class BoilerComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('boiler');
   }
 
 }

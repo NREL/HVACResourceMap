@@ -1,0 +1,228 @@
+$orange: #f98e2d;
+
+:host {
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+svg {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10.5px;
+  text-anchor: middle;
+  transform: scale(1);
+  transform-origin: top left;
+  transition: transform 1s ease-in-out;
+
+  * {
+    transition: fill 200ms linear;
+  }
+}
+
+a:hover{
+  fill: #f98e2d;
+  text-decoration: none;
+}
+
+.label {
+  fill: #444;
+}
+
+.no-pointer {
+  pointer-events: none;
+}
+
+.st15 {
+  fill: #fff;
+  fill-opacity: 0;
+  stroke: #898989;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 3;
+}
+
+.st16 {
+  fill: #455999;
+}
+
+.st17 {
+  fill: #ba6919;
+}
+
+.st18 {
+  fill: #930318;
+}
+
+.st19 {
+  fill: #1b39b2;
+}
+
+.st20 {
+  opacity: 0.15;
+  fill: #fff;
+}
+
+.st21 {
+  fill: none;
+  stroke: #444;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.st22 {
+  fill: #fff;
+  stroke: #444;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.st23 {
+  fill: none;
+  stroke: #444;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.gray {
+  fill: none;
+  stroke: #444;
+  stroke-miterlimit: 10;
+}
+
+.st25 {
+  fill: none;
+  stroke: #930318;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st26 {
+  fill: none;
+  stroke: #444;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st27 {
+  fill: #444;
+}
+
+.st28 {
+  fill: none;
+  stroke: #444;
+  stroke-width: 1.1722;
+  stroke-miterlimit: 10;
+}
+
+.st29 {
+  fill: none;
+  stroke: #444;
+  stroke-width: 1.0488;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st30 {
+  fill: none;
+  stroke: #444;
+  stroke-width: 0.8901;
+  stroke-miterlimit: 10;
+}
+
+.st31 {
+  display: none;
+  fill: none;
+  stroke: #dc7;
+  stroke-miterlimit: 10;
+}
+
+.st32 {
+  fill: #6680d1;
+}
+
+.st33 {
+  fill: #4d4d4d;
+}
+
+.st34 {
+  fill: #666;
+}
+
+$ids:
+  #ahu,
+  #ahu_back,
+  #ahucont,
+  #blrcont,
+  #boiler,
+  #chiller,
+  #controlcont,
+  #cooltherm,
+  #cp-pump,
+  #cp-valve,
+  #cp-valve,
+  #cp-valve-control,
+  #cp-valve2,
+  #d-pump1,
+  #d-pump2,
+  #d-valve,
+  #demand_control_box,
+  #diffuser1,
+  #diffuser2,
+  #duct1-outline,
+  #duct1-outline_1_,
+  #duct1_1_,
+  #duct2-outline,
+  #exhaust_stack,
+  #fan1,
+  #fan2,
+  #hoodoutline,
+  #hottherm,
+  #lab_outline,
+  #occ_sensor_back,
+  #steamtrap,
+  #steamtrapht,
+  #t-outline,
+  #terminal1,
+  #terminal2,
+  #vav,
+  #vav_1_,
+  #vav_2_,
+  #vav_systems-outline,
+  #zone1cont,
+  #zone2cont,
+  #zone3cont,
+  #zone4cont;
+
+@each $id in $ids {
+  #{$id}:hover {
+    fill: $orange;
+    fill-opacity: 1;
+    stroke: #444;
+  }
+}
+
+#pipes:hover {
+  stroke: $orange;
+  stroke-width: 3px;
+}
+
+.active {
+  &#cp-outline {
+    fill: #62d2ff;
+    fill-opacity: 1;
+    stroke: #444;
+  }
+
+  &#boiler {
+    fill: #00a3e0;
+    stroke: #444;
+  }
+}
+
+svg {
+  &.boiler {
+    transform: scale(1.7);
+  }
+}

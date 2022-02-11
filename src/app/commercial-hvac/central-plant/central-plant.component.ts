@@ -9,6 +9,7 @@ export class CentralPlantComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('cp-outline');
   }
 
 }
