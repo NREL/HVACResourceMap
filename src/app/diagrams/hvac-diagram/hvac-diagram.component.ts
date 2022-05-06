@@ -62,6 +62,10 @@ export class HvacDiagramComponent implements AfterViewInit {
       // Any x value less than half the container width (or larger than half the container width) becomes 0% or 100% respectively
       this.transformOriginX = Math.round(this.clamp(x - containerWidth / 2, 0, svgRect.width - containerWidth) / (svgRect.width - containerWidth) * 100);
       this.transformOriginY = Math.round(y / svgRect.height * 100);
+      // just a bit of padding at top (don't translate Y if it's a tiny amount or it cuts off the top)
+      if (this.transformOriginY < 10){
+        this.transformOriginY = 0;
+      }
     } else {
       this.transformOriginX = 0;
       this.transformOriginY = 0;

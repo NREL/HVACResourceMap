@@ -184,7 +184,7 @@ $ids:
   #occ_sensor_back,
   #steamtrap,
   #steamtrapht,
-  #t-outline,
+  #cooltower-outline,
   #terminal1,
   #terminal2,
   #vav,
@@ -216,14 +216,17 @@ $ids:
     stroke: #444;
   }
 
-  &#boiler, &#chiller, &#hottherm, &#cooltherm {
+  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline {
     fill: #00a3e0;
     stroke: #444;
   }
 }
 
 svg {
-  &.boiler, &.chiller, &.hottherm, &.cooltherm {
+  &.boiler, &.chiller, &.hottherm, &.cooltherm, {
+    transform: scale(1.7);
+  }
+  &.cooltower-outline {
     transform: scale(1.7);
   }
 }
