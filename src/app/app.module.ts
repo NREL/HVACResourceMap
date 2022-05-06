@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { OverlayscrollbarsModule } from 'overlayscrollbars-ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,6 +47,7 @@ import { SpaceLoadsComponent } from './space-loads/space-loads.component';
   imports: [
     AppRoutingModule,
     BrowserModule,
+    OverlayscrollbarsModule,
     SharedModule
   ],
   bootstrap: [AppComponent]

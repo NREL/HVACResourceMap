@@ -1,8 +1,10 @@
-<div class="d-flex flex-column min-vh-100">
-  <app-header [showAlternate]="!isHome && showAlternate"></app-header>
-  <app-nav [showTopNav]="showTopNav" [showAlternate]="!isHome && showAlternate"></app-nav>
-  <main id="content" class="container flex-fill">
-    <router-outlet></router-outlet>
-  </main>
-  <app-footer></app-footer>
-</div>
+<overlay-scrollbars [options]="scrollOptions" class="vh-100">
+  <div class="d-flex flex-column min-vh-100">
+    <app-header [showAlternate]="!isHome && showAlternate"></app-header>
+    <app-nav [showTopNav]="showTopNav" [showAlternate]="!isHome && showAlternate"></app-nav>
+    <main id="content" class="container flex-fill">
+      <router-outlet></router-outlet>
+    </main>
+    <app-footer></app-footer>
+  </div>
+</overlay-scrollbars>

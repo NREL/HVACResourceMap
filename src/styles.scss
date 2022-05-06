@@ -1,4 +1,5 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
+@import '~overlayscrollbars/css/OverlayScrollbars.css';
 @import 'app/shared/styles/nrel.complete.css';
 @import 'app/shared/styles/nrel.application.css';
 
@@ -97,4 +98,11 @@ table img {
 
 a.well[href$='.pdf']::after {
   display: none;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link,
+  /*.sidenav > ul.nav > li > a:hover, .sidenav > ul.nav > li > a:focus, .sidenav > ul.nav > li.active > a, .sidenav > ul.nav > li.active > a:visited*/
+{
+  background-color: #ffca28;
+  color: black;
 }
