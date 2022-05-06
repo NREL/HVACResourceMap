@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { Options } from 'overlayscrollbars';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,12 @@ export class AppComponent {
   readonly showAlternate = true;
 
   isHome = false;
+  scrollOptions: Options = {
+    overflowBehavior: {
+      x: 'hidden'
+    },
+    sizeAutoCapable: false
+  };
 
   constructor(private router: Router) {
     router.events.subscribe(event => {

@@ -9,6 +9,7 @@ export class ChillerComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('chiller');
   }
 
 }

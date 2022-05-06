@@ -9,6 +9,7 @@ export class HotThermalEnergyStorageComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('hottherm');
   }
 
 }

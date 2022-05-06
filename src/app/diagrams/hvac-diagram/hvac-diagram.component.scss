@@ -7,15 +7,16 @@ $orange: #f98e2d;
 }
 
 svg {
+  backface-visibility: hidden;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 10.5px;
   text-anchor: middle;
   transform: scale(1);
   transform-origin: top left;
-  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, transform-origin 0.3s ease-in-out;
 
   * {
-    transition: fill 200ms linear;
+    transition: fill 200ms linear, fill-opacity 200ms linear;
   }
 }
 
@@ -215,14 +216,14 @@ $ids:
     stroke: #444;
   }
 
-  &#boiler {
+  &#boiler, &#chiller, &#hottherm, &#cooltherm {
     fill: #00a3e0;
     stroke: #444;
   }
 }
 
 svg {
-  &.boiler {
+  &.boiler, &.chiller, &.hottherm, &.cooltherm {
     transform: scale(1.7);
   }
 }

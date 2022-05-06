@@ -9,6 +9,7 @@ export class CommercialHVACHomeComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors();
   }
 
 }
