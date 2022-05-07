@@ -216,17 +216,15 @@ $ids:
     stroke: #444;
   }
 
-  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump {
+  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump, &#blrcont, &#ahucont, &#controlcont, &#zone1cont, &#zone2cont, &#zone3cont, &#zone4cont {
     fill: #00a3e0;
     stroke: #444;
   }
 }
 
 svg {
-  &.boiler, &.chiller, &.hottherm, &.cooltherm, &.d-pump1 {
+  &.boiler, &.chiller, &.hottherm, &.cooltherm, &.d-pump1, &.cooltower-outline, &.blrcont {
     transform: scale(1.7);
   }
-  &.cooltower-outline {
-    transform: scale(1.7);
-  }
+  
 }

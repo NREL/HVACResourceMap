@@ -79,28 +79,28 @@
     <path id="zone4" class="st22" d="M385.2 771.5h-73.3c-2.6 0-4.6-2.1-4.6-4.6v-56.5c0-2.6 2.1-4.6 4.6-4.6h73.3c2.6 0 4.6 2.1 4.6 4.6v56.5c0 2.5-2 4.6-4.6 4.6z"/>
     <g id="zone1-temp">
       <a id="zonecontlink1" routerLink="/commercial-hvac/distribution/sensors-controls">
-        <rect id="zone1cont" x="29.5" y="746" class="st21" width="13.4" height="15.5"/>
+        <rect id="zone1cont" [class.active]="active['sensors']" x="29.5" y="746" class="st21" width="13.4" height="15.5"/>
         <line class="st21" x1="36.1" y1="771.5" x2="36.1" y2="761.1"/>
         <path class="st27 no-pointer" d="M39.7 751h-2.9v8.2h-1.1V751h-2.9v-1h6.8v1h.1z"/>
       </a>
     </g>
     <g id="zone2-temp">
       <a id="zonecontlink2" routerLink="/commercial-hvac/distribution/sensors-controls">
-        <rect id="zone2cont" x="123.3" y="746.5" class="st21" width="13.4" height="15.5"/>
+        <rect id="zone2cont" [class.active]="active['sensors']" x="123.3" y="746.5" class="st21" width="13.4" height="15.5"/>
         <line class="st21" x1="129.7" y1="772" x2="129.7" y2="761.7"/>
         <path class="st27 no-pointer" d="M133.3 751.4h-2.8v8.2h-1.1v-8.2h-2.9v-1h6.8v1z"/>
       </a>
     </g>
     <g id="zone3-temp">
       <a id="zonecontlink3" routerLink="/commercial-hvac/distribution/sensors-controls">
-        <rect id="zone3cont" x="218.4" y="747" class="st21" width="13.4" height="15.5"/>
+        <rect id="zone3cont" [class.active]="active['sensors']" x="218.4" y="747" class="st21" width="13.4" height="15.5"/>
         <line class="st21" x1="224.8" y1="772.5" x2="224.8" y2="762"/>
         <path class="st27 no-pointer" d="M228.5 751.9h-2.9v8.2h-1.1v-8.2h-2.9v-1h6.8l.1 1z"/>
       </a>
     </g>
     <g id="zone4-temp">
       <a id="zonecontlink4" routerLink="/commercial-hvac/distribution/sensors-controls">
-        <rect id="zone4cont" x="318.2" y="746.5" class="st21" width="13.4" height="15.5"/>
+        <rect id="zone4cont" [class.active]="active['sensors']" x="318.2" y="746.5" class="st21" width="13.4" height="15.5"/>
         <line class="st21" x1="324.9" y1="772" x2="324.9" y2="761.7"/>
         <path class="st27 no-pointer" d="M328.4 751.4h-2.9v8.2h-1.1v-8.2h-2.9v-1h6.8l.1 1z"/>
       </a>
@@ -167,21 +167,21 @@
     </g>
     <g id="boiler-temp">
       <a id="boilercontlink" routerLink="/commercial-hvac/central-plant/sensors-controls">
-        <rect id="blrcont" x="118.1" y="19.4" class="st22" width="13.4" height="15.5"/>
+        <rect id="blrcont" [class.active]="active['sensors']" x="118.1" y="19.4" class="st22" width="13.4" height="15.5"/>
         <line class="st21" x1="124.7" y1="44.9" x2="124.7" y2="34.6"/>
         <path class="st27 no-pointer" d="M128.3 24.4h-2.9v8.2h-1.1v-8.2h-2.9v-1h6.8v1h.1z"/>
       </a>
     </g>
     <g id="ahu-temp">
       <a id="ahucontrollink" routerLink="/commercial-hvac/distribution/sensors-controls">
-        <rect id="ahucont" x="76.4" y="346.3" class="st22" width="13.4" height="15.5"/>
+        <rect id="ahucont" [class.active]="active['sensors']" x="76.4" y="346.3" class="st22" width="13.4" height="15.5"/>
         <line class="st21" x1="82.9" y1="371.8" x2="82.9" y2="361.5"/>
         <path class="st27 no-pointer" d="M86.6 351.3h-2.9v8.2h-1.1v-8.2h-2.9v-1h6.8l.1 1z"/>
       </a>
     </g>
     <g id="control">
       <a id="controlcontrol" routerLink="/commercial-hvac/distribution/sensors-controls">
-        <rect id="controlcont" x="266.3" y="346.7" class="st22" width="13.4" height="15.3"/>
+        <rect id="controlcont" [class.active]="active['sensors']" x="266.3" y="346.7" class="st22" width="13.4" height="15.3"/>
         <line class="st21" x1="272.8" y1="372.7" x2="272.8" y2="363"/>
         <path class="st27 no-pointer" d="M272.2 350.3h1.1v9.2h-1.1v-9.2z"/>
       </a>
