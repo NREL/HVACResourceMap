@@ -216,14 +216,14 @@ $ids:
     stroke: #444;
   }
 
-  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline {
+  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump {
     fill: #00a3e0;
     stroke: #444;
   }
 }
 
 svg {
-  &.boiler, &.chiller, &.hottherm, &.cooltherm, {
+  &.boiler, &.chiller, &.hottherm, &.cooltherm, &.d-pump1 {
     transform: scale(1.7);
   }
   &.cooltower-outline {
