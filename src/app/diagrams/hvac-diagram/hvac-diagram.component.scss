@@ -210,21 +210,25 @@ $ids:
 }
 
 .active {
-  &#cp-outline {
+  &#cp-outline, &#d1-outline, &#d2-outline {
     fill: #62d2ff;
     fill-opacity: 1;
     stroke: #444;
   }
 
-  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump, &#blrcont, &#ahucont, &#controlcont, &#zone1cont, &#zone2cont, &#zone3cont, &#zone4cont {
+  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump, &#blrcont, &#ahucont, &#controlcont, &#zone1cont, &#zone2cont, &#zone3cont, &#zone4cont, &#ahu, &#diffuser1, &#diffuser2, &#duct1, &#duct2, &#fan2, &#fan1, &#pipes {
     fill: #00a3e0;
     stroke: #444;
+    opacity: 1;
   }
 }
 
 svg {
-  &.boiler, &.chiller, &.hottherm, &.cooltherm, &.d-pump1, &.cooltower-outline, &.blrcont {
+  &.boiler, &.chiller, &.hottherm, &.cooltherm, &.d-pump1, &.cooltower-outline, &.blrcont, &.diffuser2, &.fan2, &.pipes   {
     transform: scale(1.7);
+  }
+  &.ahu, &.duct1 {
+    transform: scale(1.3);
   }
   
 }
