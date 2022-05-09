@@ -8,13 +8,13 @@
     <path id="cp-outline" class="st15" [class.active]="active['cp-outline']" d="M399.7 256H14.4c-3.6 0-6.4-2.9-6.4-6.4V15c0-3.6 2.9-6.4 6.4-6.4h385.3c3.6 0 6.4 2.9 6.4 6.4v234.5c.1 3.6-2.6 6.5-6.4 6.5z"/>
     <g id="pipesall">
       <a id="pipelink" routerLink="/commercial-hvac/distribution/piping">
-        <g id="pipes" [class.active]="active['pipes']">
-          <polygon class="st16" [class.active]="active['pipes']" points="29.3 88.8 25.1 88.8 25.2 160.5 25.3 323.6 205.1 323.6 205.1 371.8 209.1 371.8 209.1 319.6 29.3 319.6"/>
-          <polygon class="st17" points="229.5 169.8 233.5 169.8 231.8 372 228 372"/>
-          <polygon class="st18" points="173.7 84.4 170.5 84.4 171.1 298.5 214.4 298.5 214.4 371.8 218.4 371.8 218.4 294.5 175.1 294.5"/>
-          <polygon class="st19" points="361.9 170.3 365.9 170.3 365.9 325 241.5 325 241.5 372 237.5 372 237.5 321 361.9 321"/>
-          <path class="st17" d="M234.6 141.4h-3.1V79.2c0-1 .7-1.9 1.6-1.9h27.1c.8 0 1.4.7 1.6 1.4h.7c.2 1.2-.5 2.2-1.6 2.2h-24.5c-.8 0-1.6.8-1.6 1.9v58.5l-.2.1z"/>
-          <path class="st19" d="M362.6 172.6h3.1V76.3c0-1-.7-1.9-1.6-1.9h-45.6l-.7 3.6h43.1c.8 0 1.6.8 1.6 1.9l.1 92.7z"/>
+        <g id="pipes">
+          <polygon class="st16" id="pipe1" [class.active]="active['pipe1']" points="29.3 88.8 25.1 88.8 25.2 160.5 25.3 323.6 205.1 323.6 205.1 371.8 209.1 371.8 209.1 319.6 29.3 319.6"/>
+          <polygon class="st17" id="pipe2" [class.active]="active['pipe1']" points="229.5 169.8 233.5 169.8 231.8 372 228 372"/>
+          <polygon class="st18" id="pipe3" [class.active]="active['pipe1']" points="173.7 84.4 170.5 84.4 171.1 298.5 214.4 298.5 214.4 371.8 218.4 371.8 218.4 294.5 175.1 294.5"/>
+          <polygon class="st19" id="pipe4" [class.active]="active['pipe1']" points="361.9 170.3 365.9 170.3 365.9 325 241.5 325 241.5 372 237.5 372 237.5 321 361.9 321"/>
+          <path class="st17" id="pipe5" [class.active]="active['pipe1']" d="M234.6 141.4h-3.1V79.2c0-1 .7-1.9 1.6-1.9h27.1c.8 0 1.4.7 1.6 1.4h.7c.2 1.2-.5 2.2-1.6 2.2h-24.5c-.8 0-1.6.8-1.6 1.9v58.5l-.2.1z"/>
+          <path class="st19" id="pipe6" [class.active]="active['pipe1']" d="M362.6 172.6h3.1V76.3c0-1-.7-1.9-1.6-1.9h-45.6l-.7 3.6h43.1c.8 0 1.6.8 1.6 1.9l.1 92.7z"/>
         </g>
       </a>
     </g>
@@ -28,7 +28,7 @@
     </a>
     <g id="terminal2all">
       <a id="terminallink2" routerLink="/commercial-hvac/distribution/terminal-units">
-        <rect id="terminal2" x="324.4" y="641" class="st22" width="42" height="64.8"/>
+        <rect id="terminal2" [class.active]="active['terminal1']" x="324.4" y="641" class="st22" width="42" height="64.8"/>
         <g class="no-pointer">
           <line class="st23" x1="331.4" y1="670.8" x2="359.2" y2="643.1"/>
           <line class="gray" x1="324.4" y1="683.6" x2="366.3" y2="683.6"/>
@@ -38,7 +38,7 @@
     </g>
     <g id="terminal1all">
       <a id="terminallink1" routerLink="/commercial-hvac/distribution/terminal-units">
-        <rect id="terminal1" x="228.8" y="641" class="st22" width="42" height="64.8"/>
+        <rect id="terminal1" [class.active]="active['terminal1']" x="228.8" y="641" class="st22" width="42" height="64.8"/>
         <g class="no-pointer">
           <line class="st23" x1="237.9" y1="670.8" x2="265.4" y2="643.1"/>
           <line class="gray" x1="228.8" y1="683.6" x2="270.5" y2="683.6"/>
@@ -48,7 +48,7 @@
     </g>
     <g id="vavall">
       <a id="vavlink" routerLink="/commercial-hvac/distribution/vav">
-        <rect id="vav" x="248.4" y="552.8" class="st22" width="74.5" height="43.1"/>
+        <rect id="vav" [class.active]="active['vav']" x="248.4" y="552.8" class="st22" width="74.5" height="43.1"/>
         <g class="no-pointer">
           <line class="st25" x1="307.5" y1="557.6" x2="290.9" y2="557.6"/>
           <line class="st25" x1="307.5" y1="564.3" x2="290.9" y2="564.3"/>
@@ -162,7 +162,7 @@
     </a>
     <g id="valve1">
       <a id="valve2link" routerLink="/commercial-hvac/distribution/valve">
-        <polygon id="cp-valve" class="st22" points="34.1 149.9 20.1 149.9 26.2 160.5 20.1 171.8 34.1 171.8 28 160.5"/>
+        <polygon id="cp-valve" [class.active]="active['cp-valve']" class="st22" points="34.1 149.9 20.1 149.9 26.2 160.5 20.1 171.8 34.1 171.8 28 160.5"/>
       </a>
     </g>
     <g id="boiler-temp">
@@ -225,12 +225,12 @@
     </g>
     <g id="coolvalve">
       <a id="valve1link" routerLink="/commercial-hvac/distribution/valve">
-        <polygon id="cp-valve2" class="st22" points="238.2 229.8 224.2 229.8 230.2 240.2 224.5 252.5 238.8 252.5 232.2 240.2"/>
+        <polygon id="cp-valve2" [class.active]="active['cp-valve']" class="st22" points="238.2 229.8 224.2 229.8 230.2 240.2 224.5 252.5 238.8 252.5 232.2 240.2"/>
       </a>
     </g>
     <g id="steamtraphot">
       <a id="steamtraplink2" routerLink="/commercial-hvac/distribution/steam-traps">
-        <path id="steamtrapht" class="st22" d="M201.4 288.6v-.6c0-.6-.5-1.2-1.2-1.2h-.8l.5-1.3c.4-1.1 0-2.4-1-3l-3.2-2c-.8-.5-1.7-.5-2.5 0l-3.2 2c-1 .6-1.4 1.9-1 3l.5 1.3h-1.2c-.6 0-1.2.5-1.2 1.2v.6c0 .6.5 1.2 1.2 1.2h.4v2h-5.2v-10.9h-6.2v30.4h6.2v-11h3.8l8.5 8.6 3.7-4.2-4.3-4.4h10.1v10.4h6.2v-29.8h-6.2v10.9H200v-2h.2c.6 0 1.2-.6 1.2-1.2z"/>
+        <path id="steamtrapht" [class.active]="active['steamtrap']" class="st22" d="M201.4 288.6v-.6c0-.6-.5-1.2-1.2-1.2h-.8l.5-1.3c.4-1.1 0-2.4-1-3l-3.2-2c-.8-.5-1.7-.5-2.5 0l-3.2 2c-1 .6-1.4 1.9-1 3l.5 1.3h-1.2c-.6 0-1.2.5-1.2 1.2v.6c0 .6.5 1.2 1.2 1.2h.4v2h-5.2v-10.9h-6.2v30.4h6.2v-11h3.8l8.5 8.6 3.7-4.2-4.3-4.4h10.1v10.4h6.2v-29.8h-6.2v10.9H200v-2h.2c.6 0 1.2-.6 1.2-1.2z"/>
       </a>
     </g>
     <a routerLink="/commercial-hvac/central-plant/hot-thermal-energy-storage">
@@ -239,7 +239,7 @@
     </a>
     <g id="steamtrapcool">
       <a id="steamtraplink_1_" routerLink="/commercial-hvac/distribution/steam-traps">
-        <path id="steamtrap" class="st22" d="M104.5 315.3h.2v2h-5.3v-10.9h-6.2v29.8h6.2v-10.4h10.1l-4.3 4.4 3.7 4.2 8.5-8.6h3.8v11h6.2v-30.4h-6.2v10.9H116v-2h.4c.7 0 1.2-.6 1.2-1.2v-.6c0-.7-.6-1.2-1.2-1.2h-1.2l.5-1.3c.4-1.1 0-2.4-1-3l-3.2-2c-.8-.5-1.7-.5-2.5 0l-3.2 2c-1 .6-1.4 1.9-1 3l.5 1.3h-.8c-.7 0-1.2.6-1.2 1.2v.6c0 .6.6 1.2 1.2 1.2z"/>
+        <path id="steamtrap" [class.active]="active['steamtrap']" class="st22" d="M104.5 315.3h.2v2h-5.3v-10.9h-6.2v29.8h6.2v-10.4h10.1l-4.3 4.4 3.7 4.2 8.5-8.6h3.8v11h6.2v-30.4h-6.2v10.9H116v-2h.4c.7 0 1.2-.6 1.2-1.2v-.6c0-.7-.6-1.2-1.2-1.2h-1.2l.5-1.3c.4-1.1 0-2.4-1-3l-3.2-2c-.8-.5-1.7-.5-2.5 0l-3.2 2c-1 .6-1.4 1.9-1 3l.5 1.3h-.8c-.7 0-1.2.6-1.2 1.2v.6c0 .6.6 1.2 1.2 1.2z"/>
       </a>
     </g>
   </g>

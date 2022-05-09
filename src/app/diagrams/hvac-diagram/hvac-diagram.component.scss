@@ -216,7 +216,7 @@ $ids:
     stroke: #444;
   }
 
-  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump, &#blrcont, &#ahucont, &#controlcont, &#zone1cont, &#zone2cont, &#zone3cont, &#zone4cont, &#ahu, &#diffuser1, &#diffuser2, &#duct1, &#duct2, &#fan2, &#fan1, &#pipes {
+  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump, &#blrcont, &#ahucont, &#controlcont, &#zone1cont, &#zone2cont, &#zone3cont, &#zone4cont, &#ahu, &#diffuser1, &#diffuser2, &#duct1, &#duct2, &#fan2, &#fan1, &#pipe1, &#pipe2, &#pipe3, &#pipe4, &#pipe5, &#pipe6, &#steamtrapht, &#steamtrap, &#terminal1, &#terminal2, &#cp-valve, &#cp-valve2, &#vav  {
     fill: #00a3e0;
     stroke: #444;
     opacity: 1;
@@ -224,11 +224,14 @@ $ids:
 }
 
 svg {
-  &.boiler, &.chiller, &.hottherm, &.cooltherm, &.d-pump1, &.cooltower-outline, &.blrcont, &.diffuser2, &.fan2, &.pipes   {
+  &.boiler, &.chiller, &.hottherm, &.cooltherm, &.d-pump1, &.cooltower-outline, &.blrcont, &.diffuser2, &.fan2, &.terminal1, &.cp-valve, &.vav {
     transform: scale(1.7);
   }
-  &.ahu, &.duct1 {
+  &.ahu, &.duct1, &.steamtrap {
     transform: scale(1.3);
+  }
+  &.pipe1 {
+  transform: scale(1.1);
   }
   
 }

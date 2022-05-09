@@ -9,6 +9,7 @@ export class OperationComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('cp-valve');
   }
 
 }

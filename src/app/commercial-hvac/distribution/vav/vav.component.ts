@@ -9,6 +9,7 @@ export class VavComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('vav');
   }
 
 }
