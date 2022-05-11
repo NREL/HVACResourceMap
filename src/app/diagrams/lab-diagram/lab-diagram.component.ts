@@ -1,12 +1,12 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
-
 @Component({
-  selector: 'app-space-diagram',
-  templateUrl: './space-diagram.component.svg'
+  selector: 'app-lab-diagram',
+  templateUrl: './lab-diagram.component.svg',
+  styleUrls: ['./lab-diagram.component.scss']
 })
-export class SpaceDiagramComponent implements AfterViewInit {
+export class LabDiagramComponent implements AfterViewInit {
   @ViewChild('svg') svg?: ElementRef;
 
   active: { [key: string]: true } = {};

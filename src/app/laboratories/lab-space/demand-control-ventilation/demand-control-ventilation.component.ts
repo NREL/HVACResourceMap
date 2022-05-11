@@ -9,6 +9,7 @@ export class DemandControlVentilationComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('demand_control_box');
   }
 
 }

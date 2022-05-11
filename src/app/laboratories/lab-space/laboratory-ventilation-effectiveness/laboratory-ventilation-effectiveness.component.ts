@@ -9,6 +9,7 @@ export class LaboratoryVentilationEffectivenessComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('lab_outline');
   }
 
 }
