@@ -317,6 +317,7 @@ $ids:
   #demand_control_box,
   #diffuser1,
   #diffuser2,
+  #disoutline,
   #duct1-outline,
   #duct1-outline_1_,
   #duct1_1_,
@@ -327,6 +328,7 @@ $ids:
   #hoodoutline,
   #hottherm,
   #lab_outline,
+  #labventlink,
   #occ_sensor_back,
   #steamtrap,
   #steamtrapht,
@@ -356,28 +358,37 @@ $ids:
 }
 
 .active {
-  &#cp-outline, &#d1-outline, &#d2-outline, &#lab_outline {
+  &#cp-outline, &#d1-outline, &#d2-outline, &#lab_outline, &#hoodoutline, &#disoutline, &#vav_systems-outline {
     fill: #62d2ff;
     fill-opacity: 1;
     stroke: #444;
   }
 
-  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump, &#blrcont, &#ahucont, &#controlcont, &#zone1cont, &#zone2cont, &#zone3cont, &#zone4cont, &#ahu, &#diffuser1, &#diffuser2, &#duct1, &#duct2, &#fan2, &#fan1, &#pipe1, &#pipe2, &#pipe3, &#pipe4, &#pipe5, &#pipe6, &#steamtrapht, &#steamtrap, &#terminal1, &#terminal2, &#cp-valve, &#cp-valve2, &#vav,  &#lab_outline, &#demand_control_box  {
+  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump, &#blrcont, &#ahucont, &#controlcont, &#zone1cont, &#zone2cont, &#zone3cont, &#zone4cont, &#ahu, &#diffuser1, &#diffuser2, &#duct1, &#duct2, &#fan2, &#fan1, &#pipe1, &#pipe2, &#pipe3, &#pipe4, &#pipe5, &#pipe6, &#steamtrapht, &#steamtrap, &#terminal1, &#terminal2, &#cp-valve, &#cp-valve2, &#vav_systems-outline,  &#lab_outline, &#demand_control_box, &#occ_sensor_back, &#vav-box  {
     fill: #00a3e0;
     stroke: #444;
     opacity: 1;
   }
+
+  &#labventlink {
+    stroke: #71C5E8 !important;
+    stroke-width: 3pt !important;
+  }
 }
 
+
 svg {
-  &.boiler, &.chiller, &.hottherm, &.cooltherm, &.d-pump1, &.cooltower-outline, &.blrcont, &.diffuser2, &.fan2, &.terminal1, &.cp-valve, &.vav {
+  &.boiler, &.chiller, &.hottherm, &.cooltherm, &.d-pump1, &.cooltower-outline, &.blrcont, &.diffuser2, &.terminal1, &.cp-valve, &.vav_systems-outline, &.vav-box {
     transform: scale(1.7);
   }
-  &.ahu, &.duct1, &.steamtrap, &.demand_control_box {
+  &.ahu, &.duct1, &.fan2, &.steamtrap, &.demand_control_box, &.occ_sensor_back, &.hoodoutline {
     transform: scale(1.3);
   }
   &.pipe1 {
   transform: scale(1.1);
+  }
+  &.labventlink, &.disoutline {
+  transform: scale(1.0);
   }
   
 }
