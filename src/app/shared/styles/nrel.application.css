@@ -30,9 +30,15 @@ header a.app-name, header a.app-name:hover, header a.app-name:visited {
   font-family: Roboto;
   font-size: 1.5rem;
   line-height: 1.2em;
-  margin: 0 0 .3em;
+  /*margin: 0 0 .3em;*/
   text-align: center;
   text-decoration: none
+}
+
+header .app-subtitle {
+  font-family: Roboto;
+  color: #494949;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 768px) {
@@ -145,4 +151,8 @@ header .logo.interior {
   .site-search-bar {
     background-color: #e3e3e3;
   }
+}
+
+.disclaimer {
+  padding: 0px 20px;
 }

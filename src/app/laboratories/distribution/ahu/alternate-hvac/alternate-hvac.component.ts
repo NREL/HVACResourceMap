@@ -9,6 +9,7 @@ export class AlternateHVACComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('ahu');
   }
 
 }

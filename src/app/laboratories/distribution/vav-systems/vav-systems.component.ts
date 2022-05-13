@@ -9,6 +9,7 @@ export class VavSystemsComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('vav_systems-outline');
   }
 
 }

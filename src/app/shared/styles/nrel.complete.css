@@ -2876,7 +2876,7 @@ header.notopnav {
 @media (min-width: 768px) {
   header .logo {
     background: url('../../../assets/images/hvac_icon.svg') no-repeat left;
-    height: 130px;
+    height: 100px;
     background-size: contain;
   }
 

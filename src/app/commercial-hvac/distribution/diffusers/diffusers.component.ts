@@ -9,6 +9,7 @@ export class DiffusersComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('diffuser2');
   }
 
 }

@@ -9,6 +9,7 @@ export class CoolingTowerComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('cooltower-outline');
   }
 
 }

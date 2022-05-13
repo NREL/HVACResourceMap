@@ -18,7 +18,7 @@ import { DuctingComponent } from './distribution/ducting/ducting.component';
 import { VavSystemsComponent } from './distribution/vav-systems/vav-systems.component';
 import { VavComponent } from './distribution/vav/vav.component';
 import { DiffuserComponent } from './distribution/diffuser/diffuser.component';
-
+import { LabDiagramComponent } from '../diagrams/lab-diagram/lab-diagram.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,8 @@ import { DiffuserComponent } from './distribution/diffuser/diffuser.component';
     DuctingComponent,
     VavSystemsComponent,
     VavComponent,
-    DiffuserComponent
+    DiffuserComponent,
+    LabDiagramComponent
   ],
   imports: [
     CommonModule,

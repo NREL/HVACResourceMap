@@ -9,6 +9,7 @@ export class TuneComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('fan2');
   }
 
 }

@@ -9,6 +9,7 @@ export class DuctingComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('duct1');
   }
 
 }

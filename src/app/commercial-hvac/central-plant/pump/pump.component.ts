@@ -9,6 +9,7 @@ export class PumpComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('pump');
   }
 
 }

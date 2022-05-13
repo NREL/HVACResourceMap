@@ -9,6 +9,7 @@ export class TerminalComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('terminal1');
   }
 
 }

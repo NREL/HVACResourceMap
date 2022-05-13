@@ -9,6 +9,7 @@ export class LowPressureDropDesignComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('disoutline');
   }
 
 }

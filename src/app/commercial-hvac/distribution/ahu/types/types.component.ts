@@ -9,6 +9,7 @@ export class TypesComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('ahu');
   }
 
 }

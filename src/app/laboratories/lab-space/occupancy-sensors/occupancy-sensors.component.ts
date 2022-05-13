@@ -9,6 +9,7 @@ export class OccupancySensorsComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('occ_sensor_back');
   }
 
 }

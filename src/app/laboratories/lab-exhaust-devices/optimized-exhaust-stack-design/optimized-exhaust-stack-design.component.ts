@@ -9,6 +9,7 @@ export class OptimizedExhaustStackDesignComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('exhaust_stack');
   }
 
 }

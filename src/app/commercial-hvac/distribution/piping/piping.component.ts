@@ -9,6 +9,7 @@ export class PipingComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('pipe1');
   }
 
 }

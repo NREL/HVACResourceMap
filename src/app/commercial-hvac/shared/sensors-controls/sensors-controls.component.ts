@@ -9,6 +9,7 @@ export class SensorsControlsComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('sensors');
   }
 
 }

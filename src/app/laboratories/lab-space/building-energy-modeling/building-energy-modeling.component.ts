@@ -9,6 +9,7 @@ export class BuildingEnergyModelingComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('labventlink');
   }
 
 }
