@@ -9,6 +9,7 @@ export class EnergyRecoveryComponent {
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
+    sharedService.setActiveSelectors('energy_recovery');
   }
 
 }
