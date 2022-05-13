@@ -4,8 +4,8 @@
         <path id="vav_systems-outline" [class.active]="active['vav_systems-outline']" class="st0" d="M324.7,397.1l3.8,17.9l5.1-0.1l0.5,209.7l18.5-0.1V397.1H324.7z" />
         </a>
         <path id="ductconnectionline1_1_" class="st1" d="M323.5,393l6.4,29.1" />
-        <path id="cp-outline" [class.active]="active['cp-outline']" class="st2" d="M399.7,256H14.4c-3.6,0-6.4-2.9-6.4-6.4V15c0-3.6,2.9-6.4,6.4-6.4h385.3
-		c3.6,0,6.4,2.9,6.4,6.4v234.5C406.2,253.1,403.5,256,399.7,256L399.7,256z" />
+        <path id="cp-outline" class="st2" [class.active]="active['cp-outline']" d="M399.7,256H14.4c-3.6,0-6.4-2.9-6.4-6.4V15c0-3.6,2.9-6.4,6.4-6.4h385.3
+		  c3.6,0,6.4,2.9,6.4,6.4v234.5C406.2,253.1,403.5,256,399.7,256L399.7,256z" />
         <a id="dislink" routerLink="/laboratories/distribution/low-pressure-drop-design">
             <path id="disoutline" [class.active]="active['disoutline']" class="st3" d="M406.2,278c0-3.2-2.7-6-6-6H14c-3.2,0-6,2.7-6,6v143c0,3.2,2.7,6,6,6h263.5
 		c-1.3,2.2-2,199.6-2,199.6c0,8.5,6.9,15.4,15.4,15.4h100c8.5,0,15.4-6.9,15.4-15.4L406.2,278L406.2,278L406.2,278z" />
@@ -264,7 +264,7 @@
 				c-0.3,1.5-5.4,8.8-7.3,11C172.1,165.7,172.6,166,173.3,165.5z" />
             </a>
         </g>
-        <path id="exhaustoutline" class="st19" d="M254.5,635.5H14.1c-3.4,0-6.1-3-6.1-6.8v-184c0-3.7,2.7-6.8,6.1-6.8h240.4
+        <path id="exhaustoutline" [class.active]="active['exhaustoutline']" class="st19" d="M254.5,635.5H14.1c-3.4,0-6.1-3-6.1-6.8v-184c0-3.7,2.7-6.8,6.1-6.8h240.4
 		c3.4,0,6.1,3,6.1,6.8v184.1C260.6,632.5,257.9,635.5,254.5,635.5L254.5,635.5z" />
         <path id="benchperson" class="st13" d="M193.2,684.1c0,0-5.3-2.2-5.7,4.7c0,0,0.8,5.1-0.2,6c0,0,1.1,1.6,0.2,2.1c0,0,1,0.1,1.6-0.5
 		l1.2-0.7l-2.5,2.3c0,0-1.7,0-3,0.8c0,0-0.6-0.8-1.5,1c-0.9,1.7-0.1,2.6-0.6,3.5c0,0-1.2,12.4,2.1,11.8s0.4,3.1-0.3,6.3

@@ -306,6 +306,7 @@ $ids:
   #chiller,
   #controlcont,
   #cooltherm,
+  #cp-outline,
   #cp-pump,
   #cp-valve,
   #cp-valve,
@@ -322,6 +323,7 @@ $ids:
   #duct1-outline_1_,
   #duct1_1_,
   #duct2-outline,
+  #exhaustoutline,
   #exhaust_stack,
   #fan1,
   #fan2,
@@ -358,13 +360,13 @@ $ids:
 }
 
 .active {
-  &#cp-outline, &#d1-outline, &#d2-outline, &#lab_outline, &#hoodoutline, &#disoutline, &#vav_systems-outline, &#diffuser1 {
+  &#cp-outline, &#d1-outline, &#d2-outline, &#lab_outline, &#hoodoutline, &#disoutline, &#vav_systems-outline, &#exhaustoutline, &#diffuser1 {
     fill: #62d2ff;
     fill-opacity: 1;
     stroke: #444;
   }
 
-  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump, &#blrcont, &#ahucont, &#controlcont, &#zone1cont, &#zone2cont, &#zone3cont, &#zone4cont, &#ahu, &#diffuser1, &#diffuser2, &#duct1, &#duct2, &#fan2, &#fan1, &#pipe1, &#pipe2, &#pipe3, &#pipe4, &#pipe5, &#pipe6, &#steamtrapht, &#steamtrap, &#terminal1, &#terminal2, &#cp-valve, &#cp-valve2, &#vav_systems-outline,  &#lab_outline, &#demand_control_box, &#occ_sensor_back, &#vav, &#energyrecovery_x5F_pipe, &#er_rec_bttm, &#er_rec_top, &#exhaust_stack, &#vav_1_, &#vav_2_  {
+  &#boiler, &#chiller, &#hottherm, &#cooltherm, &#cooltower-outline, &#d-pump1, &#d-pump2, &#cp-pump, &#blrcont, &#ahucont, &#controlcont, &#zone1cont, &#zone2cont, &#zone3cont, &#zone4cont, &#ahu, &#diffuser1, &#diffuser2, &#duct1, &#duct2, &#fan2, &#fan1, &#pipe1, &#pipe2, &#pipe3, &#pipe4, &#pipe5, &#pipe6, &#steamtrapht, &#steamtrap, &#terminal1, &#terminal2, &#cp-valve, &#cp-valve2, &#vav_systems-outline,  &#lab_outline, &#demand_control_box, &#occ_sensor_back, &#vav, &#energyrecovery_x5F_pipe, &#er_rec_bttm, &#er_rec_top, &#exhaust_stack, &#vav_1_, &#vav_2_ {
     fill: #00a3e0;
     stroke: #444;
     opacity: 1;
@@ -389,5 +391,8 @@ svg {
   &.labventlink, &.disoutline {
   transform: scale(1.0);
   }
-  
+  &.reset {
+  transform: scale(1.0);
+  }  
 }
+

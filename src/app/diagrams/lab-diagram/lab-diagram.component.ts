@@ -39,19 +39,19 @@ export class LabDiagramComponent implements AfterViewInit {
   }
 
   private updateTransformOrigin() {
-    console.log(this.classList);
+    //console.log(this.classList);
     if (this.svg && this.classList.length === 1) {
       const containerRect = this.element.nativeElement.getBoundingClientRect();
       const svgRect = this.svg.nativeElement.getBoundingClientRect();
       const childRect = this.svg.nativeElement.querySelector(`#${this.classList[0]}`).getBoundingClientRect();
-      console.log('containerRect', containerRect);
-      console.log('svgRect', svgRect);
-      console.log('childRect', childRect);
+      //console.log('containerRect', containerRect);
+      //console.log('svgRect', svgRect);
+      //console.log('childRect', childRect);
       const childCentroid = {
         x: childRect.left + childRect.width / 2,
         y: childRect.top + childRect.height / 2,
       };
-      console.log(childCentroid);
+      //console.log(childCentroid);
 
       const x = childCentroid.x - svgRect.left;
       const y = childCentroid.y - svgRect.top;
@@ -73,7 +73,7 @@ export class LabDiagramComponent implements AfterViewInit {
   }
 
   private clamp(value: number, min: number, max: number): number {
-    console.log(value, min, max);
+    //console.log(value, min, max);
     if (min > max) {
       throw new Error('Clamp min must be <= to max');
     }
