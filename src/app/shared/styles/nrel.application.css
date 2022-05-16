@@ -51,8 +51,9 @@ header .app-subtitle {
 
 /* Interior page header */
 header .logo.interior {
-  height: 65px;
-  background-size: contain;
+  /* make it whatever it is on the main page */
+  /*height: 65px;
+  background-size: contain; */
 }
 
 #interior.program-header .navbar-light .navbar-nav > li > a {
