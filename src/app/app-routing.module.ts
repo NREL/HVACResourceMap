@@ -13,7 +13,6 @@ import { VavComponent } from './commercial-hvac/distribution/vav/vav.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContributorsComponent } from './contributors/contributors.component';
 import { HomeComponent } from './home/home.component';
-import { SpaceLoadsComponent } from './space-loads/space-loads.component';
 
 const routes: Routes = [{
   path: '',
@@ -82,9 +81,6 @@ const routes: Routes = [{
     path: 'distribution/sensors-controls',
     loadChildren: () => import(/* webpackChunkName: "sensors-controls" */ './commercial-hvac/shared/sensors-controls/sensors-controls.module').then(m => m.SensorsControlsModule)
   }]
-}, {
-  path: 'space-loads',
-  component: SpaceLoadsComponent
 }, {
   path: 'laboratories',
   loadChildren: () => import(/* webpackChunkName: "laboratories" */ './laboratories/laboratories.module').then(m => m.LaboratoriesModule)
