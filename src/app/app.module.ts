@@ -21,7 +21,6 @@ import { HvacDiagramComponent } from './diagrams/hvac-diagram/hvac-diagram.compo
 import { SpaceDiagramComponent } from './diagrams/space-diagram/space-diagram.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
-import { SpaceLoadsComponent } from './space-loads/space-loads.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +38,6 @@ import { SpaceLoadsComponent } from './space-loads/space-loads.component';
     HotThermalEnergyStorageComponent,
     HvacDiagramComponent,
     SpaceDiagramComponent,
-    SpaceLoadsComponent,
     SteamTrapsComponent,
     TerminalComponent,
     VavComponent
