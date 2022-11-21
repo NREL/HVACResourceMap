@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 export class HeaderComponent {
   @Input() showTopNav = true;
   @Input() showAlternate = false;
+
 }

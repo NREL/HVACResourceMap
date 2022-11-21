@@ -28,8 +28,17 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "src/assets/images/",
+                "output": "/assets/images/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/pdf/",
+                "output": "/assets/pdf/"
+              },
+              "src/favicon.ico"
             ],
             "styles": [
               "src/app/shared/styles/bootstrap.scss",
@@ -112,9 +121,21 @@
               "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "HVACResourceMap"
+  "defaultProject": "HVACResourceMap",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
