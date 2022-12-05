@@ -48,19 +48,19 @@ h5 {
 }
 
 a {
-  color: #0079C2;
+  color: #0071b8;
 }
 
 a:visited {
-  color: #a467c2;
+  color: #9650b9;
 }
 
 a:hover, a:active {
-  color: #cc6600;
+  color: #0071b8;
 }
 
 .blue a:visited {
-  color: #0079C2;
+  color: #0071b8;;
 }
 
 .green a:visited {
@@ -2438,7 +2438,7 @@ div.event {
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-  background-color: #e3e6e8;
+  background-color: #F5F5F5;
 }
 
 caption {
