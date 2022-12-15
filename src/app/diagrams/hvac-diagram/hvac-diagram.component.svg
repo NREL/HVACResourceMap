@@ -62,13 +62,13 @@
       </a>
     </g>
     <g id="diffuser2all">
-      <a id="diffuserlink2" routerLink="/commercial-hvac/distribution/diffusers" aria-label="Diffuser">
+      <a id="diffuserlink2" routerLink="/commercial-hvac/distribution/diffusers" aria-label="Diffusers">
         <g id="diffuser2a">
           <polygon id="diffuser2" [class.active]="active['diffuser2']" class="st22" points="131 704.6 182.4 704.6 164.4 687.7 146.9 687.7" />
         </g>
       </a>
     </g>
-    <a id="diffuserlink1" routerLink="/commercial-hvac/distribution/diffusers" aria-label="Diffuser">
+    <a id="diffuserlink1" routerLink="/commercial-hvac/distribution/diffusers" aria-label="Diffusers">
       <g id="diffuser">
         <polygon id="diffuser1" [class.active]="active['diffuser2']" class="st22" points="37.6 704.9 88.8 704.9 70.9 687.9 53.5 687.9" />
       </g>

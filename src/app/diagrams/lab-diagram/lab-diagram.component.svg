@@ -5,7 +5,7 @@
     </a>
     <path id="ductconnectionline1_1_" class="st1" d="M323.5,393l6.4,29.1" />
     <path id="cp-outline" class="st2" [class.active]="active['cp-outline']" d="M399.7,256H14.4c-3.6,0-6.4-2.9-6.4-6.4V15c0-3.6,2.9-6.4,6.4-6.4h385.3 c3.6,0,6.4,2.9,6.4,6.4v234.5C406.2,253.1,403.5,256,399.7,256L399.7,256z" />
-    <a id="dislink" routerLink="/laboratories/distribution/low-pressure-drop-design">
+    <a id="dislink" routerLink="/laboratories/distribution/low-pressure-drop-design" aria-label="Low Pressure Drop Design">
       <path id="disoutline" [class.active]="active['disoutline']" class="st3" d="M406.2,278c0-3.2-2.7-6-6-6H14c-3.2,0-6,2.7-6,6v143c0,3.2,2.7,6,6,6h263.5 c-1.3,2.2-2,199.6-2,199.6c0,8.5,6.9,15.4,15.4,15.4h100c8.5,0,15.4-6.9,15.4-15.4L406.2,278L406.2,278L406.2,278z" />
     </a>
     <g id="pipesall">
