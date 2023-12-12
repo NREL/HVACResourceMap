@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Set node version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.18.0
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm install @angular/cli > /dev/null
+          npx ng build
