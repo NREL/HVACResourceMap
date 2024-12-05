@@ -1,11 +1,199 @@
 <h1>{{ title }}</h1>
 
-<p class="lead">The HVAC Resource Map is an intuitive graphical interface that provides quick access to a broad array of quality information on operations and maintenance best practices and energy and water efficiency measures.</p>
+<!-- <p class="lead">The HVAC Resource Map is an intuitive graphical interface that provides quick access to a broad array of quality information on operations and maintenance best practices and energy and water efficiency measures.</p>
 
 <p>The resources cover the central plant, distribution systems, and zone systems. The primary audiences for this resource are facility managers, operations staff, and design engineers who want to improve central plant and distribution efficiency but don't have time to search for these resources.</p>
 
 <p>This Resource Map does not duplicate guidance provided in codes and standards, and it should not be used in lieu of professional engineering services.</p>
+ -->
 
-<h2>General HVAC Resources</h2>
+<div class="row big-pad">
+	<div class="col-sm-3 no-r-pad">
+		<div class="hvac-header hvac-all"><a routerLink="/commercial-hvac/all-systems">Applicable to All Systems</a></div>
+		<div class="row hvac-row">
+			<div class="col-sm-3 icon-div">
+				<div class="hvac-icon">
+					<a routerLink="/commercial-hvac/all-systems/sensors-controls" aria-hidden="true"><img src="assets/images/hvac-icons/sensors_controls.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="col-sm-9 hvac-title big-pad"><a routerLink="/commercial-hvac/all-systems/sensors-controls">Sensors and Controls</a></div>
+		</div>
+		<div class="row hvac-row">
+			<div class="col-sm-3 icon-div">
+				<div class="hvac-icon">
+					<a routerLink="/commercial-hvac/all-systems/air-water-distribution" aria-hidden="true"><img src="assets/images/hvac-icons/distribution.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="col-sm-9 hvac-title big-pad"><a routerLink="/commercial-hvac/all-systems/air-water-distribution">Air and Water Distribution</a></div>
+		</div>
+		<div class="row hvac-row">
+			<div class="col-sm-3 icon-div big-pad">
+				<div class="hvac-icon">
+					<a routerLink="/commercial-hvac/all-systems/ventilation" aria-hidden="true">
+					<img src="assets/images/hvac-icons/ventilation.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="col-sm-9 hvac-title big-pad"><a routerLink="/commercial-hvac/all-systems/ventilation">Ventilation</a></div>
+		</div>
+		<div class="row hvac-row">
+			<div class="col-sm-3 icon-div big-pad">
+				<div class="hvac-icon">
+					<a routerLink="/commercial-hvac/all-systems/maintenance-commissioning" aria-hidden="true"><img src="assets/images/hvac-icons/maint_commiss.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="col-sm-9 hvac-title big-pad"><a routerLink="/commercial-hvac/all-systems/maintenance-commissioning">Maintenance and Commissioning</a></div>
+		</div>
+		<div class="row hvac-row">
+			<div class="col-sm-3 icon-div big-pad">
+				<div class="hvac-icon">
+					<a routerLink="/commercial-hvac/all-systems/refrigerants" aria-hidden="true"><img src="assets/images/hvac-icons/refrig.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="col-sm-9 hvac-title big-pad"><a routerLink="/commercial-hvac/all-systems/refrigerants">Refrigerants</a></div>
+		</div>
+	</div>
+	<div class="col-sm-3 no-r-pad">
+		<div class="hvac-header hvac-cool"><a routerLink="/commercial-hvac/cooling">Cooling</a></div>
+		<div class="hvac-row">
+			<div class=" icon-div">
+				<div class=" cool-icon">
+					<a routerLink="/commercial-hvac/cooling/chiller" aria-hidden="true"><img src="assets/images/hvac-icons/chiller.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/cooling/chiller">Chiller</a></div>
+			</div>
+		</div>
+		<div class="hvac-row">
+			<div class="icon-div">
+				<div class="cool-icon">
+					<a routerLink="/commercial-hvac/cooling/cooling-tower" aria-hidden="true">
+					<img src="assets/images/hvac-icons/cool_tower.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/cooling/cooling-tower">Cooling Tower</a></div>
+			</div>
+		</div>
+		<div class="hvac-row">
+			<div class=" icon-div">
+				<div class=" cool-icon">
+					<a routerLink="/commercial-hvac/cooling/evaporative" aria-hidden="true">
+					<img src="assets/images/hvac-icons/evaporative.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/cooling/evaporative">Evaporative</a></div>
+			</div>
+		</div>
+		<div class="hvac-row">
+			<div class="icon-div big-pad">
+				<div class=" cool-icon">
+					<a routerLink="/commercial-hvac/cooling/refrigeration" aria-hidden="true">
+					<img src="assets/images/hvac-icons/refrigeration.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/cooling/refrigeration">Refrigeration</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3 no-r-pad">
+		<div class="hvac-header hvac-cool-heat"><a routerLink="/commercial-hvac/cooling-heating">Cooling and Heating</a></div>
+		<div class="hvac-row">
+			<div class="icon-div small-pad">
+				<div class="cool-icon" style="width:70% !important;">
+					<a routerLink="/commercial-hvac/cooling-heating/packaged-system" aria-hidden="true">
+					<img src="assets/images/hvac-icons/packaged.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/cooling-heating/packaged-system">Packaged Systems</a></div>
+			</div>
+		</div>
+		<div class="hvac-row">
+			<div class="icon-div small-pad">
+				<div class="cool-icon">
+					<a routerLink="/commercial-hvac/cooling-heating/heat-pump" aria-hidden="true">
+					<img src="assets/images/hvac-icons/heat_pump.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/cooling-heating/heat-pump">Heat Pumps</a></div>
+			</div>
+		</div>
+		<div class="hvac-row">
+			<div class="icon-div small-pad">
+				<div class="cool-icon" style="width:70% !important;">
+					<a routerLink="/commercial-hvac/cooling-heating/split-system" aria-hidden="true">
+					<img src="assets/images/hvac-icons/split_systems.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/cooling-heating/split-system">Split Systems</a></div>
+			</div>
+		</div>
+		<div class="hvac-row">
+			<div class="icon-div big-pad">
+				<div class="cool-icon">
+					<a routerLink="/commercial-hvac/cooling-heating/thermal-storage" aria-hidden="true">
+					<img src="assets/images/hvac-icons/thermal_storage.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/cooling-heating/thermal-storage">Thermal Energy Storage</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3 no-r-pad">
+		<div class="hvac-header hvac-heat"><a routerLink="/commercial-hvac/heating">Heating</a></div>
+		<div class="hvac-row">
+			<div class=" icon-div">
+				<div class="hot-icon">
+					<a routerLink="/commercial-hvac/heating/furnace" aria-hidden="true">
+					<img src="assets/images/hvac-icons/furnace.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/heating/furnace">Furnace</a></div>
+			</div>
+		</div>
+		<div class="hvac-row">
+			<div class=" icon-div small-pad">
+				<div class="cool-icon">
+					<a routerLink="/commercial-hvac/heating/boiler" aria-hidden="true">
+					<img src="assets/images/hvac-icons/boiler.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/heating/boiler">Boiler</a></div>
+			</div>
+		</div>
+		<div class="hvac-row">
+			<div class="icon-div small-pad">
+				<div class="cool-icon">
+					<a routerLink="/commercial-hvac/heating/point-source" aria-hidden="true">
+					<img src="assets/images/hvac-icons/point_source.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/heating/point-source">Point Source</a></div>
+			</div>
+		</div>
+		<div class="hvac-row">
+			<div class=" icon-div">
+				<div class="hot-icon" style="width:27% !important">
+					<a routerLink="/commercial-hvac/heating/hot-water" aria-hidden="true">
+					<img src="assets/images/hvac-icons/hot_water.svg" aria-hidden="true"></a>
+				</div>
+			</div>
+			<div class="hvac-section">
+				<div class="cool-title"><a routerLink="/commercial-hvac/heating/hot-water">Service/Domestic Hot Water</a></div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<p><a href="https://retuning.pnnl.gov/">Building Re-Tuning Training</a>: two free interactive e-learning courses when you sign up for an account with Pacific Northwest National Laboratory (PNNL).</p>
+<!-- <h2>General HVAC Resources</h2>
+
+<p><a href="https://retuning.pnnl.gov/">Building Re-Tuning Training</a>: two free interactive e-learning courses when you sign up for an account with Pacific Northwest National Laboratory (PNNL).</p> -->
