@@ -23,30 +23,116 @@ export class CommercialHVACComponent implements OnDestroy {
         route: 'sensors-controls'
       }, {
         name: 'Air and Water Distribution',
-        route: 'air-water-distribution'
-        // children: [{
-        //   name: 'Air Handling Units',
-        //   route: 'ahu',
-        //   children: [
-        //   {
-        //     name: 'Types'
-        //   }, {
-        //     name: 'Performance Ratings',
-        //     route: 'codes'
-        //   }, {
-        //     name: 'Energy Efficiency Measures',
-        //     route: 'eems'
-        //   }, {
-        //     name: 'Operation & Training',
-        //     route: 'operation'
-        //   }, {
-        //     name: 'Procurement & Performance',
-        //     route: 'procure'
-        //   }, {
-        //     route: 'cases',
-        //     name: 'Case Studies'
-        //   }]
-        // }]
+        route: 'air-water-distribution',
+        children: [
+        {
+          name: 'Air Handling Units',
+          route: 'ahu',
+          children: [
+          {
+            name: 'Types'
+            }, {
+              name: 'Performance Ratings',
+              route: 'codes'
+            }, {
+              name: 'Energy Efficiency Measures',
+              route: 'eems'
+            }, {
+              name: 'Operation & Training',
+              route: 'operation'
+            }, {
+              name: 'Procurement & Performance',
+              route: 'procure'
+            }, {
+              route: 'cases',
+              name: 'Case Studies'
+            }
+          ]
+        }, {
+          name: 'Ducting'
+        }, {
+          name: 'Diffusers'
+        }, {
+          name: 'Fans',
+          children: [
+          {
+            name: 'Types'
+          }, {
+            name: 'Energy Efficiency Measures',
+            route: 'eems'
+          }, {
+            name: 'Calculators & Tools',
+            route: 'tools'
+          }, {
+            name: 'Operation & Training',
+            route: 'operation'
+          }, {
+            name: 'Procurement & Performance',
+            route: 'procure'
+          }, {
+            name: 'Case Studies',
+            route: 'cases'
+          }, {
+            name: 'Tune-up Measures',
+            route: 'tune'
+          }]
+        }, {
+          name: 'Piping',
+          children: [
+          {
+            name: 'Performance Ratings',
+            route: 'codes'
+          }, {
+            name: 'Energy Efficiency Measures',
+            route: 'eems'
+          }, {
+            name: 'Calculators & Tools',
+            route: 'tools'
+          }, {
+            name: 'Operation & Training',
+            route: 'operation'
+          }, {
+            name: 'Procurement & Performance',
+            route: 'procure'
+          }]
+        }, {
+          name: 'Steam Traps',
+          children: [{
+            name: 'Calculators & Tools',
+            route: 'tools'
+          }, {
+            name: 'Operation & Training',
+            route: 'operation'
+          }, {
+            name: 'Case Studies',
+            route: 'cases'
+          }]
+        }, {
+          name: 'Terminal Units'
+        }, {
+          name: 'Valve',
+          children: [{
+            name: 'Types'
+          }, {
+            name: 'Performance Ratings',
+            route: 'codes'
+          }, {
+            name: 'Energy Efficiency Measures',
+            route: 'eems'
+          }, {
+            name: 'Calculators & Tools',
+            route: 'tools'
+          }, {
+            name: 'Operation & Training',
+            route: 'operation'
+          }, {
+            name: 'Case Studies',
+            route: 'cases'
+          }]
+        }, {
+          name: 'VAV Boxes',
+          route: 'vav'
+        }]
       }, {
         name: 'Ventilation',
       }, {
@@ -134,7 +220,13 @@ export class CommercialHVACComponent implements OnDestroy {
         route: 'split-system'
       },{
         name: 'Thermal Energy Storage',
-        route: 'thermal-storage'
+        route: 'thermal-storage',
+        children: [
+        {
+          name: 'Cool Thermal Energy Storage'
+        }, {
+          name: 'Hot Thermal Energy Storage'
+        }]
       }
     ]
   },{

@@ -51,6 +51,33 @@ const routes: Routes = [{
     path: 'all-systems/air-water-distribution',
     component: AirWaterDistributionComponent
   }, {
+    path: 'all-systems/air-water-distribution/ahu',
+    loadChildren: () => import(/* webpackChunkName: "all-systems-air-water-distribution-ahu" */ './commercial-hvac/distribution/ahu/ahu.module').then(m => m.AhuModule)
+  }, {
+    path: 'all-systems/air-water-distribution/ducting',
+    component: DuctingComponent
+  }, {
+    path: 'all-systems/air-water-distribution/diffusers',
+    component: DiffusersComponent
+  }, {
+    path: 'all-systems/air-water-distribution/fans',
+    loadChildren: () => import(/* webpackChunkName: "distribution-fans" */ './commercial-hvac/distribution/fans/fans.module').then(m => m.FansModule)
+  }, {
+    path: 'all-systems/air-water-distribution/piping',
+    loadChildren: () => import(/* webpackChunkName: "distribution-piping" */ './commercial-hvac/distribution/piping/piping.module').then(m => m.PipingModule)
+  }, {
+    path: 'all-systems/air-water-distribution/steam-traps',
+    loadChildren: () => import(/* webpackChunkName: "distribution-steam-traps" */ './commercial-hvac/distribution/steam-traps/steam-traps.module').then(m => m.SteamTrapsModule)
+  }, {
+    path: 'all-systems/air-water-distribution/terminal-units',
+    component: TerminalComponent
+  }, {
+    path: 'all-systems/air-water-distribution/valve',
+    loadChildren: () => import(/* webpackChunkName: "distribution-valve" */ './commercial-hvac/distribution/valve/valve.module').then(m => m.ValveModule)
+  }, {
+    path: 'all-systems/air-water-distribution/vav',
+    component: VavComponent
+  },{
     path: 'all-systems/ventilation',
     component: VentilationComponent
   }, {
@@ -89,6 +116,12 @@ const routes: Routes = [{
   }, {
     path: 'cooling-heating/thermal-storage',
     component: ThermalStorageComponent
+  }, {
+    path: 'cooling-heating/thermal-storage/cool-thermal-energy-storage',
+    component: CoolThermalEnergyStorageComponent
+  }, {
+    path: 'cooling-heating/thermal-storage/hot-thermal-energy-storage',
+    component: HotThermalEnergyStorageComponent
   }, {
     path: 'heating',
     component: HeatingComponent
