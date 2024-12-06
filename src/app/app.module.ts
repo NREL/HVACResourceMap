@@ -4,8 +4,13 @@ import { OverlayscrollbarsModule } from 'overlayscrollbars-ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AirWaterDistributionComponent } from './commercial-hvac/all-systems/air-water-distribution/air-water-distribution.component';
+import { AllSystemsComponent } from './commercial-hvac/all-systems/all-systems.component';
 import { CentralPlantComponent } from './commercial-hvac/central-plant/central-plant.component';
+import { CoolingComponent } from './commercial-hvac/cooling/cooling.component';
+import { CoolingHeatingComponent } from './commercial-hvac/cooling-heating/cooling-heating.component';
 import { CoolThermalEnergyStorageComponent } from './commercial-hvac/central-plant/cool-thermal-energy-storage/cool-thermal-energy-storage.component';
+import { HeatingComponent } from './commercial-hvac/heating/heating.component';
 import { HotThermalEnergyStorageComponent } from './commercial-hvac/central-plant/hot-thermal-energy-storage/hot-thermal-energy-storage.component';
 import { CommercialHVACHomeComponent } from './commercial-hvac/commercial-hvac-home/commercial-hvac-home.component';
 import { CommercialHVACComponent } from './commercial-hvac/commercial-hvac.component';
@@ -25,15 +30,20 @@ import { SharedModule } from './shared/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
+    AirWaterDistributionComponent,
+    AllSystemsComponent,
     CentralPlantComponent,
     CommercialHVACComponent,
     CommercialHVACHomeComponent,
     ContactComponent,
     ContributorsComponent,
+    CoolingComponent,
+    CoolingHeatingComponent,
     CoolThermalEnergyStorageComponent,
     DiffusersComponent,
     DistributionComponent,
     DuctingComponent,
+    HeatingComponent,
     HomeComponent,
     HotThermalEnergyStorageComponent,
     HvacDiagramComponent,
