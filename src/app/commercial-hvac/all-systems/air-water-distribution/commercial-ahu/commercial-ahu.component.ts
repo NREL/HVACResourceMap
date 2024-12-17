@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { SharedService } from '@services/shared.service';
 
 @Component({
-  templateUrl: './codes.component.html'
+  templateUrl: './commercial-ahu.component.html'
 })
-export class CodesComponent {
-  readonly title = 'Piping: Performance Ratings';
+export class CommercialAhuComponent {
+  readonly title = 'Air Handling Unit';
 
   constructor(private sharedService: SharedService) {
     sharedService.setTitle(this.title);
-    sharedService.setActiveSelectors('pipe1');
+    sharedService.setActiveSelectors('cp-outline');
   }
 
 }

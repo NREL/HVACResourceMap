@@ -16,7 +16,7 @@ export class CommercialHVACComponent implements OnDestroy {
   {
     name: 'Applicable to All Systems',
     route: 'all-systems',
-    children: 
+    children:
     [
       {
         name: 'Sensors and Controls',
@@ -27,108 +27,21 @@ export class CommercialHVACComponent implements OnDestroy {
         children: [
         {
           name: 'Air Handling Units',
-          route: 'ahu',
-          children: [
-          {
-            name: 'Types'
-            }, {
-              name: 'Performance Ratings',
-              route: 'codes'
-            }, {
-              name: 'Energy Efficiency Measures',
-              route: 'eems'
-            }, {
-              name: 'Operation & Training',
-              route: 'operation'
-            }, {
-              name: 'Procurement & Performance',
-              route: 'procure'
-            }, {
-              route: 'cases',
-              name: 'Case Studies'
-            }
-          ]
+          route: 'ahu'
         }, {
           name: 'Ducting'
         }, {
           name: 'Diffusers'
         }, {
-          name: 'Fans',
-          children: [
-          {
-            name: 'Types'
-          }, {
-            name: 'Energy Efficiency Measures',
-            route: 'eems'
-          }, {
-            name: 'Calculators & Tools',
-            route: 'tools'
-          }, {
-            name: 'Operation & Training',
-            route: 'operation'
-          }, {
-            name: 'Procurement & Performance',
-            route: 'procure'
-          }, {
-            name: 'Case Studies',
-            route: 'cases'
-          }, {
-            name: 'Tune-up Measures',
-            route: 'tune'
-          }]
+          name: 'Fans'
         }, {
-          name: 'Piping',
-          children: [
-          {
-            name: 'Performance Ratings',
-            route: 'codes'
-          }, {
-            name: 'Energy Efficiency Measures',
-            route: 'eems'
-          }, {
-            name: 'Calculators & Tools',
-            route: 'tools'
-          }, {
-            name: 'Operation & Training',
-            route: 'operation'
-          }, {
-            name: 'Procurement & Performance',
-            route: 'procure'
-          }]
+          name: 'Piping'
         }, {
-          name: 'Steam Traps',
-          children: [{
-            name: 'Calculators & Tools',
-            route: 'tools'
-          }, {
-            name: 'Operation & Training',
-            route: 'operation'
-          }, {
-            name: 'Case Studies',
-            route: 'cases'
-          }]
+          name: 'Steam Traps'
         }, {
           name: 'Terminal Units'
         }, {
-          name: 'Valve',
-          children: [{
-            name: 'Types'
-          }, {
-            name: 'Performance Ratings',
-            route: 'codes'
-          }, {
-            name: 'Energy Efficiency Measures',
-            route: 'eems'
-          }, {
-            name: 'Calculators & Tools',
-            route: 'tools'
-          }, {
-            name: 'Operation & Training',
-            route: 'operation'
-          }, {
-            name: 'Case Studies',
-            route: 'cases'
-          }]
+          name: 'Valve'
         }, {
           name: 'VAV Boxes',
           route: 'vav'
@@ -145,59 +58,12 @@ export class CommercialHVACComponent implements OnDestroy {
   }, {
     name: 'Cooling',
     route: 'cooling',
-    children: 
+    children:
     [
       {
-        name: 'Chiller',
-        children: 
-        [
-          {
-            name: 'Performance Ratings',
-            route: 'codes'
-          }, {
-            name: 'Energy Efficiency Measures',
-            route: 'eems'
-          }, {
-            name: 'Calculators & Tools',
-            route: 'tools'
-          }, {
-            name: 'Operation & Training',
-            route: 'operation'
-          }, {
-            name: 'Procurement & Performance',
-            route: 'procure'
-          }, {
-            name: 'Case Studies',
-            route: 'cases'
-          }
-        ]
-
+        name: 'Chiller'
       }, {
-        name: 'Cooling Tower',
-        children: 
-        [
-          {
-            name: 'Types'
-          }, {
-            name: 'Performance Ratings',
-            route: 'codes'
-          }, {
-            name: 'Energy Efficiency Measures',
-            route: 'eems'
-          }, {
-            name: 'Calculators & Tools',
-            route: 'tools'
-          }, {
-            name: 'Operation & Training',
-            route: 'operation'
-          }, {
-            name: 'Procurement & Performance',
-            route: 'procure'
-          }, {
-            name: 'Case Studies',
-            route: 'cases'
-          }
-        ]
+        name: 'Cooling Tower'
       }, {
         name: 'Evaporative',
       }, {
@@ -207,7 +73,7 @@ export class CommercialHVACComponent implements OnDestroy {
   },{
     name: 'Cooling and Heating',
     route: 'cooling-heating',
-    children: 
+    children:
     [
       {
         name: 'Packaged Systems',
@@ -220,45 +86,17 @@ export class CommercialHVACComponent implements OnDestroy {
         route: 'split-system'
       },{
         name: 'Thermal Energy Storage',
-        route: 'thermal-storage',
-        children: [
-        {
-          name: 'Cool Thermal Energy Storage'
-        }, {
-          name: 'Hot Thermal Energy Storage'
-        }]
+        route: 'thermal-storage'
       }
     ]
   },{
     name: 'Heating',
-    children: 
+    children:
     [
       {
         name: 'Furnace'
       },{
-        name: 'Boiler',
-        children: 
-        [
-          {
-            name: 'Performance Ratings',
-            route: 'codes'
-          }, {
-            name: 'Energy Efficiency Measures',
-            route: 'eems'
-          }, {
-            name: 'Calculators & Tools',
-            route: 'tools'
-          }, {
-            name: 'Operation & Training',
-            route: 'operation'
-          }, {
-            name: 'Procurement & Performance',
-            route: 'procure'
-          }, {
-            name: 'Case Studies',
-            route: 'cases'
-          }
-        ]
+        name: 'Boiler'
       },{
         name: 'Point Source',
         route: 'point-source'

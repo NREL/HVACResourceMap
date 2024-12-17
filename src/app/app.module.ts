@@ -12,6 +12,7 @@ import { CoolingHeatingComponent } from './commercial-hvac/cooling-heating/cooli
 import { CoolThermalEnergyStorageComponent } from './commercial-hvac/central-plant/cool-thermal-energy-storage/cool-thermal-energy-storage.component';
 import { HeatingComponent } from './commercial-hvac/heating/heating.component';
 import { HotThermalEnergyStorageComponent } from './commercial-hvac/central-plant/hot-thermal-energy-storage/hot-thermal-energy-storage.component';
+import { CommercialAhuComponent } from './commercial-hvac/all-systems/air-water-distribution/commercial-ahu/commercial-ahu.component';
 import { CommercialHVACHomeComponent } from './commercial-hvac/commercial-hvac-home/commercial-hvac-home.component';
 import { CommercialHVACComponent } from './commercial-hvac/commercial-hvac.component';
 import { DiffusersComponent } from './commercial-hvac/distribution/diffusers/diffusers.component';
@@ -33,6 +34,7 @@ import { SharedModule } from './shared/shared.module';
     AirWaterDistributionComponent,
     AllSystemsComponent,
     CentralPlantComponent,
+    CommercialAhuComponent,
     CommercialHVACComponent,
     CommercialHVACHomeComponent,
     ContactComponent,
