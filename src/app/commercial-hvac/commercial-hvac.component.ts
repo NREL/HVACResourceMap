@@ -12,218 +12,312 @@ type Route = {
   templateUrl: './commercial-hvac.component.html'
 })
 export class CommercialHVACComponent implements OnDestroy {
-  readonly routes: Route[] = [{
-    name: 'Central Plant',
-    children: [{
-      name: 'Boiler',
-      children: [{
-        name: 'Performance Ratings',
-        route: 'codes'
+  readonly routes: Route[] = [
+  {
+    name: 'Applicable to All Systems',
+    route: 'all-systems',
+    children:
+    [
+      {
+        name: 'Sensors and Controls',
+        route: 'sensors-controls'
       }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
+        name: 'Air and Water Distribution',
+        route: 'air-water-distribution',
+        children: [
+        {
+          name: 'Air Handling Units',
+          route: 'ahu'
+        }, {
+          name: 'Ducting'
+        }, {
+          name: 'Diffusers'
+        }, {
+          name: 'Fans'
+        }, {
+          name: 'Piping'
+        }, {
+          name: 'Steam Traps'
+        }, {
+          name: 'Terminal Units'
+        }, {
+          name: 'Valve'
+        }, {
+          name: 'VAV Boxes',
+          route: 'vav'
+        }]
       }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
+        name: 'Ventilation',
       }, {
-        name: 'Operation & Training',
-        route: 'operation'
+        name: 'Maintenance and Commissioning',
+        route: 'maintenance-commissioning'
       }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
-    }, {
-      name: 'Chiller',
-      children: [{
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
-    }, {
-      name: 'Cooling Tower',
-      children: [{
-        name: 'Types'
-      }, {
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
-    }, {
-      name: 'Cool Thermal Energy Storage'
-    }, {
-      name: 'Hot Thermal Energy Storage'
-    }, {
-      name: 'Pump',
-      children: [{
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
-    }, {
-      name: 'Sensors & Controls',
-      children: [{
-        name: 'Operation & Training',
-        route: 'operation'
-      }]
-    }]
+        name: 'Refrigerants',
+      }
+    ]
   }, {
-    name: 'Distribution',
-    children: [{
-      name: 'Air Handling Units',
-      route: 'ahu',
-      children: [{
-        name: 'Types'
+    name: 'Cooling',
+    route: 'cooling',
+    children:
+    [
+      {
+        name: 'Chiller'
       }, {
-        name: 'Performance Ratings',
-        route: 'codes'
+        name: 'Cooling Tower'
       }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
+        name: 'Evaporative',
       }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        route: 'cases',
-        name: 'Case Studies'
-      }]
-    }, {
-      name: 'Ducting'
-    }, {
-      name: 'Diffusers'
-    }, {
-      name: 'Fans',
-      children: [{
-        name: 'Types'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }, {
-        name: 'Tune-up Measures',
-        route: 'tune'
-      }]
-    }, {
-      name: 'Piping',
-      children: [{
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }]
-    }, {
-      name: 'Steam Traps',
-      children: [{
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
-    }, {
-      name: 'Terminal Units'
-    }, {
-      name: 'Valve',
-      children: [{
-        name: 'Types'
-      }, {
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
-    }, {
-      name: 'VAV Boxes',
-      route: 'vav'
-    }, {
-      name: 'Sensors & Controls',
-      children: [{
-        name: 'Operation & Training',
-        route: 'operation'
-      }]
+        name: 'Refrigeration'
+      }
+    ]
+  },{
+    name: 'Cooling and Heating',
+    route: 'cooling-heating',
+    children:
+    [
+      {
+        name: 'Packaged Systems',
+        route: 'packaged-system'
+      },{
+        name: 'Heat Pumps',
+        route: 'heat-pump'
+      },{
+        name: 'Split Systems',
+        route: 'split-system'
+      },{
+        name: 'Thermal Energy Storage',
+        route: 'thermal-storage'
+      }
+    ]
+  },{
+    name: 'Heating',
+    children:
+    [
+      {
+        name: 'Furnace'
+      },{
+        name: 'Boiler'
+      },{
+        name: 'Point Source',
+        route: 'point-source'
+      },{
+        name: 'Service/Domestic Hot Water',
+        route: 'hot-water'
     }]
   }];
+
+  // [{
+  //   name: 'Central Plant',
+  //   children: [{
+  //     name: 'Boiler',
+  //     children: [{
+  //       name: 'Performance Ratings',
+  //       route: 'codes'
+  //     }, {
+  //       name: 'Energy Efficiency Measures',
+  //       route: 'eems'
+  //     }, {
+  //       name: 'Calculators & Tools',
+  //       route: 'tools'
+  //     }, {
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }, {
+  //       name: 'Procurement & Performance',
+  //       route: 'procure'
+  //     }, {
+  //       name: 'Case Studies',
+  //       route: 'cases'
+  //     }]
+  //   }, {
+  //     name: 'Chiller',
+  //     children: [{
+  //       name: 'Performance Ratings',
+  //       route: 'codes'
+  //     }, {
+  //       name: 'Energy Efficiency Measures',
+  //       route: 'eems'
+  //     }, {
+  //       name: 'Calculators & Tools',
+  //       route: 'tools'
+  //     }, {
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }, {
+  //       name: 'Procurement & Performance',
+  //       route: 'procure'
+  //     }, {
+  //       name: 'Case Studies',
+  //       route: 'cases'
+  //     }]
+  //   }, {
+  //     name: 'Cooling Tower',
+  //     children: [{
+  //       name: 'Types'
+  //     }, {
+  //       name: 'Performance Ratings',
+  //       route: 'codes'
+  //     }, {
+  //       name: 'Energy Efficiency Measures',
+  //       route: 'eems'
+  //     }, {
+  //       name: 'Calculators & Tools',
+  //       route: 'tools'
+  //     }, {
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }, {
+  //       name: 'Procurement & Performance',
+  //       route: 'procure'
+  //     }, {
+  //       name: 'Case Studies',
+  //       route: 'cases'
+  //     }]
+  //   }, {
+  //     name: 'Cool Thermal Energy Storage'
+  //   }, {
+  //     name: 'Hot Thermal Energy Storage'
+  //   }, {
+  //     name: 'Pump',
+  //     children: [{
+  //       name: 'Performance Ratings',
+  //       route: 'codes'
+  //     }, {
+  //       name: 'Energy Efficiency Measures',
+  //       route: 'eems'
+  //     }, {
+  //       name: 'Calculators & Tools',
+  //       route: 'tools'
+  //     }, {
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }, {
+  //       name: 'Procurement & Performance',
+  //       route: 'procure'
+  //     }, {
+  //       name: 'Case Studies',
+  //       route: 'cases'
+  //     }]
+  //   }, {
+  //     name: 'Sensors & Controls',
+  //     children: [{
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }]
+  //   }]
+  // }, {
+  //   name: 'Distribution',
+  //   children: [{
+  //     name: 'Air Handling Units',
+  //     route: 'ahu',
+  //     children: [{
+  //       name: 'Types'
+  //     }, {
+  //       name: 'Performance Ratings',
+  //       route: 'codes'
+  //     }, {
+  //       name: 'Energy Efficiency Measures',
+  //       route: 'eems'
+  //     }, {
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }, {
+  //       name: 'Procurement & Performance',
+  //       route: 'procure'
+  //     }, {
+  //       route: 'cases',
+  //       name: 'Case Studies'
+  //     }]
+  //   }, {
+  //     name: 'Ducting'
+  //   }, {
+  //     name: 'Diffusers'
+  //   }, {
+  //     name: 'Fans',
+  //     children: [{
+  //       name: 'Types'
+  //     }, {
+  //       name: 'Energy Efficiency Measures',
+  //       route: 'eems'
+  //     }, {
+  //       name: 'Calculators & Tools',
+  //       route: 'tools'
+  //     }, {
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }, {
+  //       name: 'Procurement & Performance',
+  //       route: 'procure'
+  //     }, {
+  //       name: 'Case Studies',
+  //       route: 'cases'
+  //     }, {
+  //       name: 'Tune-up Measures',
+  //       route: 'tune'
+  //     }]
+  //   }, {
+  //     name: 'Piping',
+  //     children: [{
+  //       name: 'Performance Ratings',
+  //       route: 'codes'
+  //     }, {
+  //       name: 'Energy Efficiency Measures',
+  //       route: 'eems'
+  //     }, {
+  //       name: 'Calculators & Tools',
+  //       route: 'tools'
+  //     }, {
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }, {
+  //       name: 'Procurement & Performance',
+  //       route: 'procure'
+  //     }]
+  //   }, {
+  //     name: 'Steam Traps',
+  //     children: [{
+  //       name: 'Calculators & Tools',
+  //       route: 'tools'
+  //     }, {
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }, {
+  //       name: 'Case Studies',
+  //       route: 'cases'
+  //     }]
+  //   }, {
+  //     name: 'Terminal Units'
+  //   }, {
+  //     name: 'Valve',
+  //     children: [{
+  //       name: 'Types'
+  //     }, {
+  //       name: 'Performance Ratings',
+  //       route: 'codes'
+  //     }, {
+  //       name: 'Energy Efficiency Measures',
+  //       route: 'eems'
+  //     }, {
+  //       name: 'Calculators & Tools',
+  //       route: 'tools'
+  //     }, {
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }, {
+  //       name: 'Case Studies',
+  //       route: 'cases'
+  //     }]
+  //   }, {
+  //     name: 'VAV Boxes',
+  //     route: 'vav'
+  //   }, {
+  //     name: 'Sensors & Controls',
+  //     children: [{
+  //       name: 'Operation & Training',
+  //       route: 'operation'
+  //     }]
+  //   }]
+  // }];
 
   url?: string;
   private readonly _root = '/commercial-hvac';

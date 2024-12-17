@@ -133,7 +133,7 @@
   </table>
 </div>
 
-<h2>Sources</h2>
+<h3>Sources</h3>
 <ul>
   <li><a href="https://datacenters.lbl.gov/sites/default/files/EDR_DesignGuidelines_CoolToolsChilledWater.pdf">Chillers</a></li>
   <li><a href="https://www.coolingtechnology.com/service/industrial-chillers/">Industrial Chillers</a> by Cooling Technology Inc.</li>
@@ -143,10 +143,127 @@
   <li><a href="https://goenergylink.com/blog/how-absorption-chillers-work/">How Absorption Chillers Work</a> Energy Link</li>
 </ul>
 
+
+<h2>Performance Ratings</h2>
+<p>Chiller performance is certified by the Air-Conditioning, Heating, and Refrigeration Institute and includes metrics for full load and part load performance. The integrated part load value (IPLV) is a weighted average of the performance at 100%, 75%, 50%, and 25% loading and is a better indicator of annual energy consumption than the full load performance metric. This is true for chiller plants with a single chiller. In large plants, some chillers may be base loaded even in the winter months.</p>
+
+<p>The performance of electrically operated water-cooled chillers is defined as the ratio of the rate of electricity input to the cooling output in tons of refrigeration and expressed in kW/ton. This metric is also sometimes used for air-cooled chillers, but the standard performance metric is the energy efficiency ratio (EER), which is the cooling energy provided divided by the energy input to the system and uses units of Btu/Wh. EER is the inverse of kW/ton times 12. Lower kW/ton values and higher EER values equate to more efficient performance. The performance of absorption chillers and heat recovery is expressed as coefficient of performance (COP).</p>
+
+<p class="pl-5">
+  <code>
+    kW/ton = 12/EER<br>
+    EER = 3.412·COP<br>
+    IPLV = 0.01A + 0.42B + 0.45C + 0.12D<br>
+    A = EER at 100% load<br>
+    B = EER at 75% load<br>
+    C = EER at 50% load<br>
+    D = EER at 25% load
+  </code>
+</p>
+
+<p>Minimum efficiency levels for chillers are specified by ANSI/ASHRAE Standard 90.1 or local codes. Standard 90.1 specifies minimum full load and part load efficiency levels for air-cooled chillers, water-cooled positive displacement, water-cooled centrifugal chillers, single effect absorption chillers, and double effect absorption chillers.</p>
+
+<h2>Energy Efficiency Measures</h2>
+
+<p>Per the ASHRAE equipment life expectancy chart, the typical life span of a chiller is 20–23 years. Thus, the decisions made during design and procurement have long-term impacts. Design aspects to consider include performance, capacity and number of chillers, redundancy needs, compressor type, water-cooled or air-cooled, space and weight, refrigerant, maintenance requirements, sound levels, and thermal energy storage. When specifying chiller capacity and efficiency levels, it is important to understand the annual load profile and to know that the part load performance is often more important than the full load performance because chillers generally operate at partial load.</p>
+
+<p><a href="https://tayloreng.egnyte.com/dl/ui3Jf0FuWy/EDR_Design_Guidelines_CoolTools_Chilled_Water.pdf_">The Chilled Water Plant Design Guide</a> was written by Taylor Engineering as part of the CoolTools™ project from energydesignresources. This guide provides a complete overview of the process of setting up a chilled water plant from the design through procurement and commissioning. The guide is written for engineers who design, redesign, or retrofit chilled water plants. The guide also provides a good introduction and overview for owners, facility managers, and operators. The guide proposes a life cycle cost-based approach to selecting chillers. The steps include:</p>
+
+<ul>
+  <li>Calculating the cooling load to be met by the central plant</li>
+  <li>Short listing chiller manufacturers based on experience from previous installations and local representation</li>
+  <li>Requesting chiller bids based on performance specifications</li>
+  <li>Incorporating first-cost impacts into the bids</li>
+  <li>Estimating the energy usage of each chiller in the bid through a detailed computer model of the building/plant</li>
+  <li>Evaluating maintenance cost for each manufacturer</li>
+  <li>Analyzing life cycle cost</li>
+  <li>Selecting the chiller with the lowest life cycle cost</li>
+</ul>
+
+<p>For additional information on these efficiency measures, refer to <a href="https://www.osti.gov/biblio/1220381">section 9.4.5 "Cost and Energy Efficiency" in the Operations and Maintenance Best Practices Guide</a> by the Pacific Northwest National Laboratory, published by the U.S. Department of Energy. In addition, refer to Chapter 6 in the <a href="https://invenoeng.com/wp-content/uploads/2017/08/Energy-Best-Practices-Chemical-Industry-Sourcebook.pdf">Energy-Related Best Practices</a> sourcebook published by Iowa State University.</p>
+
+<h3>Efficiency Measures</h3>
+<p>Chilled water plants are composed of several pieces of equipment, and efficient operation depends on maintaining the performance of all of the equipment as well as on optimal coordination of the components. Chilled water plant efficiency can be improved through the following actions:</p>
+
+<ul>
+  <li>Lower chiller lift by raising the chilled water temperature set point</li>
+  <li>Lower condenser water temperature, which requires that the chiller be capable of operating without triggering a low oil pressure alarm</li>
+  <li>Implement an aggressive water treatment program to reduce scaling/fouling over heat transfer surfaces</li>
+  <li>Maintain proper refrigerant charge</li>
+  <li>Purge air trapped in condenser</li>
+  <li>Clean filters on condenser water line to ensure adequate condenser water flow</li>
+  <li>Install variable frequency drives on the compressor motors of centrifugal chillers and primary loop pumps</li>
+</ul>
+
+<p>Prior to implementing chiller efficiency measures, evaluate the impact on total system energy use and effectiveness. For example, raising the chilled water temperature may increase the water flow rate required and increase pumping energy use. Also, heat transfer media such as cooling coils must be designed to produce the required capacity at the higher chilled water temperature.</p>
+
+<p>For additional information on these efficiency measures, refer to <a href="https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-19634.pdf">section 9 in the Operations and Maintenance Best Practices Guide</a> by Pacific Northwest National Laboratory, published by the U.S. Department of Energy. In addition, refer to Chapter 6 in the <a href="https://invenoeng.com/wp-content/uploads/2017/08/Energy-Best-Practices-Chemical-Industry-Sourcebook.pdf">Energy-Related Best Practices</a> sourcebook published by Iowa State University. The <a href="https://buildingretuning.pnnl.gov/documents/pnnl_sa_89198.pdf">Central Utility Plant Cooling Control Guide</a> provides examples of good and bad operations and how central utility plant cooling can be efficiently controlled.</p>
+
+<h2>Calculators and Tools</h2>
+
+<p>Taylor Engineering provides chiller performance calculators: <a href="https://www.taylorengineers.com/tools">The EDR Cool-Tools Water-Cooled Chiller Performance Spreadsheet v1.62.</a></p>
+
+<h2>Operation and Training</h2>
+
+<p>Proper operation of a chiller includes periodic maintenance and ongoing performance monitoring. Here are some steps to ensure efficient chiller operation.</p>
+
+<h3>During the annual chiller inspection, check for:</h3>
+<ul>
+  <li>Refrigerant and air leaks (check low-pressure systems for excess air and high-pressure systems for appropriate refrigerant levels)</li>
+  <li>Compressor operating pressures</li>
+  <li>Motor voltage and amps (look for increases in current draw)</li>
+  <li>Issues with electrical starters, contactors, and relays</li>
+  <li>Evaporator and condenser tube bundle cleanliness and integrity.</li>
+</ul>
+
+<h3>Performance Indicators include:</h3>
+<ul>
+  <li>Condenser and evaporator entering and leaving water temperature and flow</li>
+  <li>Chiller load profile</li>
+  <li>Chiller energy performance (kW/ton)</li>
+  <li>Oil level and pressure.</li>
+</ul>
+
+<p>For additional information on these efficiency measures, refer to this document by
+  Pacific Northwest National Laboratory, published by the U.S. Department of Energy,
+  <a href="https://buildingretuning.pnnl.gov/documents/pnnl_sa_89198.pdf">Building
+  Re-Tuning Training Guide: Central Utility Plant Cooling Control</a> and Chapter 6
+  in the <a href="https://invenoeng.com/wp-content/uploads/2017/08/Energy-Best-Practices-Chemical-Industry-Sourcebook.pdf">
+  Energy-Related Best Practices</a> sourcebook published by Iowa State University.</p>
+
+<h2>Procurement and Performance</h2>
+
+<p>Chiller procurement specification is an important aspect of overall central plant design because it is a step at which energy-efficient design intent translates to procurement of an actual energy-efficient chiller. The <a href="https://tayloreng.egnyte.com/dl/ui3Jf0FuWy/EDR_Design_Guidelines_CoolTools_Chilled_Water.pdf_#page=177">Chilled Water Plant Design Guide</a> provides some useful chiller procurement tips in Chapter 7. It recommends basing the initial interaction with the vendor on total tonnage and not mentioning the number of chillers, chiller size, chiller efficiency, and variable frequency or fixed speed drives. This is mainly to encourage multiple options from the vendor. Recommended performance specification information includes total plant tonnage, minimum number of chillers or required level of redundancy, design entering and leaving evaporator and condenser water temperature, and available sources of energy (thermal/gas/electricity). Pressure drop through the chiller bundles will impact the pumping power required and should be considered when reviewing total system energy use. </p>
+
+<p>The vendor should also be given the anticipated cooling load profile showing the number of hours at various conditions so they can recommend a chiller configuration based on that information. Depending on the project, design constraints such as mechanical room space, electrical power availability, type of refrigerant, and acoustics need to be identified and clearly outlined in the specification. Lastly, the <a href="https://tayloreng.egnyte.com/dl/ui3Jf0FuWy/EDR_Design_Guidelines_CoolTools_Chilled_Water.pdf_">Chilled Water Plant Design Guide</a> provides loads, identifies equipment, systems, and controls, addresses design, procurement, and commissioning chilled water plants.</p>
+
+<p>Utility incentives can help pay down the cost of higher efficiency equipment. Chiller suppliers should know about available incentives in a given area, but it is always best to confirm incentives with a utility representative. The <a href="https://www.dsireusa.org/">DSIRE database</a> gives an overview of state incentives for renewables and energy efficiency measures.</p>
+
+<p>For additional information, refer to <a href="https://tayloreng.egnyte.com/dl/ui3Jf0FuWy/EDR_Design_Guidelines_CoolTools_Chilled_Water.pdf_#page=224">Appendix A.1 of the Chilled Water Plant Design Guide</a> for a sample chiller bid specification.</p>
+
+<h2>Case Studies</h2>
+<p>
+  <a href="https://betterbuildingssolutioncenter.energy.gov/showcase-projects/university-virginia-campbell-hall">University of Virginia, Campbell Hall</a><br>
+  Chiller plant optimization resulted in 35% energy savings and $82,000 in annual energy cost savings.
+</p>
+
+<p>
+  <a href="https://betterbuildingssolutioncenter.energy.gov/showcase-projects/macys-ingram-park-mall">Ingram Park Mall, San Antonio, Texas</a><br>
+  Chiller plant replacement resulted in 43% energy savings and 35% annual energy cost savings.
+</p>
+
+<p>
+  <a href="https://www.csemag.com/articles/project-profile-chiller-retrofit-at-office-building/">Duke Realty Corp.</a><br>
+  Retrofitting existing constant speed chillers with variable frequency drives reduced annual energy costs by 30%.
+</p>
+
+
 <h2>Resources</h2>
 <p>For a list of commonly used terms refer to the <a href="https://www.ashrae.org/technical-resources/free-resources/ashrae-terminology">ASHRAE Terminology</a></p>
 <ul>
   <li><a href="https://betterbricks.com/resources/chillers">About Chillers- Resource Hub</a> by Better Bricks</li>
   <li><a href="https://www.cedengineering.com/userfiles/M04-027%20-%20Overview%20of%20Chiller%20Compressors%20-%20US.pdf">Overview of Chiller Compressors</a> by Continuing Education and Development, Inc.</li>
   <li><a href="https://www.epa.gov/sites/default/files/2021-02/documents/transitioning_to_low-gwp_alternatives_in_res_and_com_ac_chillers.pdf">Transitioning to Low-GWP Alternatives</a>, U.S. Environmental Protection Agency</li>
+  <li><a href="https://buildingretuning.pnnl.gov/documents/chapters/ch8_central_plant.pdf">Central Utility Plant Training: PPT presentation, slides 16-35</a></li>
+
 </ul>

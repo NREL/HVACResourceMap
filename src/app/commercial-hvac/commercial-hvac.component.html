@@ -1,9 +1,9 @@
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-9">
     <router-outlet></router-outlet>
   </div>
 
-  <app-hvac-diagram class="col-md-3 order-md-last"></app-hvac-diagram>
+  <!-- <app-hvac-diagram class="col-md-3 order-md-last"></app-hvac-diagram> -->
 
   <div class="col-md-3 order-md-first hidden-print">
     <nav class="sidenav">
@@ -14,9 +14,14 @@
             <li *ngFor="let b of a.children" [class.active]="url === join(a, b)" class="nav-item">
               <a [routerLink]="join(a, b)" routerLinkActive #rlaB="routerLinkActive" class="nav-link">{{ b.name }}</a>
               <ul *ngIf="b.children" [class.hide]="!rlaB.isActive" class="nav flex-column">
-                <li *ngFor="let c of b.children" [class.active]="rlaC.isActive" class="nav-item">
+                <li *ngFor="let c of b.children"  class="nav-item">
                   <a [routerLink]="join(a, b, c)" routerLinkActive #rlaC="routerLinkActive" class="nav-link">{{ c.name }}</a>
-                </li>
+                  <ul *ngIf="c.children" [class.hide]="!rlaC.isActive" class="nav flex-column">
+                    <li *ngFor="let d of c.children" [class.active]="url === join(a, b, c, d)" class="nav-item">
+                      <a [routerLink]="join(a, b, c, d)" [routerLinkActiveOptions]="{exact: true}" routerLinkActive #rlaD="routerLinkActive" class="nav-link">{{ d.name }}</a>
+                    </li>
+                  </ul>
+                 </li>
               </ul>
             </li>
           </ul>
