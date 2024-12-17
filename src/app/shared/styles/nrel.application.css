@@ -157,3 +157,122 @@ header .logo.interior {
 .disclaimer {
   padding: 0px 20px;
 }
+
+.hvac-header {
+  font-family: Roboto Condensed Bold, sans-serif;
+  font-weight: bold !important;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+  min-height: 5rem;
+  text-align: center;
+}
+
+.hvac-all {
+  background-color: #626d73 !important;
+}
+
+.hvac-cool {
+  background-color: #0e79bf !important;
+}
+
+.hvac-cool-heat {
+  background-color: #7da442 !important;
+}
+
+.hvac-heat {
+  background-color: #a33022 !important;
+}
+
+.hvac-title {
+  background-color: #eeeeee;
+  padding: 10px;
+  align-content: center;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.icon-div {
+  align-content: center;
+  background-color: #eeeeee;
+}
+
+.hvac-icon {
+  width: 2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 25%;
+  align-content: center;
+  margin: auto;
+}
+
+.hvac-section {
+  margin: auto;
+
+  a, a:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.big-pad {
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
+
+.no-r-pad {
+  padding-right: 0px;
+}
+
+.small-pad {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.hvac-row a, .hvac-row a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.hvac-header a, .hvac-header:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.hvac-grid-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 10px;
+  justify-items: stretch;
+}
+
+.hvac-grid-item {
+  height: 100%;
+  overflow: auto;
+  align-self: center;
+  align-content: center;
+  background-color: #eeeeee;
+}
+
+.item-span2 {
+  grid-row: span 2;
+}
+
+.item-span3 {
+  grid-row: span 3;
+}
+
+.grayed {
+  background-color: #ddd !important;
+  opacity: .5 !important;
+}
+
+.grayed-2 {
+  background-color: #ddd !important;
+  opacity: .1 !important;
+}
+

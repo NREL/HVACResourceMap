@@ -61,26 +61,7 @@ export class LaboratoriesComponent implements OnDestroy {
         route: 'operation'
       }]
     }, {
-      name: 'Fans',
-      children: [{
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }, {
-        name: 'Tune-up Measures',
-        route: 'tune'
-      }]
+      name: 'Fans'
     }, {
       name: 'Ducting'
     }, {
@@ -92,23 +73,7 @@ export class LaboratoriesComponent implements OnDestroy {
     }, {
       name: 'Diffuser'
     }, {
-      name: 'Piping',
-      children: [{
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }]
+      name: 'Piping'
     }, {
       name: 'Steam Traps',
       children: [{
@@ -116,25 +81,7 @@ export class LaboratoriesComponent implements OnDestroy {
         route: 'tools'
       }]
     }, {
-      name: 'Valve',
-      children: [{
-        name: 'Types'
-      }, {
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
+      name: 'Valve'
     }]
   }, {
     name: 'Lab Exhaust Devices',
@@ -167,26 +114,7 @@ export class LaboratoriesComponent implements OnDestroy {
         route: 'cases'
       }]
     }, {
-      name: 'Chiller',
-      children: [{
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
+      name: 'Chiller'
     }, {
       name: 'Cooling Tower',
       children: [{
