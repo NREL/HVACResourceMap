@@ -118,3 +118,36 @@ a.well[href$='.pdf']::after {
 .no-bottom {
   margin-bottom: 0px;
 }
+
+.col-img {
+  object-fit: cover;
+  /* you must set the sizes here or it won't work. e.g. */
+  width: 100%;
+  height: 100%;
+}
+
+.hp {
+  th {
+    background-color: #E4F1F9;
+    border: 0px;
+  }
+  td {
+    border: 0px;
+  }
+}
+
+.hp-tr {
+  background-color: #E4F1F9;
+}
+
+.hp ul {
+  list-style-type: none;
+}
+
+.hp li {
+  padding-bottom: 1rem;
+}
+
+.lead-img {
+  width: 60%;
+}
