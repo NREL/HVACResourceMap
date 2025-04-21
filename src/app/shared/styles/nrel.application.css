@@ -276,3 +276,13 @@ header .logo.interior {
   opacity: .1 !important;
 }
 
+.footer-icon {
+  width: 1em !important;
+  height: 1em !important;
+  vertical-align: -0.125em;
+
+}
+
+.link-decorated {
+  text-decoration: underline;
+}
