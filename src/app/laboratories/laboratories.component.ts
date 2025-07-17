@@ -94,50 +94,10 @@ export class LaboratoriesComponent implements OnDestroy {
     name: 'Central Plant',
     children: [{
       name: 'Boiler',
-      children: [{
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
     }, {
       name: 'Chiller'
     }, {
       name: 'Cooling Tower',
-      children: [{
-        name: 'Types'
-      }, {
-        name: 'Performance Ratings',
-        route: 'codes'
-      }, {
-        name: 'Energy Efficiency Measures',
-        route: 'eems'
-      }, {
-        name: 'Calculators & Tools',
-        route: 'tools'
-      }, {
-        name: 'Operation & Training',
-        route: 'operation'
-      }, {
-        name: 'Procurement & Performance',
-        route: 'procure'
-      }, {
-        name: 'Case Studies',
-        route: 'cases'
-      }]
     }, {
       name: 'Cool Thermal Energy Storage'
     }, {
