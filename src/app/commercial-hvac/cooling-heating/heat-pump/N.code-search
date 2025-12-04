@@ -4315,7 +4315,7 @@ src/app/contributors/contributors.component.html:
   17  
   18: <h3>Schema Development</h3>
   19  <ul>
-  20:   <li>Marjorie Schott, National RLaboratory of the Rockies</li>
+  20:   <li>Marjorie Schott, National Laboratory of the Rockies</li>
   21:   <li>Alex Swindler, National Laboratory of the Rockies</li>
   22:   <li>Katherine Fleming, National Laboratory of the Rockies</li>
   23  </ul>
@@ -4324,9 +4324,9 @@ src/app/contributors/contributors.component.html:
   26  
   27: <h3>Content Contributors</h3>
   28  <ul>
-  29:   <li>Rachel Romero, Laboratory of the Rockies</li>
-  30:   <li>Otto VanGeet, Laboratory of the Rockies</li>
-  31:   <li>Amy Allen, Laboratory of the Rockies</li>
+  29:   <li>Rachel Romero, National Laboratory of the Rockies</li>
+  30:   <li>Otto VanGeet, National Laboratory of the Rockies</li>
+  31:   <li>Amy Allen, National Laboratory of the Rockies</li>
   32:   <li>Kishor Khankari, AnSight LLC</li>
   33  </ul>
 
@@ -4336,8 +4336,8 @@ src/app/contributors/contributors.component.html:
   39  
   40: <h3>Schema Development</h3>
   41  <ul>
-  42:   <li>Marjorie Schott, Laboratory of the Rockies</li>
-  43:   <li>Alex Swindler, Laboratory of the Rockies</li>
+  42:   <li>Marjorie Schott, National Laboratory of the Rockies</li>
+  43:   <li>Alex Swindler, National Laboratory of the Rockies</li>
   44  </ul>
 
 src/app/contributors/contributors.component.ts:
