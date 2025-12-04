@@ -211,10 +211,11 @@ header .logo.interior {
 .hvac-section {
   margin: auto;
 
-  a, a:hover {
-    text-decoration: none;
-    color: #000;
-  }
+}
+.hvac-section a,
+.hvac-section a:hover {
+  text-decoration: none;
+  color: #000;
 }
 
 .big-pad {
@@ -236,7 +237,7 @@ header .logo.interior {
   color: #000;
 }
 
-.hvac-header a, .hvac-header:hover {
+.hvac-header a, .hvac-header a:hover {
   text-decoration: none;
   color: #FFF;
 }
