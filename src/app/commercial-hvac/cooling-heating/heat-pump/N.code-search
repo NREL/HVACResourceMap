@@ -5925,7 +5925,7 @@ src/app/shared/components/footer/footer.component.html:
   53              </div>
 
   60            <div class="col-sm-5">
-  61:             <a href="https://www.allianceforsustainableenergy.org/"><img class="mr-5 mb-3" src="assets/images/alliance-logo_black.png" alt="Alliance for Sustainable Energy, LLC"></a>
+  61:             <a href="https://www.allianceforsustainableenergy.org/"><img class="mr-5 mb-3" src="assets/images/alliance-logo_black.png" alt="Alliance for Energy Innovation, LLC"></a>
   62:             <a href="https://www.energy.gov/"><img src="assets/images/logo-doe-footer-new.png" alt="U.S. Department of Energy" class="mb-3"></a>
   63            </div>
   64            <div class="col-12 col-sm-7">
