@@ -780,7 +780,7 @@ src/app/commercial-hvac/all-systems/air-water-distribution/commercial-ahu/commer
    62: <p>The first step in efficient filter design is to understand the indoor air quality requirements of the space. If it is a critical application such as an operating room or if it is an owner requirement, high efficiency HEPA filters maybe used. Location of the jobsite also needs to be considered when selecting filters. The pressure drop associated with the filter assembly should be closely evaluated at startup and also at intermediate loading.</p>
    63  
    64: <h2>Operation and Training</h2>
-   65: <p>Periodic evaluation of air handlers is recommended to identify efficiency measures. The evaluation generally consists of a combination of on-site observations and a more detailed testing of air handling unit (AHU) components. The  <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> published by the National Renewable Energy Laboratory lists a number of measures to save energy in commercial buildings by improving the operational efficiency of AHUs. These measures are summarized below; refer to the <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> for more information:</p>
+   65: <p>Periodic evaluation of air handlers is recommended to identify efficiency measures. The evaluation generally consists of a combination of on-site observations and a more detailed testing of air handling unit (AHU) components. The  <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> lists a number of measures to save energy in commercial buildings by improving the operational efficiency of AHUs. These measures are summarized below; refer to the <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> for more information:</p>
    66  
    67  <ul>
    68:   <li>Verifying proper operation of air dampers </li>
@@ -1320,8 +1320,8 @@ src/app/commercial-hvac/central-plant/pump/pump.component.html:
 
   23  <ul>
   24:   <li><a href="https://www.researchgate.net/publication/285366552_Avoiding_Common_Chilled_Water_Distribution_Problems">Avoiding Common Chilled Water Distribution Problems</a>, by Kent Peterson, ASHRAE Journal, June 2015</li>
-  25:   <li><a href="https://www.energy.gov/sites/prod/files/2014/05/f16/pump.pdf">Improving Pumping System Performance: A Sourcebook for Industry</a>, U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, Industrial Technologies Program</li>
-  26:   <li><a href="https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/pumplcc_1001.pdf">Pump Life Cycle Costs: A Guide to LCC Analysis for Pumping Systems, Executive Summary</a> U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, Industrial Technologies Program</li>
+  25:   <li><a href="https://www.energy.gov/sites/prod/files/2014/05/f16/pump.pdf">Improving Pumping System Performance: A Sourcebook for Industry</a>, U.S. Department of Energy, Industrial Technologies Program</li>
+  26:   <li><a href="https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/pumplcc_1001.pdf">Pump Life Cycle Costs: A Guide to LCC Analysis for Pumping Systems, Executive Summary</a> U.S. Department of Energy, Industrial Technologies Program</li>
   27:   <li><a href="https://www.energy.gov/eere/iedo/pump-systems">U.S. Department of Energy's Pump Systems Website</a></li>
   28:   <li><a href="https://www.energy.gov/sites/prod/files/2015/12/f28/Pumps%20ECS%20Final%20Rule.pdf">U.S. Department of Energy's Energy Conservation Program: Energy Conservation Standards for Pumps</a></li>
   29:   <li><a href="https://www.wateronline.com/doc/tips-to-save-energy-on-pumping-systems-0001">10 Tips to Save Energy on Pumping Systems</a>, by Kevin Westerling, Water Online</li>
@@ -1432,7 +1432,7 @@ src/app/commercial-hvac/central-plant/pump/eems/eems.component.html:
 
   39  
   40: <h3>Efficient Centrifugal Pump Selection</h3>
-  41: <p>Selecting an energy-efficient centrifugal pump requires careful evaluation of the pump and system curves. In order to minimize pump energy consumption, it is best to select a pump such that the system curve intersects the pump curve within 20% of its best efficiency point. For a more detailed explanation and examples of pump selection, refer to the <a href="https://www.energy.gov/sites/prod/files/2014/05/f16/efficient_centrifug_pumps.pdf">Pumping Systems Tip Sheet #3, Select an Energy-Efficient Centrifugal Pump</a>, from the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, Industrial Technologies Program.</p>
+  41: <p>Selecting an energy-efficient centrifugal pump requires careful evaluation of the pump and system curves. In order to minimize pump energy consumption, it is best to select a pump such that the system curve intersects the pump curve within 20% of its best efficiency point. For a more detailed explanation and examples of pump selection, refer to the <a href="https://www.energy.gov/sites/prod/files/2014/05/f16/efficient_centrifug_pumps.pdf">Pumping Systems Tip Sheet #3, Select an Energy-Efficient Centrifugal Pump</a>, from the U.S. Department of Energy, Industrial Technologies Program.</p>
   42  
   43: <h3>Variable Speed Drives on Pumps</h3>
   44: <p>Existing hydronic systems often have three-way control valves that can be replaced with two-way control valves or have the bypass leg closed to allow reduced flow at reduced loads. It should be noted that this does not work on pneumatic control valves because it disables the ability of the valve actuator to handle any close-off pressure. In addition, some three-way valves may not function properly with the bypass leg closed if the open leg wasn't designed to close against higher pressure. Typically, pumps operate at less than 60% load for almost 80% of their operating hours. Because the power is proportional to the cube of the shaft speed (affinity laws), a small reduction in speed results in a significant reduction in power. (Source: <a href="https://www.plantservices.com/equipment/industrial-motors/article/11337497/pump-energy-savings-with-vfds">Pump Energy Savings with VFDs</a>, by Mark Gmitro, Baldor Electric Company).</p>
@@ -1446,7 +1446,7 @@ src/app/commercial-hvac/central-plant/pump/eems/eems.component.html:
   52  <ul>
   53:   <li>Using an inverter duty motor for high voltage applications</li>
   54:   <li>Evaluating peak flow demand and annual load profile when comparing different pumping systems.</li>
-  55:   <p>For further information on these topics, refer to the <a href="https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/variable_speed_pumping.pdf">Variable Speed Pumping: A Guide to Successful Applications—Executive Summary</a> from the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy.</p>
+  55:   <p>For further information on these topics, refer to the <a href="https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/variable_speed_pumping.pdf">Variable Speed Pumping: A Guide to Successful Applications—Executive Summary</a> from the U.S. Department of Energy.</p>
   56  </ul>
   57  
   58: <h3>Life Cycle Cost Analysis of Pumps</h3>
@@ -2067,10 +2067,10 @@ src/app/commercial-hvac/cooling-heating/packaged-system/packaged-system.componen
    62:         <p>Resources include the:</p>
    63          <ul>
    64:             <li><a href="https://www.csemag.com/articles/design-of-rtus-best-practices/">Design of RTUs: Best Practices</a>, Consulting&mdash;Specifying Engineer</li>
-   65:             <li><a href="https://www.energy.gov/eere/buildings/hvac-commissioning#:~:text=Commissioning%20is%20the%20process%20of,original%20design%20and%20engineering%20documentation.">HVAC Commissioning</a>, U.S. DOE Office of Energy Efficiency and Renewable Energy</li>
+   65:             <li><a href="https://www.energy.gov/eere/buildings/hvac-commissioning#:~:text=Commissioning%20is%20the%20process%20of,original%20design%20and%20engineering%20documentation.">HVAC Commissioning</a>, U.S. Department of Energy</li>
    66:             <li><a href="https://ccpia.org/rooftop-unit-rtu-inspection-video/">Rooftop Unit (RTU) Inspection Video</a>, Certified Commercial Property Inspectors Association</li>
    67:             <li><a href="https://www.buildingengines.com/blog/equipment-packaged-rooftop-unit-rtu/">Understanding Your HVAC&mdash;Packaged Rooftop Unit (RTU)</a>, BuildingEngines</li>
-   68:             <li><a href="https://www.nrel.gov/docs/fy24osti/87812.pdf">Decarbonizing Building Thermal Systems</a>, National Renewable Energy Laboratory. </li>
+   68:             <li><a href="https://www.nrel.gov/docs/fy24osti/87812.pdf">Decarbonizing Building Thermal Systems</a>. </li>
    69          </ul>
    70  
    71:         <p>U.S. Department of Energy Rooftop Unit Initiatives include the:</p>
@@ -2184,14 +2184,14 @@ src/app/commercial-hvac/cooling-heating/packaged-system/packaged-system.componen
   180          </ul>
   181:         <h3>Resources include:</h3>
   182          <ul>
-  183:             <li><a href="https://www.energy.gov/eere/buildings/packaged-terminal-air-conditioners-ptacs-and-packaged-terminal-heat-pumps-pthps">PTAC and PTHP Standards</a>, U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy
+  183:             <li><a href="https://www.energy.gov/eere/buildings/packaged-terminal-air-conditioners-ptacs-and-packaged-terminal-heat-pumps-pthps">PTAC and PTHP Standards</a>, U.S. Department of Energy
   184                  <ul>
   185:                     <li><a href="https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Publications/Research/Other-Technical-Reports/18-27-PTHP-Market-Development.pdf">Packaged Terminal Heat Pump Market and Development Research Report</a>, New York State Energy Research and Development Authority
   186                          </li>
   187:                     <li><a href="https://hvac-eng.com/understanding-packaged-terminal-air-conditioners-heat-pumps-energy-efficient-solutions-for-versatile-applications-technical-specifications-installation-maintenance-and-troubleshooting/">Understanding Packaged Terminal Air Conditioners/Heat Pumps: Energy-Efficient Solutions for Versatile Applications, Technical Specifications, Installation, Maintenance, and Troubleshooting</a>, HVAC/R & Solar Data, Tables, Tools, Guides</li>
   188                  </ul>
   189              </li>
-  190:             <li><a href="https://www.energy.gov/eere/buildings/single-package-vertical-air-conditioners-and-heat-pumps">SPVAC and SPVHP  Standards</a>, U.S. DOE Office of Energy Efficiency and Renewable Energy</li>
+  190:             <li><a href="https://www.energy.gov/eere/buildings/single-package-vertical-air-conditioners-and-heat-pumps">SPVAC and SPVHP  Standards</a>, U.S. Department of Energy</li>
   191:             <li><a href="https://www.ecfr.gov/current/title-10/chapter-II/subchapter-D/part-431#p-431.97(d)">Federal Minimum Energy Conservation Standards</a>, Code of Federal Regulations (Table 7, 8, 11)</li>
   192:             <li>Directory of available certified products from the <a href="https://www.ahridirectory.org">Air Conditioning, Heating, and Refrigeration Institute (AHRI).</a></li>
   193          </ul>
@@ -2333,7 +2333,7 @@ src/app/commercial-hvac/cooling-heating/thermal-storage/thermal-storage.componen
   13:   <li>Redundancy in cooling systems is needed to make up for short-term cooling requirement.</li>
   14  </ul>
   15  
-  16: <p>Refer to <a href="https://www.energy.gov/sites/prod/files/2020/02/f71/bto-IceStorageWebinar-011620.pdf">Thermal Energy Storage Webinar Series Ice Thermal Energy Storage</a> from the U.S. Department of Energy's Office of Energy Efficiency and Renewable Energy.</p>
+  16: <p>Refer to <a href="https://www.energy.gov/sites/prod/files/2020/02/f71/bto-IceStorageWebinar-011620.pdf">Thermal Energy Storage Webinar Series Ice Thermal Energy Storage</a> from the U.S. Department of Energy.</p>
   17  
   18  <h3>Resources</h3>
   19: <p><a href="https://store.accuristech.com/ashrae/standards/ashrae-design-guide-for-cool-thermal-storage-2nd-ed?product_id=2046532">ASHRAE Design Guide for Cool Thermal Storage</a></p>
@@ -2350,7 +2350,7 @@ src/app/commercial-hvac/cooling-heating/thermal-storage/thermal-storage.componen
   30:   <li>Redundancy in heating systems is needed to make up for short-term heating requirement.</li>
   31  </ul>
   32  
-  33: <p>Refer to <a href="https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/Thermal_Energy_Storage_Fact_Sheet_0.pdf">Thermal Energy Storage Overview</a> from the U.S. Department of Energy's Office of Energy Efficiency and Renewable Energy.</p>
+  33: <p>Refer to <a href="https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/Thermal_Energy_Storage_Fact_Sheet_0.pdf">Thermal Energy Storage Overview</a> from the U.S. Department of Energy.</p>
 
 src/app/commercial-hvac/cooling-heating/thermal-storage/thermal-storage.component.ts:
    1: import { Component } from '@angular/core';
@@ -2597,7 +2597,7 @@ src/app/commercial-hvac/distribution/ahu/eems/eems.component.ts:
 
 src/app/commercial-hvac/distribution/ahu/operation/operation.component.html:
    2  
-   3: <p>Periodic evaluation of air handlers is recommended to identify efficiency measures. The evaluation generally consists of a combination of on-site observations and a more detailed testing of air handling unit (AHU) components. The  <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> published by the National Renewable Energy Laboratory lists a number of measures to save energy in commercial buildings by improving the operational efficiency of AHUs. These measures are summarized below; refer to the <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> for more information:</p>
+   3: <p>Periodic evaluation of air handlers is recommended to identify efficiency measures. The evaluation generally consists of a combination of on-site observations and a more detailed testing of air handling unit (AHU) components. The  <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a>  lists a number of measures to save energy in commercial buildings by improving the operational efficiency of AHUs. These measures are summarized below; refer to the <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> for more information:</p>
    4  
    5  <ul>
    6:   <li>Verifying proper operation of air dampers </li>
@@ -3576,14 +3576,14 @@ src/app/commercial-hvac/distribution/fans/fans.component.html:
   853:   <li>Delp, W., E. N. Matson, J. D. Dickerhoff, P. M. Modera. 1997. <a href="https://www.osti.gov/biblio/589246">Field Investigation of Duct System Performance in California Light Commercial Buildings</a>. LBNL-40102. Berkeley, CA: Lawrence Berkeley National Laboratory.</li>
   854:   <li>DOE 2003. <a href="https://www.nrel.gov/docs/fy03osti/29166.pdf">Improving Fan System Performance, a Sourcebook for Industry</a>. Washington. DC: U.S. Department of Energy.</li>
   855:   <li>DOE 2013. <a href="https://www.energy.gov/sites/prod/files/2014/02/f8/Motor%20Energy%20Savings%20Potential%20Report%202013-12-4.pdf">Energy Savings Potential and Opportunities for High-Efficiency Electric Motors in Residential and Commercial Equipment</a>. Washington, DC: U.S. Department of Energy.</li>
-  856:   <li>DOE 2014a. <a href="https://www.energy.gov/sites/prod/files/2014/04/f15/amo_motors_handbook_web.pdf">Premium Efficiency Motor Selection and Application Guide: A Handbook for Industry</a>. Office of Energy Efficiency and Renewable Energy, Advanced Manufacturing Office (AMO), Washington, DC: U.S. Department of Energy.</li>
-  857:   <li>DOE 2014b. <a href="https://www.energy.gov/sites/prod/files/2014/04/f15/amo_motors_sourcebook_web.pdf">Improving Motor and Drive System Performance: A Sourcebook for Industry</a>. Office of Energy Efficiency and Renewable Energy, Advanced Manufacturing Office (AMO): U.S. Department of Energy; February, 2014b.</li>
+  856:   <li>DOE 2014a. <a href="https://www.energy.gov/sites/prod/files/2014/04/f15/amo_motors_handbook_web.pdf">Premium Efficiency Motor Selection and Application Guide: A Handbook for Industry</a>. Advanced Manufacturing Office (AMO), Washington, DC: U.S. Department of Energy.</li>
+  857:   <li>DOE 2014b. <a href="https://www.energy.gov/sites/prod/files/2014/04/f15/amo_motors_sourcebook_web.pdf">Improving Motor and Drive System Performance: A Sourcebook for Industry</a>. Advanced Manufacturing Office (AMO): U.S. Department of Energy; February, 2014b.</li>
   858:   <li>EDR 2009. <a href="https://tayloreng.egnyte.com/dl/jzNGKhmF1C/EDR_VAV_Guide.pdf_">Advanced Variable Air Volume VAV System Design Guide</a>. Energy Design Resources. </li>
   859:   <li>EPA. 2008. ENERGY STAR <a href="https://www.energystar.gov/sites/default/files/buildings/tools/EPA_BUM_Full.pdf">Building Manual Chapter 8: Air Distribution Systems</a>. Washington, DC: Environmental Protection Administration. </li>
   860:   <li>GSA 2014. <a href="https://www.nrel.gov/docs/fy14osti/61448.pdf">Synchronous and Cogged Belt Performance Assessment</a>. GSA Proving Ground Findings. Washington, DC: General Services Administration. </li>
   861:   <li>Modera, M. 2005. <a href="https://www.researchgate.net/publication/291572887_Fixing_duct_leaks_in_commercial_buildings">Fixing Duct Leaks in Commercial Buildings</a>. ASHRAE Journal, June 2005. Atlanta, GA: ASHRAE.</li>
-  862:   <li>NLR 2015. <a href="https://www.nrel.gov/docs/fy23osti/82173.pdf">Field Test Best Practices: Air flow.</a> NLR Buildings Research. Golden, CO: National Renewable Energy Laboratory</li>
-  863:   <li>NLR 2017. <a href="https://hvacresourcemap.net/">HVAC Resource Map</a>. Golden, CO: National Renewable Energy Laboratory. </li>
+  862:   <li>NLR 2015. <a href="https://www.nrel.gov/docs/fy23osti/82173.pdf">Field Test Best Practices: Air flow.</a> NLR Buildings Research. Golden, CO.</li>
+  863:   <li>NLR 2017. <a href="https://hvacresourcemap.net/">HVAC Resource Map</a>. Golden, CO.</li>
   864:   <li>Taylor, S. 2015. <a href="https://tayloreng.egnyte.com/dl/e1DzRUmHTl/ASHRAE_Journal_-_Trim_and_Respond.pdf_">Resetting Setpoints Using Trim & Respond Logic</a>. ASHRAE Journal. November 2015. Atlanta GA: ASHRAE </li>
   865:   <li>Roth, K., D. Westphalen, J. Dieckmann, D. S. Hamilton, and W. Goetzler. 2002. <a href="https://www1.eere.energy.gov/buildings/publications/pdfs/commercial_initiative/hvac_volume3_final_report.pdf">Energy Consumption Characteristics of Commercial Building HVAC Systems Volume III: Energy Savings Potential</a>. Washington, DC: U.S. Department of Energy.</li>
   866:   <li>Weaver, K. and C. Culp 2007. <a href="https://www.proquest.com/openview/cd8d2802a8a2cabeaccc62b03a0574e3/1">Static Pressure Losses in Nonmetallic Flexible Duct</a>. ASHRAE Transactions. July 2007. Atlanta, GA: ASHRAE.</li>
@@ -4062,7 +4062,7 @@ src/app/commercial-hvac/distribution/valve/valve.component.html:
   288  
 
   290  <ul>
-  291:   <li><a href="https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/steam17_valves_fittings.pdf">Steam Tip Sheet #17: Install Removable Insulation on Valves and Fittings</a>. January 2012. U.S. Department of Energy Office of Energy Efficiency and Renewable Energy.</li>
+  291:   <li><a href="https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/steam17_valves_fittings.pdf">Steam Tip Sheet #17: Install Removable Insulation on Valves and Fittings</a>. January 2012. U.S. Department of Energy.</li>
   292:   <li><a href="https://www.valin.com/resources/articles/control-valve-sizing-101-rules-thumb">Size Matters: Valve Sizing 101</a>, Jon Monsen. August16, 2012. Valin.</li>
   293:   <li><a href="https://www.documentation.emersonprocess.com/intradoc-cgi/groups/public/documents/reference/d351798x012_11.pdf">Valve Sizing Calculation (Traditional Method)</a></li>
   294  
@@ -4303,30 +4303,30 @@ src/app/contributors/contributors.component.html:
    5  <ul>
    6:   <li>Kent Peterson, P2S Engineering</li>
    7:   <li>Scott Williams, Williams Building Systems Engineering PC</li>
-   8:   <li>Otto VanGeet, National Renewable Energy Laboratory</li>
-   9:   <li>Anna Hoenmans, National Renewable Energy Laboratory</li>
+   8:   <li>Otto VanGeet, National Laboratory of the Rockies</li>
+   9:   <li>Anna Hoenmans, National Laboratory of the Rockies</li>
   10  </ul>
   11  
   12: <h3>Content Contributors</h3>
   13  <ul>
-  14:   <li>Michael Deru, National Renewable Energy Laboratory</li>
-  15:   <li>Anoop Honnekeri, National Renewable Energy Laboratory</li>
+  14:   <li>Michael Deru, National Laboratory of the Rockies</li>
+  15:   <li>Anoop Honnekeri, National Laboratory of the Rockies</li>
   16  </ul>
   17  
   18: <h3>Schema Development</h3>
   19  <ul>
-  20:   <li>Marjorie Schott, National Renewable Energy Laboratory</li>
-  21:   <li>Alex Swindler, National Renewable Energy Laboratory</li>
-  22:   <li>Katherine Fleming, National Renewable Energy Laboratory</li>
+  20:   <li>Marjorie Schott, National Laboratory of the Rockies</li>
+  21:   <li>Alex Swindler, National Laboratory of the Rockies</li>
+  22:   <li>Katherine Fleming, National Laboratory of the Rockies</li>
   23  </ul>
   24  
   25: <h2>Laboratories Section Contributors</h2>
   26  
   27: <h3>Content Contributors</h3>
   28  <ul>
-  29:   <li>Rachel Romero, National Renewable Energy Laboratory</li>
-  30:   <li>Otto VanGeet, National Renewable Energy Laboratory</li>
-  31:   <li>Amy Allen, National Renewable Energy Laboratory</li>
+  29:   <li>Rachel Romero, National Laboratory of the Rockies</li>
+  30:   <li>Otto VanGeet, National Laboratory of the Rockies</li>
+  31:   <li>Amy Allen, National Laboratory of the Rockies</li>
   32:   <li>Kishor Khankari, AnSight LLC</li>
   33  </ul>
 
@@ -4336,8 +4336,8 @@ src/app/contributors/contributors.component.html:
   39  
   40: <h3>Schema Development</h3>
   41  <ul>
-  42:   <li>Marjorie Schott, National Renewable Energy Laboratory</li>
-  43:   <li>Alex Swindler, National Renewable Energy Laboratory</li>
+  42:   <li>Marjorie Schott, National Laboratory of the Rockies</li>
+  43:   <li>Alex Swindler, National Laboratory of the Rockies</li>
   44  </ul>
 
 src/app/contributors/contributors.component.ts:
@@ -4815,7 +4815,7 @@ src/app/laboratories/distribution/ahu/eems/eems.component.ts:
 
 src/app/laboratories/distribution/ahu/operation/operation.component.html:
    2  
-   3: <p>Periodic evaluation of air handlers is recommended to identify efficiency measures. The evaluation generally consists of a combination of on-site observations and a more detailed testing of air handling unit (AHU) components. The <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> published by the National Renewable Energy Laboratory lists a number of measures to save energy in commercial buildings by improving the operational efficiency of AHUs. These measures are summarized below; refer to the <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> for more information:</p>
+   3: <p>Periodic evaluation of air handlers is recommended to identify efficiency measures. The evaluation generally consists of a combination of on-site observations and a more detailed testing of air handling unit (AHU) components. The <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> lists a number of measures to save energy in commercial buildings by improving the operational efficiency of AHUs. These measures are summarized below; refer to the <a href="https://www.nrel.gov/docs/gen/fy11/50134.pdf">General Air Handling Unit Checklist</a> for more information:</p>
    4  
    5  <ul>
    6:   <li>Verifying proper operation of air dampers</li>
@@ -5840,7 +5840,7 @@ src/app/laboratories/laboratories-home/laboratories-home.component.html:
   13:   <p>The resources listed on this site have been carefully selected to help narrow your search for helpful information.</p>
   14  </div>
   15  
-  16: <img class="img-fluid rounded" src="assets/images/29658.jpg" alt="Jeff Wolfe does research in the compositional analysis lab at the Field Test Laboratory Building (FTLB) at the National Renewable Energy Laboratory in Golden, CO. (Photo by Dennis Schroeder/NLR)">
+  16: <img class="img-fluid rounded" src="assets/images/29658.jpg" alt="Jeff Wolfe does research in the compositional analysis lab at the Field Test Laboratory Building (FTLB) at the National Laboratory of the Rockies in Golden, CO. (Photo by Dennis Schroeder/NLR)">
   17: <p class="caption">
   18:   <strong>Laboratories have unique HVAC needs</strong> Photo by Dennis Schroeder/NLR 29658
   19  </p>
@@ -5925,11 +5925,11 @@ src/app/shared/components/footer/footer.component.html:
   53              </div>
 
   60            <div class="col-sm-5">
-  61:             <a href="https://www.allianceforsustainableenergy.org/"><img class="mr-5 mb-3" src="assets/images/alliance-logo_black.png" alt="Alliance for Sustainable Energy, LLC"></a>
+  61:             <a href="https://www.allianceforsustainableenergy.org/"><img class="mr-5 mb-3" src="assets/images/alliance-logo_black.png" alt="Alliance for Energy Innovation, LLC"></a>
   62:             <a href="https://www.energy.gov/"><img src="assets/images/logo-doe-footer-new.png" alt="U.S. Department of Energy" class="mb-3"></a>
   63            </div>
   64            <div class="col-12 col-sm-7">
-  65:             <p class="nrel-attr">The National Renewable Energy Laboratory is a national laboratory of the <a href="https://www.energy.gov/" class="link-decorated">U.S. Department of Energy</a>, <a href="https://www.energy.gov/eere/office-energy-efficiency-and-renewable-energy" class="link-decorated">Office of Energy Efficiency and Renewable Energy</a>, under Contract No. DE-AC36-08GO28308.</p>
+  65:             <p class="nrel-attr">The National Laboratory of the Rockies is a national laboratory of the <a href="https://www.energy.gov/" class="link-decorated">U.S. Department of Energy</a>, Office of Critical Minerals and Energy Innovation, operated under Contract No. DE-AC36-08GO28308.</p>
   66            </div>
 
 src/app/shared/components/header/header.component.html:
@@ -5962,14 +5962,14 @@ src/app/shared/components/header/header.component.html:
   27  
   28:                         <input type="hidden" name="pr" value="metanrel"/>
   29                          <div class="form-group">
-  30:                           <label for="query" class="sr-only">Search NREL.gov</label>
+  30:                           <label for="query" class="sr-only">Search Site</label>
   31:                           <input
   32                              type="search"
   33:                             id="query" name="query"
   34:                             maxlength="2047"
-  35:                             placeholder="Search NREL.gov"
+  35:                             placeholder="Search Site"
   36:                             class="form-control"
-  37:                             aria-label="Search NREL.gov">
+  37:                             aria-label="Search Site">
   38:                           <button type="submit" class="btn btn-default">Search</button>
   39                          </div>
 
